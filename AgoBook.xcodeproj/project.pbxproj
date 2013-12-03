@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25DCF1EE184E71E80010F119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1ED184E71E80010F119 /* UIKit.framework */; };
+		25DCF1F0184E71E80010F119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1EF184E71E80010F119 /* Foundation.framework */; };
+		25DCF1F2184E71E80010F119 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1F1184E71E80010F119 /* CoreGraphics.framework */; };
+		25DCF1F4184E71E80010F119 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1F3184E71E80010F119 /* CoreData.framework */; };
+		25DCF1FA184E71E80010F119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF1F8184E71E80010F119 /* InfoPlist.strings */; };
+		25DCF1FC184E71E80010F119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF1FB184E71E80010F119 /* main.m */; };
+		25DCF200184E71E80010F119 /* EAPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF1FF184E71E80010F119 /* EAPAppDelegate.m */; };
+		25DCF202184E71E80010F119 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF201184E71E80010F119 /* Default.png */; };
+		25DCF204184E71E80010F119 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF203184E71E80010F119 /* Default@2x.png */; };
+		25DCF206184E71E80010F119 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF205184E71E80010F119 /* Default-568h@2x.png */; };
+		25DCF209184E71E80010F119 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF207184E71E80010F119 /* MainStoryboard.storyboard */; };
+		25DCF20C184E71E80010F119 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF20A184E71E80010F119 /* AgoBook.xcdatamodeld */; };
+		25DCF20F184E71E80010F119 /* EAPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF20E184E71E80010F119 /* EAPMainViewController.m */; };
+		25DCF212184E71E80010F119 /* EAPFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF211184E71E80010F119 /* EAPFlipsideViewController.m */; };
+		25DCF21A184E71E80010F119 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF219184E71E80010F119 /* SenTestingKit.framework */; };
+		25DCF21B184E71E80010F119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1ED184E71E80010F119 /* UIKit.framework */; };
+		25DCF21C184E71E80010F119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1EF184E71E80010F119 /* Foundation.framework */; };
+		25DCF21D184E71E80010F119 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1F3184E71E80010F119 /* CoreData.framework */; };
+		25DCF225184E71E80010F119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF223184E71E80010F119 /* InfoPlist.strings */; };
+		25DCF228184E71E80010F119 /* AgoBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF227184E71E80010F119 /* AgoBookTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25DCF21E184E71E80010F119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25DCF1E2184E71E80010F119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25DCF1E9184E71E80010F119;
+			remoteInfo = AgoBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25DCF1EA184E71E80010F119 /* AgoBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DCF1ED184E71E80010F119 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25DCF1EF184E71E80010F119 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25DCF1F1184E71E80010F119 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25DCF1F3184E71E80010F119 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		25DCF1F7184E71E80010F119 /* AgoBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AgoBook-Info.plist"; sourceTree = "<group>"; };
+		25DCF1F9184E71E80010F119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25DCF1FB184E71E80010F119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25DCF1FD184E71E80010F119 /* AgoBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AgoBook-Prefix.pch"; sourceTree = "<group>"; };
+		25DCF1FE184E71E80010F119 /* EAPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPAppDelegate.h; sourceTree = "<group>"; };
+		25DCF1FF184E71E80010F119 /* EAPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPAppDelegate.m; sourceTree = "<group>"; };
+		25DCF201184E71E80010F119 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		25DCF203184E71E80010F119 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		25DCF205184E71E80010F119 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		25DCF208184E71E80010F119 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		25DCF20B184E71E80010F119 /* AgoBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgoBook.xcdatamodel; sourceTree = "<group>"; };
+		25DCF20D184E71E80010F119 /* EAPMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPMainViewController.h; sourceTree = "<group>"; };
+		25DCF20E184E71E80010F119 /* EAPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPMainViewController.m; sourceTree = "<group>"; };
+		25DCF210184E71E80010F119 /* EAPFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPFlipsideViewController.h; sourceTree = "<group>"; };
+		25DCF211184E71E80010F119 /* EAPFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPFlipsideViewController.m; sourceTree = "<group>"; };
+		25DCF218184E71E80010F119 /* AgoBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DCF219184E71E80010F119 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		25DCF222184E71E80010F119 /* AgoBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AgoBookTests-Info.plist"; sourceTree = "<group>"; };
+		25DCF224184E71E80010F119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25DCF226184E71E80010F119 /* AgoBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgoBookTests.h; sourceTree = "<group>"; };
+		25DCF227184E71E80010F119 /* AgoBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgoBookTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25DCF1E7184E71E80010F119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF1EE184E71E80010F119 /* UIKit.framework in Frameworks */,
+				25DCF1F0184E71E80010F119 /* Foundation.framework in Frameworks */,
+				25DCF1F2184E71E80010F119 /* CoreGraphics.framework in Frameworks */,
+				25DCF1F4184E71E80010F119 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DCF214184E71E80010F119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF21A184E71E80010F119 /* SenTestingKit.framework in Frameworks */,
+				25DCF21B184E71E80010F119 /* UIKit.framework in Frameworks */,
+				25DCF21C184E71E80010F119 /* Foundation.framework in Frameworks */,
+				25DCF21D184E71E80010F119 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25DCF1E1184E71E80010F119 = {
+			isa = PBXGroup;
+			children = (
+				25DCF1F5184E71E80010F119 /* AgoBook */,
+				25DCF220184E71E80010F119 /* AgoBookTests */,
+				25DCF1EC184E71E80010F119 /* Frameworks */,
+				25DCF1EB184E71E80010F119 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25DCF1EB184E71E80010F119 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF1EA184E71E80010F119 /* AgoBook.app */,
+				25DCF218184E71E80010F119 /* AgoBookTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25DCF1EC184E71E80010F119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF1ED184E71E80010F119 /* UIKit.framework */,
+				25DCF1EF184E71E80010F119 /* Foundation.framework */,
+				25DCF1F1184E71E80010F119 /* CoreGraphics.framework */,
+				25DCF1F3184E71E80010F119 /* CoreData.framework */,
+				25DCF219184E71E80010F119 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25DCF1F5184E71E80010F119 /* AgoBook */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF1FE184E71E80010F119 /* EAPAppDelegate.h */,
+				25DCF1FF184E71E80010F119 /* EAPAppDelegate.m */,
+				25DCF207184E71E80010F119 /* MainStoryboard.storyboard */,
+				25DCF20D184E71E80010F119 /* EAPMainViewController.h */,
+				25DCF20E184E71E80010F119 /* EAPMainViewController.m */,
+				25DCF210184E71E80010F119 /* EAPFlipsideViewController.h */,
+				25DCF211184E71E80010F119 /* EAPFlipsideViewController.m */,
+				25DCF20A184E71E80010F119 /* AgoBook.xcdatamodeld */,
+				25DCF1F6184E71E80010F119 /* Supporting Files */,
+			);
+			path = AgoBook;
+			sourceTree = "<group>";
+		};
+		25DCF1F6184E71E80010F119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF1F7184E71E80010F119 /* AgoBook-Info.plist */,
+				25DCF1F8184E71E80010F119 /* InfoPlist.strings */,
+				25DCF1FB184E71E80010F119 /* main.m */,
+				25DCF1FD184E71E80010F119 /* AgoBook-Prefix.pch */,
+				25DCF201184E71E80010F119 /* Default.png */,
+				25DCF203184E71E80010F119 /* Default@2x.png */,
+				25DCF205184E71E80010F119 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25DCF220184E71E80010F119 /* AgoBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF226184E71E80010F119 /* AgoBookTests.h */,
+				25DCF227184E71E80010F119 /* AgoBookTests.m */,
+				25DCF221184E71E80010F119 /* Supporting Files */,
+			);
+			path = AgoBookTests;
+			sourceTree = "<group>";
+		};
+		25DCF221184E71E80010F119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25DCF222184E71E80010F119 /* AgoBookTests-Info.plist */,
+				25DCF223184E71E80010F119 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25DCF1E9184E71E80010F119 /* AgoBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DCF22B184E71E80010F119 /* Build configuration list for PBXNativeTarget "AgoBook" */;
+			buildPhases = (
+				25DCF1E6184E71E80010F119 /* Sources */,
+				25DCF1E7184E71E80010F119 /* Frameworks */,
+				25DCF1E8184E71E80010F119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgoBook;
+			productName = AgoBook;
+			productReference = 25DCF1EA184E71E80010F119 /* AgoBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25DCF217184E71E80010F119 /* AgoBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DCF22E184E71E80010F119 /* Build configuration list for PBXNativeTarget "AgoBookTests" */;
+			buildPhases = (
+				25DCF213184E71E80010F119 /* Sources */,
+				25DCF214184E71E80010F119 /* Frameworks */,
+				25DCF215184E71E80010F119 /* Resources */,
+				25DCF216184E71E80010F119 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25DCF21F184E71E80010F119 /* PBXTargetDependency */,
+			);
+			name = AgoBookTests;
+			productName = AgoBookTests;
+			productReference = 25DCF218184E71E80010F119 /* AgoBookTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25DCF1E2184E71E80010F119 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EAP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Simone Bierti";
+			};
+			buildConfigurationList = 25DCF1E5184E71E80010F119 /* Build configuration list for PBXProject "AgoBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25DCF1E1184E71E80010F119;
+			productRefGroup = 25DCF1EB184E71E80010F119 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25DCF1E9184E71E80010F119 /* AgoBook */,
+				25DCF217184E71E80010F119 /* AgoBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25DCF1E8184E71E80010F119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF1FA184E71E80010F119 /* InfoPlist.strings in Resources */,
+				25DCF202184E71E80010F119 /* Default.png in Resources */,
+				25DCF204184E71E80010F119 /* Default@2x.png in Resources */,
+				25DCF206184E71E80010F119 /* Default-568h@2x.png in Resources */,
+				25DCF209184E71E80010F119 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DCF215184E71E80010F119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF225184E71E80010F119 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DCF216184E71E80010F119 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25DCF1E6184E71E80010F119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF1FC184E71E80010F119 /* main.m in Sources */,
+				25DCF200184E71E80010F119 /* EAPAppDelegate.m in Sources */,
+				25DCF20C184E71E80010F119 /* AgoBook.xcdatamodeld in Sources */,
+				25DCF20F184E71E80010F119 /* EAPMainViewController.m in Sources */,
+				25DCF212184E71E80010F119 /* EAPFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DCF213184E71E80010F119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DCF228184E71E80010F119 /* AgoBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25DCF21F184E71E80010F119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25DCF1E9184E71E80010F119 /* AgoBook */;
+			targetProxy = 25DCF21E184E71E80010F119 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25DCF1F8184E71E80010F119 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DCF1F9184E71E80010F119 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25DCF207184E71E80010F119 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DCF208184E71E80010F119 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		25DCF223184E71E80010F119 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DCF224184E71E80010F119 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25DCF229184E71E80010F119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		25DCF22A184E71E80010F119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25DCF22C184E71E80010F119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
+				INFOPLIST_FILE = "AgoBook/AgoBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25DCF22D184E71E80010F119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
+				INFOPLIST_FILE = "AgoBook/AgoBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		25DCF22F184E71E80010F119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AgoBook.app/AgoBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
+				INFOPLIST_FILE = "AgoBookTests/AgoBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		25DCF230184E71E80010F119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AgoBook.app/AgoBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
+				INFOPLIST_FILE = "AgoBookTests/AgoBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25DCF1E5184E71E80010F119 /* Build configuration list for PBXProject "AgoBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DCF229184E71E80010F119 /* Debug */,
+				25DCF22A184E71E80010F119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DCF22B184E71E80010F119 /* Build configuration list for PBXNativeTarget "AgoBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DCF22C184E71E80010F119 /* Debug */,
+				25DCF22D184E71E80010F119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25DCF22E184E71E80010F119 /* Build configuration list for PBXNativeTarget "AgoBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DCF22F184E71E80010F119 /* Debug */,
+				25DCF230184E71E80010F119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25DCF20A184E71E80010F119 /* AgoBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25DCF20B184E71E80010F119 /* AgoBook.xcdatamodel */,
+			);
+			currentVersion = 25DCF20B184E71E80010F119 /* AgoBook.xcdatamodel */;
+			path = AgoBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25DCF1E2184E71E80010F119 /* Project object */;
+}
