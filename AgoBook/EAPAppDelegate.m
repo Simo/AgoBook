@@ -7,20 +7,89 @@
 //
 
 #import "EAPAppDelegate.h"
-
 #import "EAPMainViewController.h"
+#import "Persona.h"
+#import "StoriaMedica.h"
+#import "StoriaEmotiva.h"
+#import "Trattamento.h"
+#import "Diagnosi.h"
+#import "Seduta.h"
+#import "Punto.h"
+
+#define debug 1
 
 @implementation EAPAppDelegate
-
+/*
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize fetchedResultsController = _fetchedResultsController;
+*/
+
+- (void) setupFetchedResultsController
+{
+    // 1 - Decide what Entity you want
+    NSString *entityName = @"Persona"; // Put your entity name here
+    NSLog(@"Setting up a Fetched Results Controller for the Entity named %@", entityName);
+    
+    // 2 - Request that Entity
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    
+    // 3 - Filter it if you want
+    //request.predicate = [NSPredicate predicateWithFormat:@"Person.name = Blah"];
+    
+    // 4 - Sort it if you want
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"cognome"
+                                                                                     ascending:YES
+                                                                                      selector:@selector(localizedCaseInsensitiveCompare:)]];
+    // 5 - Fetch it
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                        managedObjectContext:[[self cdh] context]
+                                                                          sectionNameKeyPath:nil
+                                                                                   cacheName:nil];
+    [self.fetchedResultsController performFetch:nil];
+}
+
+
+-(CoreDataHelper *) cdh
+{
+    if (debug==1) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
+    
+    if(!_coreDataHelper){
+        static dispatch_once_t predicate;
+        dispatch_once(&predicate, ^{
+            _coreDataHelper = [CoreDataHelper new];
+        });
+        [_coreDataHelper setupCoreData];
+    }
+    
+    return _coreDataHelper;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    /*
+     */
+    [self cdh];
+    
+    [self setupFetchedResultsController];
+    
+    if (![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+        NSLog(@"!!!!! ~~> There's nothing in the database so defaults will be inserted");
+        [self importCoreDataDefaultPeople];
+    }
+    else {
+        NSLog(@"There's stuff in the database so skipping the import of default data.");
+    }
+    
     EAPMainViewController *controller = (EAPMainViewController *)self.window.rootViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    controller.managedObjectContext = self.coreDataHelper.context;
+    
+    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
+
     return YES;
 }
 							
@@ -34,6 +103,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[self cdh] saveContext];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -49,102 +119,71 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+    [[self cdh] saveContext];
 }
 
-- (void)saveContext
-{
-    NSError *error = nil;
-    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
-    if (managedObjectContext != nil) {
-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        } 
-    }
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
-#pragma mark - Core Data stack
-
-// Returns the managed object context for the application.
-// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
-- (NSManagedObjectContext *)managedObjectContext
-{
-    if (_managedObjectContext != nil) {
-        return _managedObjectContext;
-    }
+-(void) insertPersonaWithNome:(NSString *) nome cognome:(NSString *) cognome dataNascita:(NSString *) dataNascita sesso:(NSString *) sesso  {
+    Persona * persona = [NSEntityDescription insertNewObjectForEntityForName:@"Persona"
+                                                      inManagedObjectContext:[[self cdh] context]];
+    [persona setNome:nome];
+    [persona setCognome:cognome];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"it-IT"];
+    [formatter setLocale:locale];
+    [formatter dateFromString:dataNascita];
+    [persona setDataNascita:[formatter dateFromString:dataNascita]];
+    [persona setSesso:sesso];
+    /*
+    UIImage *foto = [UIImage imageNamed:fotoURI];
+    NSData *fotoConv = UIImagePNGRepresentation(foto);
+    [persona setFoto:fotoConv];
+     */
+    StoriaMedica *storiaMedica = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaMedica" inManagedObjectContext:[[self cdh] context]];
+    [storiaMedica setIncidenti:@"Nessuno in particolare, tutti nello specifico"];
     
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (coordinator != nil) {
-        _managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-    }
-    return _managedObjectContext;
+    StoriaEmotiva *storiaEmotiva = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaEmotiva" inManagedObjectContext:[[self cdh] context]];
+    [storiaEmotiva setSaporePref:@"Dolce un pò salato"];
+    
+    [persona setStoriamedica:storiaMedica];
+    [persona setStoriaemotiva:storiaEmotiva];
+    
+    Diagnosi *diagnosi = [NSEntityDescription insertNewObjectForEntityForName:@"Diagnosi" inManagedObjectContext:[[self cdh] context]];
+    [diagnosi setDescrizione:@"dolore alla sciatica"];
+    
+    Punto *punto1 = [NSEntityDescription insertNewObjectForEntityForName:@"Punto" inManagedObjectContext:[[self cdh] context]];
+    [punto1 setPunto:@"P12"];
+    Punto *punto2 = [NSEntityDescription insertNewObjectForEntityForName:@"Punto" inManagedObjectContext:[[self cdh] context]];
+    [punto2 setPunto:@"P21"];
+    
+    NSSet *set = [[NSSet alloc] initWithObjects:punto1, punto2, nil];
+    
+    Seduta *seduta = [NSEntityDescription insertNewObjectForEntityForName:@"Seduta" inManagedObjectContext:[[self cdh] context]];
+    [seduta setDataSeduta:[formatter dateFromString:@"10/01/2014"]];
+    [seduta setPunti:set];
+    
+    NSSet *setSedute = [[NSSet alloc] initWithObjects:seduta, nil];
+    
+    [diagnosi setSedute:setSedute];
+    
+    Trattamento *trattamento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Trattamento" inManagedObjectContext:[[self cdh] context]];
+    [trattamento1 setDiagnosi:diagnosi];
+    
+    NSSet *setTrattamenti = [[NSSet alloc] initWithObjects:trattamento1, nil];
+    
+    [persona setTrattamenti:setTrattamenti];
+    
+    [[self cdh] saveContext];
 }
 
-// Returns the managed object model for the application.
-// If the model doesn't already exist, it is created from the application's model.
-- (NSManagedObjectModel *)managedObjectModel
-{
-    if (_managedObjectModel != nil) {
-        return _managedObjectModel;
-    }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"AgoBook" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return _managedObjectModel;
-}
-
-// Returns the persistent store coordinator for the application.
-// If the coordinator doesn't already exist, it is created and the application's store added to it.
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
-{
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
+-(void) importCoreDataDefaultPeople {
+    NSLog(@"import default data");
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"AgoBook.sqlite"];
+    [self insertPersonaWithNome:@"Simone" cognome:@"Bierti" dataNascita:@"03/07/1977" sesso:@"M"];
     
-    NSError *error = nil;
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
-        /*
-         Replace this implementation with code to handle the error appropriately.
-         
-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-         
-         Typical reasons for an error here include:
-         * The persistent store is not accessible;
-         * The schema for the persistent store is incompatible with current managed object model.
-         Check the error message to determine what the actual problem was.
-         
-         
-         If the persistent store is not accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
-         
-         If you encounter schema incompatibility errors during development, you can reduce their frequency by:
-         * Simply deleting the existing store:
-         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
-         
-         * Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-         @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES}
-         
-         Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
-         
-         */
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }    
-    
-    return _persistentStoreCoordinator;
-}
-
-#pragma mark - Application's Documents directory
-
-// Returns the URL to the application's Documents directory.
-- (NSURL *)applicationDocumentsDirectory
-{
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 @end

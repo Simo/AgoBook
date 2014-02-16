@@ -1,13 +1,13 @@
 //
-//  AgoBookTests.h
-//  AgoBookTests
+//  EAPEmptySegue.h
+//  AgoBook
 //
 //  Created by Simone Bierti on 03/12/13.
 //  Copyright (c) 2013 Simone Bierti. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
 
-@interface AgoBookTests : SenTestCase
+@interface EAPEmptySegue : UIStoryboardSegue
 
 @end

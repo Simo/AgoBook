@@ -7,16 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataHelper.h"
 
 @interface EAPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CoreDataHelper *coreDataHelper;
 
+/*
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+ */
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+
+// - (void)saveContext;
+//- (NSURL *)applicationDocumentsDirectory;
+-(CoreDataHelper *) cdh;
 
 @end
