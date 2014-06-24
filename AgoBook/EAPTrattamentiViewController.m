@@ -67,7 +67,7 @@
 }
 
 - (IBAction)segmentChanged:(UISegmentedControl *)sender {
-    NSLog(@"segmented control in trattamenti -> %i", sender.selectedSegmentIndex);
+    //NSLog(@"segmented control in trattamenti -> %i", sender.selectedSegmentIndex);
     if(sender.selectedSegmentIndex == 0){
         [self.dettaglioTrattamentoVC caricaChildVC:@"ProblemiSegue"];
     } else if(sender.selectedSegmentIndex == 1){

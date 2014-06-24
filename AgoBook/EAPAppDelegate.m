@@ -15,7 +15,11 @@
 #import "Diagnosi.h"
 #import "Seduta.h"
 #import "Punto.h"
-
+#import "Segno.h"
+#import "Elemento.h"
+#import "Rassegna.h"
+#import "SegnoTag.h"
+//#import "SegnoPersonale.h"
 #define debug 1
 
 @implementation EAPAppDelegate
@@ -48,6 +52,24 @@
                                                                           sectionNameKeyPath:nil
                                                                                    cacheName:nil];
     [self.fetchedResultsController performFetch:nil];
+}
+
+- (NSArray *) listaSegni{
+    NSString *entityName = @"Segno";
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"priority"
+                                                                                     ascending:YES
+                                                                                      selector:@selector(localizedCaseInsensitiveCompare:)]];
+    
+     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                        managedObjectContext:[[self cdh] context]
+                                                                          sectionNameKeyPath:nil
+                                                                                   cacheName:nil];
+    [self.fetchedResultsController performFetch:nil];
+    
+    return [self.fetchedResultsController fetchedObjects];
 }
 
 
@@ -88,6 +110,13 @@
     EAPMainViewController *controller = (EAPMainViewController *)self.window.rootViewController;
     controller.managedObjectContext = self.coreDataHelper.context;
     
+    if(![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+        [self.fetchedResultsController performFetch:nil];
+    }
+    else {
+        NSLog(@"il conto di fetchResult è diverso 0");
+    }
+    
     controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
 
     return YES;
@@ -126,7 +155,75 @@
     return UIStatusBarStyleLightContent;
 }
 
--(void) insertPersonaWithNome:(NSString *) nome cognome:(NSString *) cognome dataNascita:(NSString *) dataNascita sesso:(NSString *) sesso  {
+-(void) insertElementiWithNome:(NSString *) nome {
+    Elemento *elemento = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                  inManagedObjectContext:[[self cdh] context]];
+    [elemento setNome:nome];
+}
+
+-(void) insertSegnoWithNome:(NSString *)nome descrizione:(NSString *)descrizione priority:(NSNumber *)priority {
+    Segno *segno = [NSEntityDescription insertNewObjectForEntityForName:@"Segno"
+                                                 inManagedObjectContext:[[self cdh] context]];
+    [segno setNome:nome];
+    [segno setDescrizione:descrizione];
+    [segno setPriority:priority];
+    
+    if([segno.nome isEqualToString:@"OCCHI"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                           inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"legno"];
+        [segno addElementiObject:elemento1];
+    } else if([segno.nome isEqualToString:@"ORECCHI"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"acqua"];
+        [segno addElementiObject:elemento1];
+        Elemento *elemento2 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento2 setNome:@"fuoco"];
+        [segno addElementiObject:elemento2];
+    } else if([segno.nome isEqualToString:@"NASO"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"metallo"];
+        [segno addElementiObject:elemento1];
+    } else if([segno.nome isEqualToString:@"PELLE"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"metallo"];
+        [segno addElementiObject:elemento1];
+    } else if([segno.nome isEqualToString:@"UNGHIE"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"legno"];
+        [segno addElementiObject:elemento1];
+    } else if([segno.nome isEqualToString:@"OSSA"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"acqua"];
+        [segno addElementiObject:elemento1];
+    } else if([segno.nome isEqualToString:@"MUSCOLI"]){
+        Elemento *elemento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Elemento"
+                                                            inManagedObjectContext:[[self cdh] context]];
+        [elemento1 setNome:@"terra"];
+        [segno addElementiObject:elemento1];
+    }
+
+    
+}
+
+-(void) insertSegnoWith:(Segno *) segno {
+    Segno *s = [NSEntityDescription insertNewObjectForEntityForName:@"Segno"
+                                                 inManagedObjectContext:[[self cdh] context]];
+    [s setNome:segno.nome];
+    [s setDescrizione:segno.descrizione];
+    [s setPriority:segno.priority];
+    
+    [[self cdh] saveContext];
+}
+
+
+-(Persona *) insertPersonaWithNome:(NSString *) nome cognome:(NSString *) cognome dataNascita:(NSString *) dataNascita sesso:(NSString *) sesso  {
     Persona * persona = [NSEntityDescription insertNewObjectForEntityForName:@"Persona"
                                                       inManagedObjectContext:[[self cdh] context]];
     [persona setNome:nome];
@@ -176,14 +273,57 @@
     
     [persona setTrattamenti:setTrattamenti];
     
-    [[self cdh] saveContext];
+    return persona;
+}
+
+
+-(void) insertRassegnaForPersona:(Persona *)persona {
+    Rassegna *rassegna = [NSEntityDescription insertNewObjectForEntityForName:@"Rassegna" inManagedObjectContext:[[self cdh] context]];
+    // recupera la lista dei segni disponibili
+    NSArray * segni = [self listaSegni];
+    
+    //SegnoPersonale *segno1 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoPersonale" inManagedObjectContext:[[self cdh] context]];
+    SegnoTag *tag1 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoTag" inManagedObjectContext:[[self cdh] context]];
+    [tag1 setDescrizione:@"Cefalea a grappolo"];
+    //segno1.segno = [segni objectAtIndex:0];
+    //segno1.tags = [[NSSet alloc] initWithObjects:tag1, nil];
+    persona.rassegnaSegni = rassegna;
+
 }
 
 -(void) importCoreDataDefaultPeople {
     NSLog(@"import default data");
     
-    [self insertPersonaWithNome:@"Simone" cognome:@"Bierti" dataNascita:@"03/07/1977" sesso:@"M"];
+    Persona *persona = [self insertPersonaWithNome:@"Simone" cognome:@"Bierti" dataNascita:@"03/07/1977" sesso:@"M"];
     
+    [self insertSegnoWithNome:@"TESTA" descrizione:@"Emicrania. vertigini, cefalea" priority:@1];
+    [self insertSegnoWithNome:@"OCCHI" descrizione:@"Occhiali, bruciore, lacrimazione" priority:@2];
+    [self insertSegnoWithNome:@"ORECCHI" descrizione:@"Sordità, acufeni, ronzii, dolore, tinnito" priority:@3];
+    [self insertSegnoWithNome:@"NASO" descrizione:@"Olfatto, epistassi" priority:@4];
+    [self insertSegnoWithNome:@"DENTI" descrizione:@"" priority:@5];
+    [self insertSegnoWithNome:@"GOLA" descrizione:@"Tonsillite, adenoidi, gusto, linguaggio" priority:@6];
+    [self insertSegnoWithNome:@"PELLE" descrizione:@"Scura, grassa, lividi, eruzioni, prurito" priority:@7];
+    [self insertSegnoWithNome:@"CAPELLI E CUOIO CAPELLUTO" descrizione:@"Secchi, grassi, colore" priority:@8];
+    [self insertSegnoWithNome:@"UNGHIE" descrizione:@"Ondulate, fragili, deboli, sfaldate, scolorite" priority:@9];
+    [self insertSegnoWithNome:@"OSSA" descrizione:@"Dolori, artrite, osteoporosi, fratture" priority:@10];
+    [self insertSegnoWithNome:@"MUSCOLI" descrizione:@"Flaccidi, deboli, forti, spastici" priority:@11];
+    [self insertSegnoWithNome:@"URINA" descrizione:@"Frequenza, controllo, colore, odore, infezioni, bruciore, ritenzione, sintomi ora del giorno" priority:@12];
+    [self insertSegnoWithNome:@"SUDORE" descrizione:@"Sempre, mai, notte, salato, punti del corpo" priority:@13];
+    [self insertSegnoWithNome:@"INTESTINO" descrizione:@"Diarrea, stitichezza, regolarità, " priority:@14];
+    [self insertSegnoWithNome:@"SONNO" descrizione:@"Come dorme, quante ore, risvegli" priority:@15];
+    [self insertSegnoWithNome:@"SOGNI" descrizione:@"Li ricorda, temi ricorrenti" priority:@16];
+    [self insertSegnoWithNome:@"FUMO" descrizione:@"Cosa, quanto, come si sente, cerca di smettere" priority:@17];
+    [self insertSegnoWithNome:@"BERE" descrizione:@"Cosa, quanto, thé, caffé, acqua, alcool" priority:@18];
+    [self insertSegnoWithNome:@"DIETA" descrizione:@"Cosa mangia, quanto, regime alimentare" priority:@19];
+    [self insertSegnoWithNome:@"MEDICINE" descrizione:@"Vitamine, integratori, lassativi, pillola, ansiolitici" priority:@20];
+    [self insertSegnoWithNome:@"CICLO MESTRUALE" descrizione:@"Età, regolarità, durata, disturbi, flusso, fase del ciclo, gravidanza, parto, sessualità" priority:@21];
+    [self insertSegnoWithNome:@"LIVELLO DI ENERGIA" descrizione:@"Generale: poca, tanta, troppa. Sessuale: tensione, frustrazione, desiderio, fantasie" priority:@22];
+    [self insertSegnoWithNome:@"POLSI" descrizione:@"" priority:@23];
+    [self insertSegnoWithNome:@"LINGUA" descrizione:@"" priority:@24];
+    
+    //[self insertRassegnaForPersona:persona];
+    
+    [[self cdh] saveContext];
 }
 
 @end

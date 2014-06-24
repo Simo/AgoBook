@@ -7,10 +7,10 @@
 //
 
 #import "EAPContainedCommonViewController.h"
+#import "CoreDataHelper.h"
+#import "EAPAppDelegate.h"
 
 @interface EAPContainedCommonViewController ()
-
-@property (strong, nonatomic) NSManagedObjectID *selectedPerson;
 
 @end
 
@@ -35,6 +35,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(id) fetchObjectFromId:(NSManagedObjectID *) selectedObjectId {
+    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    id obj = [cdh.context existingObjectWithID:self.selectedPersonId error:nil];
+    return obj;
 }
 
 @end

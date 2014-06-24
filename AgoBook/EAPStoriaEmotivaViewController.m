@@ -7,6 +7,8 @@
 //
 
 #import "EAPStoriaEmotivaViewController.h"
+#import "Persona.h"
+#import "StoriaEmotiva.h"
 
 @interface EAPStoriaEmotivaViewController ()
 
@@ -23,11 +25,22 @@
     return self;
 }
 
+-(void) refreshInterface {
+    self.txtFieldAutoDescrizione.text = self.selectedPerson.storiaemotiva.autoDescrizione;
+    self.txtFieldStoriaPersonale.text = self.selectedPerson.storiaemotiva.storiaPersonale;
+}
+
+-(void)updateContextFields{
+    self.selectedPerson.storiaemotiva.autoDescrizione = self.txtFieldAutoDescrizione.text;
+    self.selectedPerson.storiaemotiva.storiaPersonale = self.txtFieldStoriaPersonale.text;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self.delegate populateStoriaEmotivaFields:self];
+    //[self.delegate populateStoriaEmotivaFields:self];
+    [self refreshInterface];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,8 +50,11 @@
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-    NSLog(@"persona normale?");
-    [self.delegate changeStoriaEmotivaFields:self];
+    [self updateContextFields];
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    [self updateContextFields];
 }
 
 @end

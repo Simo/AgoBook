@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Persona;
+
 @interface EAPContainedCommonViewController : UIViewController
+
+@property (strong, nonatomic) Persona *selectedPerson;
+@property (strong, nonatomic) NSManagedObjectID *selectedPersonId;
+
+-(id) fetchObjectFromId:(NSManagedObjectID *) selectedObjectId;
 
 @end

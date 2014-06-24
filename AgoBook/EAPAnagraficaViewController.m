@@ -7,6 +7,7 @@
 //
 
 #import "EAPAnagraficaViewController.h"
+#import "Persona.h"
 #define debug 1
 
 @interface EAPAnagraficaViewController ()
@@ -24,13 +25,24 @@
     return self;
 }
 
+-(void) refreshInterface {
+    self.txtNome.text = self.selectedPerson.nome;
+    self.txtCognome.text = self.selectedPerson.cognome;
+}
+
+-(void)updateContextFields{
+    self.selectedPerson.nome = self.txtNome.text;
+    self.selectedPerson.cognome = self.txtCognome.text;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.txtNome setDelegate:self];
     [self.txtCognome setDelegate:self];
-    [self.delegate populateAnagraficaViewFields:self];
+    //[self.delegate populateAnagraficaViewFields:self];
+    [self refreshInterface];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,9 +51,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    [self updateContextFields];
+}
+
 -(void)btnPressed:(id)sender
 {
-    [self.delegate changeAnagraficaFields:self];
+    //[self.delegate changeAnagraficaFields:self];
+    [self updateContextFields];
 }
 
 @end

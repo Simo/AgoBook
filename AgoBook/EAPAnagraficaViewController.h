@@ -13,9 +13,6 @@
 
 @protocol EAPAnagraficaViewControllerDelegate
 
--(void)populateAnagraficaViewFields:(EAPAnagraficaViewController *)controller;
--(void)changeAnagraficaFields:(EAPAnagraficaViewController *)controller;
-
 @end
 
 @interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate>

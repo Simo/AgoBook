@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Allegato" representedClassName="Allegato" syncable="YES">
+        <attribute name="dataInsert" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="esameObiettivo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="EsameObiettivo" inverseName="allegati" inverseEntity="EsameObiettivo" syncable="YES"/>
+    </entity>
+    <entity name="Anamnesi" representedClassName="Anamnesi" syncable="YES">
+        <attribute name="manifestazione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sintomi" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="trattamento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Trattamento" inverseName="anamnesi" inverseEntity="Trattamento" syncable="YES"/>
+    </entity>
+    <entity name="Diagnosi" representedClassName="Diagnosi" syncable="YES">
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sedute" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Seduta" inverseName="diagnosi" inverseEntity="Seduta" syncable="YES"/>
+        <relationship name="trattamento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Trattamento" inverseName="diagnosi" inverseEntity="Trattamento" syncable="YES"/>
+    </entity>
+    <entity name="Elemento" representedClassName="Elemento" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="segni" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Segno" inverseName="elementi" inverseEntity="Segno" syncable="YES"/>
+    </entity>
+    <entity name="EsameObiettivo" representedClassName="EsameObiettivo" syncable="YES">
+        <attribute name="evidenze" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="allegati" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Allegato" inverseName="esameObiettivo" inverseEntity="Allegato" syncable="YES"/>
+        <relationship name="trattamento" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Trattamento" inverseName="esameObiettivo" inverseEntity="Trattamento" syncable="YES"/>
+    </entity>
+    <entity name="Famiglia" representedClassName="Famiglia" syncable="YES">
+        <attribute name="commenti" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nucleo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="persona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="famiglia" inverseEntity="Persona" syncable="YES"/>
+    </entity>
+    <entity name="Lavoro" representedClassName="Lavoro" syncable="YES">
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locazione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="soddisfazione" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="persona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="lavoro" inverseEntity="Persona" syncable="YES"/>
+    </entity>
+    <entity name="Persona" representedClassName="Persona" syncable="YES">
+        <attribute name="cognome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataNascita" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sesso" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="famiglia" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Famiglia" inverseName="persona" inverseEntity="Famiglia" syncable="YES"/>
+        <relationship name="lavoro" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Lavoro" inverseName="persona" inverseEntity="Lavoro" syncable="YES"/>
+        <relationship name="segniPersonali" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SegnoPersonale" inverseName="persona" inverseEntity="SegnoPersonale" syncable="YES"/>
+        <relationship name="storiaemotiva" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="StoriaEmotiva" inverseName="persona" inverseEntity="StoriaEmotiva" syncable="YES"/>
+        <relationship name="storiamedica" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="StoriaMedica" inverseName="persona" inverseEntity="StoriaMedica" syncable="YES"/>
+        <relationship name="trattamenti" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trattamento" inverseName="persona" inverseEntity="Trattamento" syncable="YES"/>
+    </entity>
+    <entity name="Punto" representedClassName="Punto" syncable="YES">
+        <attribute name="applicato" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dataAppl" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dolente" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="punto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempoAppl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="seduta" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Seduta" inverseName="punti" inverseEntity="Seduta" syncable="YES"/>
+    </entity>
+    <entity name="Rassegna" representedClassName="Rassegna" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="segnipersonali" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SegnoPersonale" inverseName="tags" inverseEntity="SegnoPersonale" syncable="YES"/>
+    </entity>
+    <entity name="Seduta" representedClassName="Seduta" syncable="YES">
+        <attribute name="dataSeduta" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="feedBackIst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedBackSucc" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="diagnosi" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Diagnosi" inverseName="sedute" inverseEntity="Diagnosi" syncable="YES"/>
+        <relationship name="punti" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Punto" inverseName="seduta" inverseEntity="Punto" syncable="YES"/>
+    </entity>
+    <entity name="Segno" representedClassName="Segno" syncable="YES">
+        <attribute name="attivo" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="elementi" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Elemento" inverseName="segni" inverseEntity="Elemento" syncable="YES"/>
+        <relationship name="segnipersonali" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SegnoPersonale" inverseName="segno" inverseEntity="SegnoPersonale" syncable="YES"/>
+    </entity>
+    <entity name="SegnoPersonale" representedClassName="SegnoPersonale" syncable="YES">
+        <attribute name="dataIns" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="persona" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="segniPersonali" inverseEntity="Persona" syncable="YES"/>
+        <relationship name="segno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Segno" inverseName="segnipersonali" inverseEntity="Segno" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rassegna" inverseName="segnipersonali" inverseEntity="Rassegna" syncable="YES"/>
+    </entity>
+    <entity name="StoriaEmotiva" representedClassName="StoriaEmotiva" syncable="YES">
+        <attribute name="autoDescrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colorePref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cosaNonPiace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oraMigliore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oraPeggiore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saporePref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stagioneOdiata" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stagionePref" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storiaPersonale" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="persona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="storiaemotiva" inverseEntity="Persona" syncable="YES"/>
+    </entity>
+    <entity name="StoriaMedica" representedClassName="StoriaMedica" syncable="YES">
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="effettiCollaterali" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="incidenti" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interventi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partiColpite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ricoveri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storiaMedicaFamiglia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="persona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="storiamedica" inverseEntity="Persona" syncable="YES"/>
+    </entity>
+    <entity name="Trattamento" representedClassName="Trattamento" syncable="YES">
+        <attribute name="concluso" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dataFine" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dataInizio" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="anamnesi" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Anamnesi" inverseName="trattamento" inverseEntity="Anamnesi" syncable="YES"/>
+        <relationship name="diagnosi" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Diagnosi" inverseName="trattamento" inverseEntity="Diagnosi" syncable="YES"/>
+        <relationship name="esameObiettivo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="EsameObiettivo" inverseName="trattamento" inverseEntity="EsameObiettivo" syncable="YES"/>
+        <relationship name="persona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Persona" inverseName="trattamenti" inverseEntity="Persona" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Allegato" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Anamnesi" positionX="-83" positionY="-306" width="128" height="90"/>
+        <element name="Diagnosi" positionX="97" positionY="-180" width="128" height="90"/>
+        <element name="Elemento" positionX="-227" positionY="-76" width="128" height="75"/>
+        <element name="EsameObiettivo" positionX="-261" positionY="-216" width="128" height="90"/>
+        <element name="Famiglia" positionX="-504" positionY="-378" width="128" height="90"/>
+        <element name="Lavoro" positionX="-531" positionY="-522" width="128" height="105"/>
+        <element name="Persona" positionX="-767" positionY="-312" width="128" height="208"/>
+        <element name="Punto" positionX="214" positionY="-36" width="128" height="150"/>
+        <element name="Rassegna" positionX="-506" positionY="-72" width="128" height="73"/>
+        <element name="Seduta" positionX="180" positionY="-432" width="128" height="120"/>
+        <element name="Segno" positionX="-164" positionY="134" width="128" height="133"/>
+        <element name="SegnoPersonale" positionX="-335" positionY="41" width="128" height="103"/>
+        <element name="StoriaEmotiva" positionX="-540" positionY="48" width="128" height="195"/>
+        <element name="StoriaMedica" positionX="-234" positionY="-423" width="128" height="165"/>
+        <element name="Trattamento" positionX="-63" positionY="-639" width="128" height="150"/>
+    </elements>
+</model>

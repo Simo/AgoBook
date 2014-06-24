@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Simone Bierti. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface AgoBookTests : SenTestCase
+@interface AgoBookTests : XCTestCase
 
 @end

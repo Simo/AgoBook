@@ -50,7 +50,7 @@
         if(!self.problemiVC){
             self.problemiVC = segue.destinationViewController;
             self.problemiVC.delegate = self;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -65,7 +65,7 @@
         if(!self.seduteVC){
             self.seduteVC = segue.destinationViewController;
             self.seduteVC.listaSedute = self.listaSedutePerSeduteVC;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -81,7 +81,7 @@
     } else if ([segue.identifier isEqualToString:SegueIdentifierListPuntiVC]) {
         if(!self.puntiVC){
             self.puntiVC = segue.destinationViewController;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);

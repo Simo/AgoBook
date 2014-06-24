@@ -7,34 +7,50 @@
 //
 
 #import "EAPPuntiSedutaTableViewController.h"
+#import "CoreDataHelper.h"
+#import "EAPAppDelegate.h"
+#import "Punto.h"
+#import "EAPPuntiNuovaSedutaCell.h"
 
-#define kSecondsForCompleteUpdate   3.0
-#define kUpdateInterval             0.02
+#define debug 1
+
+#define kSecondsForCompleteUpdate   1680.0 /*28 minuti per completare il trattamento*/
+#define kUpdateInterval             1
 
 @interface EAPPuntiSedutaTableViewController ()
-
-@property (strong, nonatomic) IBOutlet UIProgressView *progressView;
-@property (strong, nonatomic) IBOutlet UIButton *avviaProgress;
-@property (strong, nonatomic) IBOutlet UITextField *txtFieldPunto;
-@property (strong, nonatomic) NSTimer *timer;
-
 @end
 
 @implementation EAPPuntiSedutaTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
 }
 
+#pragma mark - DATA
+
+- (void) configureFetch {
+    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Punto"];
+    request.sortDescriptors = @[];
+    [request setFetchBatchSize:50];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:cdh.context sectionNameKeyPath:nil cacheName:nil];
+     self.fetchedResultsController.delegate = self;
+    
+}
+     
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    //[self.tableView registerClass: [EAPPuntiNuovaSedutaCell class] forCellReuseIdentifier:@"puntosedutaCell"];
+    [self configureFetch];
+    [self performFetch];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,38 +59,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)startProgressTapped
-{
-    self.progressView.progress = 0.0;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (debug==1) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
     
-    self.avviaProgress.enabled = NO;
+    static NSString *CellIdentifier = @"puntosedutaCell";
+    EAPPuntiNuovaSedutaCell *cell = (EAPPuntiNuovaSedutaCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    self.timer = [NSTimer timerWithTimeInterval:kUpdateInterval
-                                         target:self
-                                       selector:@selector(updateProgressView)
-                                       userInfo:nil
-                                        repeats:YES];
+    cell.txtFieldPunto.delegate = cell;
+    Punto *p = (Punto *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.punto = p;
+    cell.txtFieldPunto.text = p.punto;
     
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
-    
-    [self.timer fire];
+    return cell;
 }
 
-#pragma mark - Private Methods
-
-- (void)updateProgressView;
-{
-    if (self.progressView.progress < 1.0)
-    {
-        self.progressView.progress += (kUpdateInterval / kSecondsForCompleteUpdate);
-    }
-    else
-    {
-        [self.timer invalidate];
-        
-        self.avviaProgress.enabled = YES;
-    }
+-(void)populateList{
+    [self.tableView reloadData];
 }
 
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    NSLog(@"nella table view");
+}
 
 @end

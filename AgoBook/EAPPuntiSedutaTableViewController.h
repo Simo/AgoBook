@@ -10,4 +10,6 @@
 
 @interface EAPPuntiSedutaTableViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 
+-(void)populateList;
+
 @end

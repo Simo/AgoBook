@@ -36,7 +36,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"sect:%i,index:%i",indexPath.section,indexPath.row);
+    //NSLog(@"sect:%i,index:%i",indexPath.section,indexPath.row);
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSLog(@"%@",cell.textLabel.text);
     [self.delegate2 willLoadRespectiveViewController:self indexPath:indexPath];

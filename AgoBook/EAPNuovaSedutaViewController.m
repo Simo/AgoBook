@@ -7,6 +7,10 @@
 //
 
 #import "EAPNuovaSedutaViewController.h"
+#import "EAPPuntiSedutaTableViewController.h"
+#import "CoreDataHelper.h"
+#import "EAPAppDelegate.h"
+#import "Punto.h"
 
 @interface EAPNuovaSedutaViewController ()
 
@@ -33,6 +37,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"embedPuntiSedutaTable"]){
+        self.puntiList = segue.destinationViewController;
+        [self addChildViewController:segue.destinationViewController];
+        [self.view addSubview:((UIViewController *)segue.destinationViewController).view];
+    }
+}
+
+- (IBAction)insertButtonPressed:(UIButton *)button
+{
+    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    Punto *nuovoPunto = [NSEntityDescription insertNewObjectForEntityForName:@"Punto" inManagedObjectContext:[cdh context]];
+    nuovoPunto.punto = @"Punto";
+    [self.puntiList populateList];
 }
 
 @end

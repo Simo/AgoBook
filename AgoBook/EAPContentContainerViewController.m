@@ -16,12 +16,13 @@
 #import "EAPStoriaMedicaViewController.h"
 #import "EAPStoriaEmotivaViewController.h"
 #import "EAPRassegnaSegniViewController.h"
+#import "EAPRassSegniPersonaleViewController.h"
 #import "EAPTrattamentiViewController.h"
 
 #define SegueIdentifierAnagrafica @"AnagraficaSegue"
 #define SegueIdentifierStoriaMedica @"StoriaMedicaSegue"
 #define SegueIdentifierStoriaEmotiva @"StoriaEmotivaSegue"
-#define SegueIdentifierRassegnaSegni @"RassegnaSegniSegue"
+#define SegueIdentifierRassegnaSegni @"RassSegniPersSegue"
 #define SegueIdentifierTrattamenti @"TrattamentiSegue"
 #define SegueIdentifierNuovaSeduta @"NuovaSedutaSegue"
 
@@ -66,7 +67,8 @@
         if(!self.anagraficaVC){
             self.anagraficaVC = segue.destinationViewController;
             self.anagraficaVC.delegate = self;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            self.anagraficaVC.selectedPerson = self.persona;
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             //configura le dimensioni
@@ -88,7 +90,7 @@
     } else if ([segue.identifier isEqualToString:SegueIdentifierStoriaMedica]) {
         if(!self.storiaMedicaVC){
             self.storiaMedicaVC = segue.destinationViewController;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -106,7 +108,8 @@
         if(!self.storiaEmotivaVC){
             self.storiaEmotivaVC = segue.destinationViewController;
             self.storiaEmotivaVC.delegate = self;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            self.storiaEmotivaVC.selectedPerson = self.persona;
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];//[[NSNumber alloc] initWithInt:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -121,7 +124,7 @@
         if(!self.rassegnaSegniVC){
             self.rassegnaSegniVC = segue.destinationViewController;
             self.rassegnaSegniVC.delegate = self;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -136,7 +139,7 @@
         if(!self.trattamentiVC){
             self.trattamentiVC = segue.destinationViewController;
             self.trattamentiVC.delegate = self;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -150,7 +153,7 @@
     } else if ([segue.identifier isEqualToString:SegueIdentifierNuovaSeduta]){
         if(!self.nuovaSedutaVC){
             self.nuovaSedutaVC = segue.destinationViewController;
-            NSNumber *number = [[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -186,20 +189,19 @@
 
 #pragma mark - DELEGATION ON CONTENT VCs
 
-
+/*
 #pragma mark ∆ Anagrafica
-
--(void)populateAnagraficaViewFields:(EAPAnagraficaViewController *)controller
-{
-    controller.txtNome.text = self.persona.nome;
-    controller.txtCognome.text = self.persona.cognome;
-}
 
 -(void)changeAnagraficaFields:(EAPAnagraficaViewController *)controller
 {
-    self.persona.nome = controller.txtNome.text;
-    self.persona.cognome = controller.txtCognome.text;
     [[(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh] saveContext];
+}
+*/
+-(void)populateAnagraficaViewFields:(EAPAnagraficaViewController *)controller{
+    
+}
+-(void)changeAnagraficaFields:(EAPAnagraficaViewController *)controller{
+    
 }
 
 #pragma mark ∆ StoriaMedica

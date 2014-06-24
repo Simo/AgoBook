@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EAPContainedCommonViewController.h"
 
 @class EAPStoriaEmotivaViewController;
 
@@ -17,10 +18,12 @@
 
 @end
 
-@interface EAPStoriaEmotivaViewController : UIViewController <UITextFieldDelegate>
+@interface EAPStoriaEmotivaViewController : EAPContainedCommonViewController <UITextFieldDelegate,UITextViewDelegate>
 
 @property (weak, nonatomic) id <EAPStoriaEmotivaViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UITextField *txtFieldAutoDescrizione;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UITextView *txtFieldStoriaPersonale;
+
 @end

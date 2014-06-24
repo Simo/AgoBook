@@ -8,38 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */; };
+		2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
+		2519007618BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
+		252593E7195A129E0086A0D5 /* Rassegna.m in Sources */ = {isa = PBXBuildFile; fileRef = 252593E6195A129E0086A0D5 /* Rassegna.m */; };
 		2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		2537BB2B187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		2545F7CF18970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		2545F7D018970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
 		25463ABF187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
-		255AF5FA18809B4400E533AD /* EsameObiettivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF5F918809B4400E533AD /* EsameObiettivo.m */; };
-		255AF5FB18809B4400E533AD /* EsameObiettivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF5F918809B4400E533AD /* EsameObiettivo.m */; };
-		255AF5FE18809B4500E533AD /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF5FD18809B4500E533AD /* Persona.m */; };
-		255AF5FF18809B4500E533AD /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF5FD18809B4500E533AD /* Persona.m */; };
-		255AF60218809B4500E533AD /* StoriaEmotiva.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60118809B4500E533AD /* StoriaEmotiva.m */; };
-		255AF60318809B4500E533AD /* StoriaEmotiva.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60118809B4500E533AD /* StoriaEmotiva.m */; };
-		255AF60618809B4500E533AD /* Diagnosi.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60518809B4500E533AD /* Diagnosi.m */; };
-		255AF60718809B4500E533AD /* Diagnosi.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60518809B4500E533AD /* Diagnosi.m */; };
-		255AF60A18809B4500E533AD /* Anamnesi.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60918809B4500E533AD /* Anamnesi.m */; };
-		255AF60B18809B4500E533AD /* Anamnesi.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60918809B4500E533AD /* Anamnesi.m */; };
-		255AF60E18809B4500E533AD /* Punto.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60D18809B4500E533AD /* Punto.m */; };
-		255AF60F18809B4500E533AD /* Punto.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF60D18809B4500E533AD /* Punto.m */; };
-		255AF61218809B4500E533AD /* Trattamento.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61118809B4500E533AD /* Trattamento.m */; };
-		255AF61318809B4500E533AD /* Trattamento.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61118809B4500E533AD /* Trattamento.m */; };
-		255AF61618809B4500E533AD /* Famiglia.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61518809B4500E533AD /* Famiglia.m */; };
-		255AF61718809B4500E533AD /* Famiglia.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61518809B4500E533AD /* Famiglia.m */; };
-		255AF61A18809B4500E533AD /* StoriaMedica.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61918809B4500E533AD /* StoriaMedica.m */; };
-		255AF61B18809B4500E533AD /* StoriaMedica.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61918809B4500E533AD /* StoriaMedica.m */; };
-		255AF61E18809B4500E533AD /* Seduta.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61D18809B4500E533AD /* Seduta.m */; };
-		255AF61F18809B4500E533AD /* Seduta.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF61D18809B4500E533AD /* Seduta.m */; };
-		255AF62218809B4500E533AD /* Allegato.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF62118809B4500E533AD /* Allegato.m */; };
-		255AF62318809B4500E533AD /* Allegato.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF62118809B4500E533AD /* Allegato.m */; };
-		255AF62618809B4500E533AD /* Lavoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF62518809B4500E533AD /* Lavoro.m */; };
-		255AF62718809B4500E533AD /* Lavoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AF62518809B4500E533AD /* Lavoro.m */; };
+		256DE34A1902C53F006DCF75 /* Segno.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE3481902C53F006DCF75 /* Segno.m */; };
+		256F316918FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
+		256F316A18FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
+		256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
+		256F316E18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
+		257DA5081955D37A00A59DDD /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 257DA5071955D37A00A59DDD /* Persona.m */; };
+		259E0DFA194C9DA300AF2E85 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259E0DF9194C9DA300AF2E85 /* CoreText.framework */; };
+		259E0DFE194CC61100AF2E85 /* Seduta.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0DFD194CC61100AF2E85 /* Seduta.m */; };
+		259E0E01194CC61100AF2E85 /* Allegato.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E00194CC61100AF2E85 /* Allegato.m */; };
+		259E0E07194CC61200AF2E85 /* StoriaMedica.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E06194CC61200AF2E85 /* StoriaMedica.m */; };
+		259E0E0A194CC61200AF2E85 /* Diagnosi.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E09194CC61200AF2E85 /* Diagnosi.m */; };
+		259E0E0D194CC61200AF2E85 /* Famiglia.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E0C194CC61200AF2E85 /* Famiglia.m */; };
+		259E0E10194CC61200AF2E85 /* Punto.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E0F194CC61200AF2E85 /* Punto.m */; };
+		259E0E13194CC61200AF2E85 /* Trattamento.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E12194CC61200AF2E85 /* Trattamento.m */; };
+		259E0E16194CC61200AF2E85 /* EsameObiettivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E15194CC61200AF2E85 /* EsameObiettivo.m */; };
+		259E0E19194CC61200AF2E85 /* Lavoro.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E18194CC61200AF2E85 /* Lavoro.m */; };
+		259E0E1C194CC61200AF2E85 /* StoriaEmotiva.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E1B194CC61200AF2E85 /* StoriaEmotiva.m */; };
+		259E0E22194CC61200AF2E85 /* Anamnesi.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E21194CC61200AF2E85 /* Anamnesi.m */; };
+		259E0E25194CC61200AF2E85 /* Elemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E24194CC61200AF2E85 /* Elemento.m */; };
+		259E0E2B194CC61200AF2E85 /* Segno.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E0E2A194CC61200AF2E85 /* Segno.m */; };
+		25B6E6BB195A0AC8004DE436 /* SegnoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B6E6BA195A0AC8004DE436 /* SegnoTag.m */; };
 		25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BC99281853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
+		25BE8689194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE8688194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m */; };
 		25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C6EE5C18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m */; };
 		25C6EE5E18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C6EE5C18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m */; };
 		25C6EE6118A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C6EE6018A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -79,7 +80,6 @@
 		25DCF209184E71E80010F119 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DCF207184E71E80010F119 /* MainStoryboard.storyboard */; };
 		25DCF20F184E71E80010F119 /* EAPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF20E184E71E80010F119 /* EAPMainViewController.m */; };
 		25DCF212184E71E80010F119 /* EAPFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF211184E71E80010F119 /* EAPFlipsideViewController.m */; };
-		25DCF21A184E71E80010F119 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF219184E71E80010F119 /* SenTestingKit.framework */; };
 		25DCF21B184E71E80010F119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1ED184E71E80010F119 /* UIKit.framework */; };
 		25DCF21C184E71E80010F119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1EF184E71E80010F119 /* Foundation.framework */; };
 		25DCF21D184E71E80010F119 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1F3184E71E80010F119 /* CoreData.framework */; };
@@ -143,6 +143,8 @@
 		25ED82BD1852FC73009C0EB9 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED82871852FC73009C0EB9 /* MagicalRecord.m */; };
 		25F4898918B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F4898818B0F97900189EF6 /* EAPContainedCommonViewController.m */; };
 		25F4898A18B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F4898818B0F97900189EF6 /* EAPContainedCommonViewController.m */; };
+		25F633D4194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F633D3194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m */; };
+		25F6C2EB195A10EF00634770 /* SegnoPersonale.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F6C2E9195A10EF00634770 /* SegnoPersonale.m */; };
 		25FC340D18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FC340C18AFB01800775243 /* EAPPuntiSedutaTableViewController.m */; };
 		25FC340E18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FC340C18AFB01800775243 /* EAPPuntiSedutaTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -160,38 +162,59 @@
 /* Begin PBXFileReference section */
 		250C285C18A67EC900164FDA /* EAPNuovaSedutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPNuovaSedutaViewController.h; sourceTree = "<group>"; };
 		250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPNuovaSedutaViewController.m; sourceTree = "<group>"; };
+		2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntiNuovaSedutaCell.h; sourceTree = "<group>"; };
+		2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntiNuovaSedutaCell.m; sourceTree = "<group>"; };
+		252593E5195A129E0086A0D5 /* Rassegna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rassegna.h; path = ../Rassegna.h; sourceTree = "<group>"; };
+		252593E6195A129E0086A0D5 /* Rassegna.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rassegna.m; path = ../Rassegna.m; sourceTree = "<group>"; };
 		2537BB28187C9D89009EB7F7 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		2545F7CD18970B2A00F09DC3 /* CoreDataPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPickerTextField.h; sourceTree = "<group>"; };
 		2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPickerTextField.m; sourceTree = "<group>"; };
 		25463ABC187DF199001F9D2C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
-		255AF5F818809B4400E533AD /* EsameObiettivo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsameObiettivo.h; sourceTree = "<group>"; };
-		255AF5F918809B4400E533AD /* EsameObiettivo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsameObiettivo.m; sourceTree = "<group>"; };
-		255AF5FC18809B4500E533AD /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
-		255AF5FD18809B4500E533AD /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
-		255AF60018809B4500E533AD /* StoriaEmotiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriaEmotiva.h; sourceTree = "<group>"; };
-		255AF60118809B4500E533AD /* StoriaEmotiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriaEmotiva.m; sourceTree = "<group>"; };
-		255AF60418809B4500E533AD /* Diagnosi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diagnosi.h; sourceTree = "<group>"; };
-		255AF60518809B4500E533AD /* Diagnosi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diagnosi.m; sourceTree = "<group>"; };
-		255AF60818809B4500E533AD /* Anamnesi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anamnesi.h; sourceTree = "<group>"; };
-		255AF60918809B4500E533AD /* Anamnesi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Anamnesi.m; sourceTree = "<group>"; };
-		255AF60C18809B4500E533AD /* Punto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Punto.h; sourceTree = "<group>"; };
-		255AF60D18809B4500E533AD /* Punto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Punto.m; sourceTree = "<group>"; };
-		255AF61018809B4500E533AD /* Trattamento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trattamento.h; sourceTree = "<group>"; };
-		255AF61118809B4500E533AD /* Trattamento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trattamento.m; sourceTree = "<group>"; };
-		255AF61418809B4500E533AD /* Famiglia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Famiglia.h; sourceTree = "<group>"; };
-		255AF61518809B4500E533AD /* Famiglia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Famiglia.m; sourceTree = "<group>"; };
-		255AF61818809B4500E533AD /* StoriaMedica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriaMedica.h; sourceTree = "<group>"; };
-		255AF61918809B4500E533AD /* StoriaMedica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriaMedica.m; sourceTree = "<group>"; };
-		255AF61C18809B4500E533AD /* Seduta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seduta.h; sourceTree = "<group>"; };
-		255AF61D18809B4500E533AD /* Seduta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seduta.m; sourceTree = "<group>"; };
-		255AF62018809B4500E533AD /* Allegato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Allegato.h; sourceTree = "<group>"; };
-		255AF62118809B4500E533AD /* Allegato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Allegato.m; sourceTree = "<group>"; };
-		255AF62418809B4500E533AD /* Lavoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lavoro.h; sourceTree = "<group>"; };
-		255AF62518809B4500E533AD /* Lavoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lavoro.m; sourceTree = "<group>"; };
+		256BD5791953755700AE9106 /* AgoBook 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 4.xcdatamodel"; sourceTree = "<group>"; };
+		256DE33E1902C0EA006DCF75 /* AgoBook 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 3.xcdatamodel"; sourceTree = "<group>"; };
+		256DE3481902C53F006DCF75 /* Segno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Segno.m; sourceTree = "<group>"; };
+		256F316718FDCC50003114D5 /* SBRTTokenButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRTTokenButton.h; sourceTree = "<group>"; };
+		256F316818FDCC50003114D5 /* SBRTTokenButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenButton.m; sourceTree = "<group>"; };
+		256F316B18FDCCF1003114D5 /* SBRTTokenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRTTokenView.h; sourceTree = "<group>"; };
+		256F316C18FDCCF1003114D5 /* SBRTTokenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenView.m; sourceTree = "<group>"; };
+		257DA5061955D37A00A59DDD /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
+		257DA5071955D37A00A59DDD /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
+		259E0DF9194C9DA300AF2E85 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		259E0DFC194CC61100AF2E85 /* Seduta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seduta.h; path = modelli/Seduta.h; sourceTree = "<group>"; };
+		259E0DFD194CC61100AF2E85 /* Seduta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seduta.m; path = modelli/Seduta.m; sourceTree = "<group>"; };
+		259E0DFF194CC61100AF2E85 /* Allegato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Allegato.h; path = modelli/Allegato.h; sourceTree = "<group>"; };
+		259E0E00194CC61100AF2E85 /* Allegato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Allegato.m; path = modelli/Allegato.m; sourceTree = "<group>"; };
+		259E0E05194CC61200AF2E85 /* StoriaMedica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriaMedica.h; path = modelli/StoriaMedica.h; sourceTree = "<group>"; };
+		259E0E06194CC61200AF2E85 /* StoriaMedica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriaMedica.m; path = modelli/StoriaMedica.m; sourceTree = "<group>"; };
+		259E0E08194CC61200AF2E85 /* Diagnosi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Diagnosi.h; path = modelli/Diagnosi.h; sourceTree = "<group>"; };
+		259E0E09194CC61200AF2E85 /* Diagnosi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Diagnosi.m; path = modelli/Diagnosi.m; sourceTree = "<group>"; };
+		259E0E0B194CC61200AF2E85 /* Famiglia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Famiglia.h; path = modelli/Famiglia.h; sourceTree = "<group>"; };
+		259E0E0C194CC61200AF2E85 /* Famiglia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Famiglia.m; path = modelli/Famiglia.m; sourceTree = "<group>"; };
+		259E0E0E194CC61200AF2E85 /* Punto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Punto.h; path = modelli/Punto.h; sourceTree = "<group>"; };
+		259E0E0F194CC61200AF2E85 /* Punto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Punto.m; path = modelli/Punto.m; sourceTree = "<group>"; };
+		259E0E11194CC61200AF2E85 /* Trattamento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trattamento.h; path = modelli/Trattamento.h; sourceTree = "<group>"; };
+		259E0E12194CC61200AF2E85 /* Trattamento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Trattamento.m; path = modelli/Trattamento.m; sourceTree = "<group>"; };
+		259E0E14194CC61200AF2E85 /* EsameObiettivo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EsameObiettivo.h; path = modelli/EsameObiettivo.h; sourceTree = "<group>"; };
+		259E0E15194CC61200AF2E85 /* EsameObiettivo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EsameObiettivo.m; path = modelli/EsameObiettivo.m; sourceTree = "<group>"; };
+		259E0E17194CC61200AF2E85 /* Lavoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lavoro.h; path = modelli/Lavoro.h; sourceTree = "<group>"; };
+		259E0E18194CC61200AF2E85 /* Lavoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lavoro.m; path = modelli/Lavoro.m; sourceTree = "<group>"; };
+		259E0E1A194CC61200AF2E85 /* StoriaEmotiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriaEmotiva.h; path = modelli/StoriaEmotiva.h; sourceTree = "<group>"; };
+		259E0E1B194CC61200AF2E85 /* StoriaEmotiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriaEmotiva.m; path = modelli/StoriaEmotiva.m; sourceTree = "<group>"; };
+		259E0E20194CC61200AF2E85 /* Anamnesi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Anamnesi.h; path = modelli/Anamnesi.h; sourceTree = "<group>"; };
+		259E0E21194CC61200AF2E85 /* Anamnesi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Anamnesi.m; path = modelli/Anamnesi.m; sourceTree = "<group>"; };
+		259E0E23194CC61200AF2E85 /* Elemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Elemento.h; path = modelli/Elemento.h; sourceTree = "<group>"; };
+		259E0E24194CC61200AF2E85 /* Elemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Elemento.m; path = modelli/Elemento.m; sourceTree = "<group>"; };
+		259E0E29194CC61200AF2E85 /* Segno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Segno.h; path = modelli/Segno.h; sourceTree = "<group>"; };
+		259E0E2A194CC61200AF2E85 /* Segno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Segno.m; path = modelli/Segno.m; sourceTree = "<group>"; };
+		25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 5.xcdatamodel"; sourceTree = "<group>"; };
+		25B6E6B9195A0AC8004DE436 /* SegnoTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegnoTag.h; sourceTree = "<group>"; };
+		25B6E6BA195A0AC8004DE436 /* SegnoTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegnoTag.m; sourceTree = "<group>"; };
 		25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 2.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99261853BE3100787841 /* AgoBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgoBook.xcdatamodel; sourceTree = "<group>"; };
+		25BE8687194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPRassSegniPersonaleViewController.h; sourceTree = "<group>"; };
+		25BE8688194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPRassSegniPersonaleViewController.m; sourceTree = "<group>"; };
 		25C6EE5B18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = "../../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h"; sourceTree = "<group>"; };
 		25C6EE5C18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = "../../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m"; sourceTree = "<group>"; };
 		25C6EE5F18A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "../../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
@@ -237,8 +260,7 @@
 		25DCF20E184E71E80010F119 /* EAPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPMainViewController.m; sourceTree = "<group>"; };
 		25DCF210184E71E80010F119 /* EAPFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPFlipsideViewController.h; sourceTree = "<group>"; };
 		25DCF211184E71E80010F119 /* EAPFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAPFlipsideViewController.m; sourceTree = "<group>"; };
-		25DCF218184E71E80010F119 /* AgoBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25DCF219184E71E80010F119 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		25DCF218184E71E80010F119 /* AgoBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DCF222184E71E80010F119 /* AgoBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AgoBookTests-Info.plist"; sourceTree = "<group>"; };
 		25DCF224184E71E80010F119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25DCF226184E71E80010F119 /* AgoBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgoBookTests.h; sourceTree = "<group>"; };
@@ -303,6 +325,9 @@
 		25ED82891852FC73009C0EB9 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		25F4898718B0F97900189EF6 /* EAPContainedCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPContainedCommonViewController.h; sourceTree = "<group>"; };
 		25F4898818B0F97900189EF6 /* EAPContainedCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPContainedCommonViewController.m; sourceTree = "<group>"; };
+		25F633D2194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSegnoPersonaleTableViewCell.h; sourceTree = "<group>"; };
+		25F633D3194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSegnoPersonaleTableViewCell.m; sourceTree = "<group>"; };
+		25F6C2E9195A10EF00634770 /* SegnoPersonale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegnoPersonale.m; sourceTree = "<group>"; };
 		25FC340B18AFB01800775243 /* EAPPuntiSedutaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntiSedutaTableViewController.h; sourceTree = "<group>"; };
 		25FC340C18AFB01800775243 /* EAPPuntiSedutaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntiSedutaTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -312,6 +337,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259E0DFA194C9DA300AF2E85 /* CoreText.framework in Frameworks */,
 				25DCF1EE184E71E80010F119 /* UIKit.framework in Frameworks */,
 				25DCF1F0184E71E80010F119 /* Foundation.framework in Frameworks */,
 				25DCF1F2184E71E80010F119 /* CoreGraphics.framework in Frameworks */,
@@ -323,7 +349,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DCF21A184E71E80010F119 /* SenTestingKit.framework in Frameworks */,
 				25DCF21B184E71E80010F119 /* UIKit.framework in Frameworks */,
 				25DCF21C184E71E80010F119 /* Foundation.framework in Frameworks */,
 				25DCF21D184E71E80010F119 /* CoreData.framework in Frameworks */,
@@ -336,6 +361,7 @@
 		250C285A18A6770B00164FDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				256F316618FDCC08003114D5 /* Tokenized */,
 				2537BB27187C9D4C009EB7F7 /* CoreDataHelpers */,
 				250C285B18A6771900164FDA /* TPKeyboardAvoiding */,
 			);
@@ -369,32 +395,51 @@
 		255AF5F718809B2400E533AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				255AF62418809B4500E533AD /* Lavoro.h */,
-				255AF62518809B4500E533AD /* Lavoro.m */,
-				255AF62018809B4500E533AD /* Allegato.h */,
-				255AF62118809B4500E533AD /* Allegato.m */,
-				255AF61C18809B4500E533AD /* Seduta.h */,
-				255AF61D18809B4500E533AD /* Seduta.m */,
-				255AF61818809B4500E533AD /* StoriaMedica.h */,
-				255AF61918809B4500E533AD /* StoriaMedica.m */,
-				255AF61418809B4500E533AD /* Famiglia.h */,
-				255AF61518809B4500E533AD /* Famiglia.m */,
-				255AF61018809B4500E533AD /* Trattamento.h */,
-				255AF61118809B4500E533AD /* Trattamento.m */,
-				255AF60C18809B4500E533AD /* Punto.h */,
-				255AF60D18809B4500E533AD /* Punto.m */,
-				255AF60818809B4500E533AD /* Anamnesi.h */,
-				255AF60918809B4500E533AD /* Anamnesi.m */,
-				255AF60418809B4500E533AD /* Diagnosi.h */,
-				255AF60518809B4500E533AD /* Diagnosi.m */,
-				255AF60018809B4500E533AD /* StoriaEmotiva.h */,
-				255AF60118809B4500E533AD /* StoriaEmotiva.m */,
-				255AF5FC18809B4500E533AD /* Persona.h */,
-				255AF5FD18809B4500E533AD /* Persona.m */,
-				255AF5F818809B4400E533AD /* EsameObiettivo.h */,
-				255AF5F918809B4400E533AD /* EsameObiettivo.m */,
+				257DA5061955D37A00A59DDD /* Persona.h */,
+				257DA5071955D37A00A59DDD /* Persona.m */,
+				259E0E29194CC61200AF2E85 /* Segno.h */,
+				259E0E2A194CC61200AF2E85 /* Segno.m */,
+				259E0E23194CC61200AF2E85 /* Elemento.h */,
+				259E0E24194CC61200AF2E85 /* Elemento.m */,
+				259E0E20194CC61200AF2E85 /* Anamnesi.h */,
+				259E0E21194CC61200AF2E85 /* Anamnesi.m */,
+				259E0E1A194CC61200AF2E85 /* StoriaEmotiva.h */,
+				259E0E1B194CC61200AF2E85 /* StoriaEmotiva.m */,
+				259E0E17194CC61200AF2E85 /* Lavoro.h */,
+				259E0E18194CC61200AF2E85 /* Lavoro.m */,
+				259E0E14194CC61200AF2E85 /* EsameObiettivo.h */,
+				259E0E15194CC61200AF2E85 /* EsameObiettivo.m */,
+				259E0E11194CC61200AF2E85 /* Trattamento.h */,
+				259E0E12194CC61200AF2E85 /* Trattamento.m */,
+				259E0E0E194CC61200AF2E85 /* Punto.h */,
+				259E0E0F194CC61200AF2E85 /* Punto.m */,
+				259E0E0B194CC61200AF2E85 /* Famiglia.h */,
+				259E0E0C194CC61200AF2E85 /* Famiglia.m */,
+				259E0E08194CC61200AF2E85 /* Diagnosi.h */,
+				259E0E09194CC61200AF2E85 /* Diagnosi.m */,
+				259E0E05194CC61200AF2E85 /* StoriaMedica.h */,
+				259E0E06194CC61200AF2E85 /* StoriaMedica.m */,
+				259E0DFF194CC61100AF2E85 /* Allegato.h */,
+				259E0E00194CC61100AF2E85 /* Allegato.m */,
+				259E0DFC194CC61100AF2E85 /* Seduta.h */,
+				259E0DFD194CC61100AF2E85 /* Seduta.m */,
+				25B6E6B9195A0AC8004DE436 /* SegnoTag.h */,
+				25B6E6BA195A0AC8004DE436 /* SegnoTag.m */,
+				252593E5195A129E0086A0D5 /* Rassegna.h */,
+				252593E6195A129E0086A0D5 /* Rassegna.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		256F316618FDCC08003114D5 /* Tokenized */ = {
+			isa = PBXGroup;
+			children = (
+				256F316718FDCC50003114D5 /* SBRTTokenButton.h */,
+				256F316818FDCC50003114D5 /* SBRTTokenButton.m */,
+				256F316B18FDCCF1003114D5 /* SBRTTokenView.h */,
+				256F316C18FDCCF1003114D5 /* SBRTTokenView.m */,
+			);
+			name = Tokenized;
 			sourceTree = "<group>";
 		};
 		25CE2319184FABAF00AD84F4 /* Contained */ = {
@@ -416,6 +461,9 @@
 				25CE232B184FBEC300AD84F4 /* EAPTrattamentiViewController.m */,
 				250C285C18A67EC900164FDA /* EAPNuovaSedutaViewController.h */,
 				250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */,
+				25BE8687194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.h */,
+				25BE8688194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m */,
+				25F633CE194E3FE000A70FAF /* RassegnaSegniPersonali */,
 			);
 			name = Contained;
 			sourceTree = "<group>";
@@ -502,7 +550,7 @@
 			isa = PBXGroup;
 			children = (
 				25DCF1EA184E71E80010F119 /* AgoBook.app */,
-				25DCF218184E71E80010F119 /* AgoBookTests.octest */,
+				25DCF218184E71E80010F119 /* AgoBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -510,11 +558,11 @@
 		25DCF1EC184E71E80010F119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				259E0DF9194C9DA300AF2E85 /* CoreText.framework */,
 				25DCF1ED184E71E80010F119 /* UIKit.framework */,
 				25DCF1EF184E71E80010F119 /* Foundation.framework */,
 				25DCF1F1184E71E80010F119 /* CoreGraphics.framework */,
 				25DCF1F3184E71E80010F119 /* CoreData.framework */,
-				25DCF219184E71E80010F119 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -700,11 +748,22 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		25F633CE194E3FE000A70FAF /* RassegnaSegniPersonali */ = {
+			isa = PBXGroup;
+			children = (
+				25F633D2194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.h */,
+				25F633D3194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m */,
+			);
+			name = RassegnaSegniPersonali;
+			sourceTree = "<group>";
+		};
 		25FC340618AFAF9400775243 /* NuovaSeduta */ = {
 			isa = PBXGroup;
 			children = (
 				25FC340B18AFB01800775243 /* EAPPuntiSedutaTableViewController.h */,
 				25FC340C18AFB01800775243 /* EAPPuntiSedutaTableViewController.m */,
+				2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */,
+				2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */,
 			);
 			name = NuovaSeduta;
 			sourceTree = "<group>";
@@ -745,8 +804,8 @@
 			);
 			name = AgoBookTests;
 			productName = AgoBookTests;
-			productReference = 25DCF218184E71E80010F119 /* AgoBookTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 25DCF218184E71E80010F119 /* AgoBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -755,7 +814,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = EAP;
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Simone Bierti";
 			};
 			buildConfigurationList = 25DCF1E5184E71E80010F119 /* Build configuration list for PBXProject "AgoBook" */;
@@ -820,6 +880,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259E0E2B194CC61200AF2E85 /* Segno.m in Sources */,
 				25DCF1FC184E71E80010F119 /* main.m in Sources */,
 				25DCF200184E71E80010F119 /* EAPAppDelegate.m in Sources */,
 				25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */,
@@ -832,55 +893,64 @@
 				25CE231C184FABCB00AD84F4 /* EAPAnagraficaViewController.m in Sources */,
 				25CE2320184FBC6900AD84F4 /* EAPStoriaMedicaViewController.m in Sources */,
 				25CE2324184FBD8000AD84F4 /* EAPStoriaEmotivaViewController.m in Sources */,
-				255AF61218809B4500E533AD /* Trattamento.m in Sources */,
-				255AF60218809B4500E533AD /* StoriaEmotiva.m in Sources */,
+				256F316918FDCC50003114D5 /* SBRTTokenButton.m in Sources */,
+				259E0E25194CC61200AF2E85 /* Elemento.m in Sources */,
 				25CE2328184FBEAD00AD84F4 /* EAPRassegnaSegniViewController.m in Sources */,
-				255AF5FE18809B4500E533AD /* Persona.m in Sources */,
+				259E0E16194CC61200AF2E85 /* EsameObiettivo.m in Sources */,
 				25F4898918B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */,
-				255AF61618809B4500E533AD /* Famiglia.m in Sources */,
-				255AF60A18809B4500E533AD /* Anamnesi.m in Sources */,
 				25FC340D18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */,
+				2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */,
 				25CE232C184FBEC300AD84F4 /* EAPTrattamentiViewController.m in Sources */,
+				252593E7195A129E0086A0D5 /* Rassegna.m in Sources */,
 				25CE2333184FC6AD00AD84F4 /* EAPSeduteViewController.m in Sources */,
 				25CE2337184FC6BC00AD84F4 /* EAPPuntiViewController.m in Sources */,
-				255AF60618809B4500E533AD /* Diagnosi.m in Sources */,
+				259E0E1C194CC61200AF2E85 /* StoriaEmotiva.m in Sources */,
 				25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				25CE233B184FC6D500AD84F4 /* EAPProblemiViewController.m in Sources */,
-				255AF60E18809B4500E533AD /* Punto.m in Sources */,
-				255AF61A18809B4500E533AD /* StoriaMedica.m in Sources */,
 				25CE233F184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */,
 				25CE2345184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */,
 				25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */,
 				25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				259E0E19194CC61200AF2E85 /* Lavoro.m in Sources */,
 				25ED828E1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
-				255AF62218809B4500E533AD /* Allegato.m in Sources */,
+				259E0E01194CC61100AF2E85 /* Allegato.m in Sources */,
 				25ED82901852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
 				250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */,
 				25ED82921852FC73009C0EB9 /* NSObject+MagicalDataImport.m in Sources */,
+				25BE8689194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m in Sources */,
 				2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */,
+				259E0E13194CC61200AF2E85 /* Trattamento.m in Sources */,
 				2545F7CF18970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */,
 				25ED82941852FC73009C0EB9 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				25F6C2EB195A10EF00634770 /* SegnoPersonale.m in Sources */,
 				25ED82961852FC73009C0EB9 /* NSString+MagicalDataImport.m in Sources */,
 				25ED82981852FC73009C0EB9 /* NSManagedObject+MagicalAggregation.m in Sources */,
-				255AF62618809B4500E533AD /* Lavoro.m in Sources */,
 				25ED829A1852FC73009C0EB9 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				25F633D4194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m in Sources */,
 				25ED829C1852FC73009C0EB9 /* NSManagedObject+MagicalFinders.m in Sources */,
 				25ED829E1852FC73009C0EB9 /* NSManagedObject+MagicalRecord.m in Sources */,
+				259E0DFE194CC61100AF2E85 /* Seduta.m in Sources */,
 				25ED82A01852FC73009C0EB9 /* NSManagedObject+MagicalRequests.m in Sources */,
+				259E0E22194CC61200AF2E85 /* Anamnesi.m in Sources */,
+				259E0E10194CC61200AF2E85 /* Punto.m in Sources */,
 				25ED82A21852FC73009C0EB9 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				25ED82A41852FC73009C0EB9 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				25ED82A61852FC73009C0EB9 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				25ED82A81852FC73009C0EB9 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				259E0E0D194CC61200AF2E85 /* Famiglia.m in Sources */,
 				25ED82AA1852FC73009C0EB9 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				25ED82AC1852FC73009C0EB9 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				25ED82AE1852FC73009C0EB9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				25ED82B01852FC73009C0EB9 /* MagicalRecord+Actions.m in Sources */,
 				25ED82B21852FC73009C0EB9 /* MagicalRecord+ErrorHandling.m in Sources */,
+				256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */,
 				25ED82B41852FC73009C0EB9 /* MagicalRecord+iCloud.m in Sources */,
-				255AF61E18809B4500E533AD /* Seduta.m in Sources */,
+				259E0E07194CC61200AF2E85 /* StoriaMedica.m in Sources */,
+				259E0E0A194CC61200AF2E85 /* Diagnosi.m in Sources */,
+				25B6E6BB195A0AC8004DE436 /* SegnoTag.m in Sources */,
+				257DA5081955D37A00A59DDD /* Persona.m in Sources */,
 				25ED82B61852FC73009C0EB9 /* MagicalRecord+Options.m in Sources */,
 				25ED82B81852FC73009C0EB9 /* MagicalRecord+Setup.m in Sources */,
-				255AF5FA18809B4400E533AD /* EsameObiettivo.m in Sources */,
 				25ED82BA1852FC73009C0EB9 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				25ED82BC1852FC73009C0EB9 /* MagicalRecord.m in Sources */,
 				25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */,
@@ -893,10 +963,9 @@
 			files = (
 				25DCF228184E71E80010F119 /* AgoBookTests.m in Sources */,
 				2537BB2B187C9D89009EB7F7 /* CoreDataHelper.m in Sources */,
-				255AF61B18809B4500E533AD /* StoriaMedica.m in Sources */,
 				25DCF235184E75700010F119 /* EAPEmptySegue.m in Sources */,
-				255AF61318809B4500E533AD /* Trattamento.m in Sources */,
 				25FC340E18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */,
+				256DE34A1902C53F006DCF75 /* Segno.m in Sources */,
 				25C6EE6218A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				25DCF23B184E77300010F119 /* EAPSideBarViewController.m in Sources */,
 				25D983FF184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */,
@@ -906,21 +975,16 @@
 				25CE2329184FBEAD00AD84F4 /* EAPRassegnaSegniViewController.m in Sources */,
 				25CE232D184FBEC300AD84F4 /* EAPTrattamentiViewController.m in Sources */,
 				25CE2334184FC6AD00AD84F4 /* EAPSeduteViewController.m in Sources */,
-				255AF61718809B4500E533AD /* Famiglia.m in Sources */,
-				255AF5FB18809B4400E533AD /* EsameObiettivo.m in Sources */,
+				256F316A18FDCC50003114D5 /* SBRTTokenButton.m in Sources */,
 				25C6EE5E18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				25CE2338184FC6BC00AD84F4 /* EAPPuntiViewController.m in Sources */,
 				25463ABF187DF199001F9D2C /* CoreDataTableViewController.m in Sources */,
 				25CE233C184FC6D500AD84F4 /* EAPProblemiViewController.m in Sources */,
-				255AF61F18809B4500E533AD /* Seduta.m in Sources */,
-				255AF60318809B4500E533AD /* StoriaEmotiva.m in Sources */,
-				255AF62318809B4500E533AD /* Allegato.m in Sources */,
+				256F316E18FDCCF1003114D5 /* SBRTTokenView.m in Sources */,
 				25CE2340184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */,
-				255AF60B18809B4500E533AD /* Anamnesi.m in Sources */,
 				25CE2346184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */,
 				25ED828B1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */,
 				25F4898A18B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */,
-				255AF60F18809B4500E533AD /* Punto.m in Sources */,
 				25ED828D1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				25ED828F1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				25ED82911852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
@@ -940,16 +1004,14 @@
 				25ED82AD1852FC73009C0EB9 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				25ED82AF1852FC73009C0EB9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				25ED82B11852FC73009C0EB9 /* MagicalRecord+Actions.m in Sources */,
-				255AF60718809B4500E533AD /* Diagnosi.m in Sources */,
+				2519007618BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */,
 				2545F7D018970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */,
 				25ED82B31852FC73009C0EB9 /* MagicalRecord+ErrorHandling.m in Sources */,
 				25ED82B51852FC73009C0EB9 /* MagicalRecord+iCloud.m in Sources */,
-				255AF5FF18809B4500E533AD /* Persona.m in Sources */,
 				25ED82B71852FC73009C0EB9 /* MagicalRecord+Options.m in Sources */,
 				25ED82B91852FC73009C0EB9 /* MagicalRecord+Setup.m in Sources */,
 				25ED82BB1852FC73009C0EB9 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				25ED82BD1852FC73009C0EB9 /* MagicalRecord.m in Sources */,
-				255AF62718809B4500E533AD /* Lavoro.m in Sources */,
 				25BC99281853BE3100787841 /* AgoBook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1064,6 +1126,7 @@
 		25DCF22D184E71E80010F119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
 				INFOPLIST_FILE = "AgoBook/AgoBook-Info.plist";
@@ -1077,15 +1140,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AgoBook.app/AgoBook";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
 				INFOPLIST_FILE = "AgoBookTests/AgoBookTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1094,15 +1157,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AgoBook.app/AgoBook";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
 				INFOPLIST_FILE = "AgoBookTests/AgoBookTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1143,9 +1206,12 @@
 			isa = XCVersionGroup;
 			children = (
 				25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */,
+				256DE33E1902C0EA006DCF75 /* AgoBook 3.xcdatamodel */,
+				256BD5791953755700AE9106 /* AgoBook 4.xcdatamodel */,
+				25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */,
 				25BC99261853BE3100787841 /* AgoBook.xcdatamodel */,
 			);
-			currentVersion = 25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */;
+			currentVersion = 25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */;
 			path = AgoBook.xcdatamodeld;
 			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;

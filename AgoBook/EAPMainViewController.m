@@ -47,7 +47,8 @@
         } else if (indexPath.row == 2){
             [self.contentContainer willLoadContentViewFromMenu:@"StoriaEmotivaSegue"];
         } else if (indexPath.row == 3){
-            [self.contentContainer willLoadContentViewFromMenu:@"RassegnaSegniSegue"];
+            //[self.contentContainer willLoadContentViewFromMenu:@"RassegnaSegniSegue"];
+            [self.contentContainer willLoadContentViewFromMenu:@"RassSegniPersSegue"];
         } else if (indexPath.row == 4){
             [self.contentContainer willLoadContentViewFromMenu:@"TrattamentiSegue"];
         }

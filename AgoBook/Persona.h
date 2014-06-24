@@ -2,14 +2,14 @@
 //  Persona.h
 //  AgoBook
 //
-//  Created by Simone Bierti on 10/01/14.
+//  Created by Simone Bierti on 21/06/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Trattamento, Famiglia, Lavoro, StoriaEmotiva, StoriaMedica;
+@class Famiglia, Lavoro, Rassegna, StoriaEmotiva, StoriaMedica, Trattamento;
 
 @interface Persona : NSManagedObject
 
@@ -23,6 +23,7 @@
 @property (nonatomic, retain) StoriaEmotiva *storiaemotiva;
 @property (nonatomic, retain) StoriaMedica *storiamedica;
 @property (nonatomic, retain) NSSet *trattamenti;
+@property (nonatomic, retain) Rassegna *rassegnaSegni;
 @end
 
 @interface Persona (CoreDataGeneratedAccessors)

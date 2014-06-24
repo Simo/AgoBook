@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class EAPPuntiSedutaTableViewController;
 
 @interface EAPNuovaSedutaViewController : UIViewController
+
+@property (strong, nonatomic) EAPPuntiSedutaTableViewController *puntiList;
 
 @end
