@@ -66,9 +66,22 @@
     
     static NSString *CellIdentifier = @"puntosedutaCell";
     EAPPuntiNuovaSedutaCell *cell = (EAPPuntiNuovaSedutaCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    /*
+    for(UIView *view in cell.contentView.subviews){
+        [view removeFromSuperview];
+    }
+    */
+    // richiama il punto che popola la cell
+    Punto *p = (Punto *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    // Istanzia un UIButton per avviare il count
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(600, 10, 40, 20);
+    [button setTitle:@"Avvia" forState:UIControlStateNormal];
+    [cell.contentView addSubview:button];
+    // aggiungiamo la funzionalita'
+    [button addTarget:cell action:@selector(startProgressTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     cell.txtFieldPunto.delegate = cell;
-    Punto *p = (Punto *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.punto = p;
     cell.txtFieldPunto.text = p.punto;
     

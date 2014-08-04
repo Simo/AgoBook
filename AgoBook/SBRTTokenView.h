@@ -22,6 +22,8 @@
 @property (weak, nonatomic) id <SBRTTokenViewDelegate> delegate;
 
 
++ (CGFloat) heightForTokenViewFromArray:(NSArray *) strings withFont:(UIFont *)font withViewWidth:(CGFloat) width;
 - (void) refreshTokenView:(NSArray *) array;
-
+- (void) refreshTokenViewWithSegnoTags:(NSArray *) array;
+- (void) refreshTokenView:(NSArray *) array forCell:(NSInteger) indexPathRow;
 @end

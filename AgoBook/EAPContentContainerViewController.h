@@ -13,17 +13,18 @@
 #import "EAPRassegnaSegniViewController.h"
 #import "EAPTrattamentiViewController.h"
 #import "EAPNuovaSedutaViewController.h"
+#import "EAPRassSegniPersonaleViewController.h"
 
 @class Persona;
 
-@interface EAPContentContainerViewController : UIViewController <EAPAnagraficaViewControllerDelegate, EAPStoriaMedicaViewControllerDelegate ,EAPStoriaEmotivaViewControllerDelegate, EAPRassegnaSegniViewControllerDelegate, EAPTrattamentiViewControllerDelegate>
+@interface EAPContentContainerViewController : UIViewController <EAPAnagraficaViewControllerDelegate, EAPStoriaMedicaViewControllerDelegate ,EAPStoriaEmotivaViewControllerDelegate, EAPRassSegniPersonaleViewControllerDelegate, EAPTrattamentiViewControllerDelegate>
 
 @property (weak, nonatomic) Persona *persona;
 
 @property (strong, nonatomic) EAPAnagraficaViewController *anagraficaVC;
 @property (strong, nonatomic) EAPStoriaMedicaViewController *storiaMedicaVC;
 @property (strong, nonatomic) EAPStoriaEmotivaViewController *storiaEmotivaVC;
-@property (strong, nonatomic) EAPRassegnaSegniViewController *rassegnaSegniVC;
+@property (strong, nonatomic) EAPRassSegniPersonaleViewController *rassegnaSegniVC;
 @property (strong, nonatomic) EAPTrattamentiViewController *trattamentiVC;
 @property (strong, nonatomic) EAPNuovaSedutaViewController *nuovaSedutaVC;
 

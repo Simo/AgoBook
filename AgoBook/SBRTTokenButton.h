@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SegnoTag;
 
 @interface SBRTTokenButton : UIButton
+
+@property (weak, nonatomic) SegnoTag *tag;
+
++ (instancetype)buttonWithTag:(SegnoTag *)tag;
 
 @end

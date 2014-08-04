@@ -7,6 +7,8 @@
 //
 
 #import "CoreDataTableViewController.h"
+#import "EAPSegnoPersonaleTableViewCell.h"
+#import "Persona.h"
 
 @class EAPRassSegniPersonaleViewController;
 
@@ -17,7 +19,15 @@
 
 @end
 
-@interface EAPRassSegniPersonaleViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+@interface EAPRassSegniPersonaleViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,EAPSegnoPersonaleTableViewCellDelegate>
 
 @property (weak,nonatomic) id<EAPRassSegniPersonaleViewControllerDelegate> delegate;
+@property (strong,nonatomic) Persona *selectedPersona;
+@property (strong, nonatomic) NSManagedObjectID *selectedPersonId;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedTags;
+@property (strong, nonatomic) NSArray *fetchedSegni;
+
+
+-(void)reloadDataOnTableView:(EAPSegnoPersonaleTableViewCell *)controller;
+
 @end

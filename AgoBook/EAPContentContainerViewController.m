@@ -124,6 +124,7 @@
         if(!self.rassegnaSegniVC){
             self.rassegnaSegniVC = segue.destinationViewController;
             self.rassegnaSegniVC.delegate = self;
+            self.rassegnaSegniVC.selectedPersonId = [self.persona objectID];
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];

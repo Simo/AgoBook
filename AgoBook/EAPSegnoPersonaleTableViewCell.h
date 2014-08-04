@@ -9,18 +9,24 @@
 #import <UIKit/UIKit.h>
 #import "SBRTTokenView.h"
 
+@class EAPSegnoPersonaleTableViewCell;
 @class Segno;
+@class SegnoPersonale;
+@class SegnoTag;
 
-@interface EAPSegnoPersonaleTableViewCell : UITableViewCell <UITextFieldDelegate,SBRTTokenViewDelegate>
+@protocol EAPSegnoPersonaleTableViewCellDelegate
 
-@property (strong, nonatomic) IBOutlet UILabel *lblNomeSegno;
-@property (strong, nonatomic) IBOutlet UILabel *lblElementoSegno;
-@property (strong, nonatomic) IBOutlet UITextField *txtFieldSegniTag;
+-(void) reloadDataOnTableView:(EAPSegnoPersonaleTableViewCell *)controller;
+
+@end
+
+@interface EAPSegnoPersonaleTableViewCell : UITableViewCell <UIScrollViewDelegate ,UITextFieldDelegate,SBRTTokenViewDelegate>
+
+@property (weak, nonatomic) id<EAPSegnoPersonaleTableViewCellDelegate> delegate;
+@property (strong, nonatomic) SegnoPersonale *segnoPersonale;
+@property (strong, nonatomic) UIView *containerTokenView;
 @property (strong, nonatomic) SBRTTokenView *tokenView;
-@property (strong, nonatomic) IBOutlet UIView *tokensContainerView;
 @property (strong, nonatomic) NSMutableArray *tokens;
-@property CGFloat tokensContainerViewHeight;
-@property CGFloat tokensContainerViewWidth;
 
--(void) setForTokensContainerView:(UIView *)tokensContainerView height:(CGFloat)height width:(CGFloat)width;
+
 @end

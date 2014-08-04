@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) Punto *punto;
 
+-(IBAction)startProgressTapped:(id)sender;
+
 @end

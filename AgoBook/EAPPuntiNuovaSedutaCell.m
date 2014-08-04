@@ -36,12 +36,12 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)startProgressTapped
+- (IBAction)startProgressTapped:(id)sender
 {
     self.progressView.progress = 0.0;
     self.secondsPassed = 0;
-    
-    self.avviaProgress.enabled = NO;
+    UIButton *this = (UIButton *)sender;
+    this.enabled = NO;
     
     self.timer = [NSTimer timerWithTimeInterval:kUpdateInterval
                                          target:self

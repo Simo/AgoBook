@@ -1,20 +1,20 @@
 //
-//  EsameObiettivo.m
+//  Diagnosi.m
 //  AgoBook
 //
 //  Created by Simone Bierti on 25/06/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
-#import "EsameObiettivo.h"
-#import "Allegato.h"
+#import "Diagnosi.h"
+#import "Seduta.h"
 #import "Trattamento.h"
 
 
-@implementation EsameObiettivo
+@implementation Diagnosi
 
-@dynamic evidenze;
-@dynamic allegati;
+@dynamic descrizione;
+@dynamic sedute;
 @dynamic trattamento;
 
 @end

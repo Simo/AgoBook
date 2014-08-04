@@ -8,12 +8,12 @@
 
 #import "EAPSegnoPersonaleTableViewCell.h"
 #import "Segno.h"
+#import "SegnoPersonale.h"
+#import "SegnoTag.h"
 
 @interface EAPSegnoPersonaleTableViewCell ()
 
 @property (strong,nonatomic) Segno *segno;
-
-
 
 @end
 
@@ -40,11 +40,6 @@
     // Configure the view for the selected state
 }
 
--(void) setForTokensContainerView:(UIView *)tokensContainerView height:(CGFloat)height width:(CGFloat)width
-{
-    self.tokensContainerView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, width, height)];
-}
-
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if([string isEqualToString:@"\n"]) {
         [textField resignFirstResponder];
@@ -58,17 +53,23 @@
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-        [self.tokens addObject:textField.text];
-        [self.tokenView refreshTokenView:self.tokens];
-        textField.text = @"";
-        textField.placeholder = @"placeholder3";
+    // inserisce il tag per il segnoPersonale della cella
+    [self insertSegnoTagWithDescrizione:textField.text];
+    //[self.delegate reloadDataOnTableView:self];
+    //textField.text = @"";
+    //textField.placeholder = @"placeholder3";
 }
 
 -(void)addMeToSubviews:(SBRTTokenView *)view {
-    if(![[self.tokensContainerView subviews] containsObject:view]){
-        NSLog(@"aggiungo la subview");
-        [self.tokensContainerView addSubview:view];
+    if (![[self.containerTokenView subviews] containsObject:view]) {
+        [self.containerTokenView addSubview:view];
     }
+}
+
+-(void)insertSegnoTagWithDescrizione:(NSString *)text {
+    SegnoTag *tag =[NSEntityDescription insertNewObjectForEntityForName:@"SegnoTag" inManagedObjectContext:[self.segnoPersonale managedObjectContext]];
+    [tag setDescrizione:text];
+    [self.segnoPersonale addTagsObject:tag];
 }
 
 @end

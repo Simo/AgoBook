@@ -19,7 +19,7 @@
 #import "Elemento.h"
 #import "Rassegna.h"
 #import "SegnoTag.h"
-//#import "SegnoPersonale.h"
+#import "SegnoPersonale.h"
 #define debug 1
 
 @implementation EAPAppDelegate
@@ -51,6 +51,7 @@
                                                                         managedObjectContext:[[self cdh] context]
                                                                           sectionNameKeyPath:nil
                                                                                    cacheName:nil];
+    
     [self.fetchedResultsController performFetch:nil];
 }
 
@@ -63,13 +64,14 @@
                                                                                      ascending:YES
                                                                                       selector:@selector(localizedCaseInsensitiveCompare:)]];
     
-     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
-                                                                        managedObjectContext:[[self cdh] context]
-                                                                          sectionNameKeyPath:nil
-                                                                                   cacheName:nil];
-    [self.fetchedResultsController performFetch:nil];
     
-    return [self.fetchedResultsController fetchedObjects];
+    
+   // NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Segno" inManagedObjectContext:[[self cdh] context]];
+    
+    NSError *error = nil;
+    NSArray *array = [[[self cdh] context] executeFetchRequest:request error:&error];
+    
+    return array;
 }
 
 
@@ -281,13 +283,20 @@
     Rassegna *rassegna = [NSEntityDescription insertNewObjectForEntityForName:@"Rassegna" inManagedObjectContext:[[self cdh] context]];
     // recupera la lista dei segni disponibili
     NSArray * segni = [self listaSegni];
+    // per ognuno dei segni stabiliti creo un riferimento
+    for (Segno *segno in segni) {
+        //crea un segno personale al quale appendere il segno in questione
+        SegnoPersonale *segnoP = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoPersonale" inManagedObjectContext:[[self cdh] context]];
+        [segnoP setSegno:segno];
+        // crea un tag da aggiungere al set dei tag
+        SegnoTag *tag1 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoTag" inManagedObjectContext:[[self cdh] context]];
+        // diamo una prima stringa al tag
+        [tag1 setDescrizione:[NSString stringWithFormat:@"%@",segno.priority]];
+        segnoP.tags = [[NSSet alloc] initWithObjects:tag1, nil];
+        [rassegna addSegnipersonaliObject:segnoP];
+    }
+        persona.rassegnaSegni = rassegna;
     
-    //SegnoPersonale *segno1 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoPersonale" inManagedObjectContext:[[self cdh] context]];
-    SegnoTag *tag1 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoTag" inManagedObjectContext:[[self cdh] context]];
-    [tag1 setDescrizione:@"Cefalea a grappolo"];
-    //segno1.segno = [segni objectAtIndex:0];
-    //segno1.tags = [[NSSet alloc] initWithObjects:tag1, nil];
-    persona.rassegnaSegni = rassegna;
 
 }
 
@@ -321,9 +330,10 @@
     [self insertSegnoWithNome:@"POLSI" descrizione:@"" priority:@23];
     [self insertSegnoWithNome:@"LINGUA" descrizione:@"" priority:@24];
     
-    //[self insertRassegnaForPersona:persona];
-    
     [[self cdh] saveContext];
+    [self insertRassegnaForPersona:persona];
+   [[self cdh] saveContext]; 
+    
 }
 
 @end

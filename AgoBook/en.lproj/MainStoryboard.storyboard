@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -18,6 +18,7 @@
                                 <items>
                                     <navigationItem title="Title" id="14">
                                         <barButtonItem key="rightBarButtonItem" title="Info" id="15">
+                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="togglePopover:" destination="2" id="23"/>
                                             </connections>
@@ -85,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="-708"/>
+            <point key="canvasLocation" x="976" y="-386"/>
         </scene>
         <!--Side Bar View Controller-->
         <scene sceneID="k9w-Ny-L99">
@@ -407,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXk-ry-ZeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1210" y="47"/>
+            <point key="canvasLocation" x="1186" y="519"/>
         </scene>
         <!--Storia Medica View Controller-->
         <scene sceneID="g2z-aL-2Sh">
@@ -896,7 +897,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView contentMode="scaleToFill" id="eyS-J5-2A4">
-                                <rect key="frame" x="20" y="176" width="664" height="352"/>
+                                <rect key="frame" x="20" y="176" width="664" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
@@ -1081,7 +1082,7 @@
             <objects>
                 <tableViewController id="BO9-Ld-K9y" customClass="EAPPuntiSedutaTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZKy-51-ekh">
-                        <rect key="frame" x="0.0" y="0.0" width="664" height="352"/>
+                        <rect key="frame" x="0.0" y="0.0" width="664" height="465"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1093,17 +1094,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="664" height="81"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="caO-9q-5CZ">
-                                            <rect key="frame" x="589" y="7" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" title="Button">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="startProgressTapped" destination="sEP-kg-tPP" eventType="touchUpInside" id="Qi7-2p-lBe"/>
-                                            </connections>
-                                        </button>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="FXg-3t-2J1">
                                             <rect key="frame" x="50" y="7" width="132" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1129,7 +1119,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="avviaProgress" destination="caO-9q-5CZ" id="Sdv-8G-lmp"/>
                                     <outlet property="lblTempoAppl" destination="APZ-9j-2Ve" id="Qbg-6J-MTl"/>
                                     <outlet property="progressView" destination="HnK-m2-HN6" id="XUV-E7-6j7"/>
                                     <outlet property="txtFieldPunto" destination="FXg-3t-2J1" id="q4D-P9-9fr"/>
@@ -1162,35 +1151,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hvn-Hb-HPJ" id="39a-bg-Aju">
                                     <rect key="frame" x="0.0" y="0.0" width="704" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Em4-3X-aB9">
-                                            <rect key="frame" x="20" y="10" width="239" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="MyU-FM-tqM">
-                                            <rect key="frame" x="443" y="6" width="241" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <connections>
-                                                <outlet property="delegate" destination="Hvn-Hb-HPJ" id="HJw-pp-ogq"/>
-                                            </connections>
-                                        </textField>
-                                        <view contentMode="scaleToFill" id="PiM-jj-mSj">
-                                            <rect key="frame" x="20" y="39" width="664" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                        </view>
-                                    </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="lblNomeSegno" destination="Em4-3X-aB9" id="qdF-Yf-9GG"/>
-                                    <outlet property="tokensContainerView" destination="PiM-jj-mSj" id="1mt-DW-qtl"/>
-                                    <outlet property="txtFieldSegniTag" destination="MyU-FM-tqM" id="bE7-Dl-KIP"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1203,7 +1164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thg-hB-naF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5199" y="335"/>
+            <point key="canvasLocation" x="5731" y="-675"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rlp-r4-uP8">

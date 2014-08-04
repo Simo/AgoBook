@@ -1,20 +1,19 @@
 //
-//  EsameObiettivo.m
+//  Anamnesi.m
 //  AgoBook
 //
 //  Created by Simone Bierti on 25/06/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
-#import "EsameObiettivo.h"
-#import "Allegato.h"
+#import "Anamnesi.h"
 #import "Trattamento.h"
 
 
-@implementation EsameObiettivo
+@implementation Anamnesi
 
-@dynamic evidenze;
-@dynamic allegati;
+@dynamic manifestazione;
+@dynamic sintomi;
 @dynamic trattamento;
 
 @end
