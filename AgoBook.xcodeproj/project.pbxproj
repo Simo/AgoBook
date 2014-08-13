@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25071F4C199024F600A01A02 /* EAPInitialViewController.m */; };
+		25071F5119902DAE00A01A02 /* EAPListaPersoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25071F5019902DAE00A01A02 /* EAPListaPersoneTableViewController.m */; };
 		250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */; };
 		2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
 		2519007618BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
 		2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		2537BB2B187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
+		25392D901997EA9E00C5C10A /* EAPPatientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25392D8F1997EA9E00C5C10A /* EAPPatientsTableViewController.m */; };
 		2543C26919726B5300EAB5DD /* SegnoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2543C26819726B5200EAB5DD /* SegnoTag.m */; };
+		2544C14C1997496300460451 /* EAPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2544C14B1997496300460451 /* EAPPictureViewController.m */; };
 		2545F7CF18970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		2545F7D018970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
@@ -160,14 +164,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25071F4B199024F600A01A02 /* EAPInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPInitialViewController.h; sourceTree = "<group>"; };
+		25071F4C199024F600A01A02 /* EAPInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPInitialViewController.m; sourceTree = "<group>"; };
+		25071F4F19902DAE00A01A02 /* EAPListaPersoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPListaPersoneTableViewController.h; sourceTree = "<group>"; };
+		25071F5019902DAE00A01A02 /* EAPListaPersoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPListaPersoneTableViewController.m; sourceTree = "<group>"; };
 		250C285C18A67EC900164FDA /* EAPNuovaSedutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPNuovaSedutaViewController.h; sourceTree = "<group>"; };
 		250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPNuovaSedutaViewController.m; sourceTree = "<group>"; };
 		2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntiNuovaSedutaCell.h; sourceTree = "<group>"; };
 		2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntiNuovaSedutaCell.m; sourceTree = "<group>"; };
 		2537BB28187C9D89009EB7F7 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		25392D8E1997EA9E00C5C10A /* EAPPatientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPatientsTableViewController.h; sourceTree = "<group>"; };
+		25392D8F1997EA9E00C5C10A /* EAPPatientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPatientsTableViewController.m; sourceTree = "<group>"; };
 		2543C26719726B5200EAB5DD /* SegnoTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegnoTag.h; sourceTree = "<group>"; };
 		2543C26819726B5200EAB5DD /* SegnoTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegnoTag.m; sourceTree = "<group>"; };
+		2544C14A1997496300460451 /* EAPPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPictureViewController.h; sourceTree = "<group>"; };
+		2544C14B1997496300460451 /* EAPPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPictureViewController.m; sourceTree = "<group>"; };
 		2545F7CD18970B2A00F09DC3 /* CoreDataPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPickerTextField.h; sourceTree = "<group>"; };
 		2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPickerTextField.m; sourceTree = "<group>"; };
 		25463ABC187DF199001F9D2C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
@@ -361,6 +373,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25071F4E19902D6300A01A02 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				25071F4F19902DAE00A01A02 /* EAPListaPersoneTableViewController.h */,
+				25071F5019902DAE00A01A02 /* EAPListaPersoneTableViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		250C285A18A6770B00164FDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +415,24 @@
 				2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */,
 			);
 			name = CoreDataHelpers;
+			sourceTree = "<group>";
+		};
+		25392D8D1997EA6E00C5C10A /* PatientsList */ = {
+			isa = PBXGroup;
+			children = (
+				25392D8E1997EA9E00C5C10A /* EAPPatientsTableViewController.h */,
+				25392D8F1997EA9E00C5C10A /* EAPPatientsTableViewController.m */,
+			);
+			name = PatientsList;
+			sourceTree = "<group>";
+		};
+		2544C1491997492E00460451 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				2544C14A1997496300460451 /* EAPPictureViewController.h */,
+				2544C14B1997496300460451 /* EAPPictureViewController.m */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 		255AF5F718809B2400E533AD /* Models */ = {
@@ -591,6 +630,8 @@
 				25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */,
 				25DCF236184E77170010F119 /* Controllers */,
 				25DCF231184E75070010F119 /* Segue */,
+				25071F4B199024F600A01A02 /* EAPInitialViewController.h */,
+				25071F4C199024F600A01A02 /* EAPInitialViewController.m */,
 				25DCF1FE184E71E80010F119 /* EAPAppDelegate.h */,
 				25DCF1FF184E71E80010F119 /* EAPAppDelegate.m */,
 				25DCF207184E71E80010F119 /* MainStoryboard.storyboard */,
@@ -648,6 +689,9 @@
 		25DCF236184E77170010F119 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25392D8D1997EA6E00C5C10A /* PatientsList */,
+				2544C1491997492E00460451 /* Pictures */,
+				25071F4E19902D6300A01A02 /* Home */,
 				25D983FA184E8A6E00E1F11C /* Content */,
 				25DCF237184E771D0010F119 /* SideBarMenu */,
 			);
@@ -929,6 +973,7 @@
 				25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				25BD2D6D195B494B00A3EA37 /* Lavoro.m in Sources */,
 				25CE233B184FC6D500AD84F4 /* EAPProblemiViewController.m in Sources */,
+				25071F5119902DAE00A01A02 /* EAPListaPersoneTableViewController.m in Sources */,
 				25CE233F184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */,
 				25CE2345184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */,
 				25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */,
@@ -936,8 +981,10 @@
 				25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				25BD2D7F195B494B00A3EA37 /* StoriaEmotiva.m in Sources */,
 				25ED828E1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */,
 				25BD2D85195B494B00A3EA37 /* Rassegna.m in Sources */,
 				25ED82901852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
+				2544C14C1997496300460451 /* EAPPictureViewController.m in Sources */,
 				25BD2D79195B494B00A3EA37 /* Persona.m in Sources */,
 				250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */,
 				25ED82921852FC73009C0EB9 /* NSObject+MagicalDataImport.m in Sources */,
@@ -954,6 +1001,7 @@
 				25ED82A01852FC73009C0EB9 /* NSManagedObject+MagicalRequests.m in Sources */,
 				25ED82A21852FC73009C0EB9 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				25ED82A41852FC73009C0EB9 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				25392D901997EA9E00C5C10A /* EAPPatientsTableViewController.m in Sources */,
 				25ED82A61852FC73009C0EB9 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				25BD2D82195B494B00A3EA37 /* StoriaMedica.m in Sources */,
 				25BD2D8E195B494B00A3EA37 /* Seduta.m in Sources */,
