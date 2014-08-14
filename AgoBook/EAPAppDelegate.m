@@ -8,6 +8,7 @@
 
 #import "EAPAppDelegate.h"
 #import "EAPMainViewController.h"
+#import "EAPInitialViewController.h"
 #import "Persona.h"
 #import "StoriaMedica.h"
 #import "StoriaEmotiva.h"
@@ -108,7 +109,7 @@
     else {
         NSLog(@"There's stuff in the database so skipping the import of default data.");
     }
-    
+    /*
     EAPMainViewController *controller = (EAPMainViewController *)self.window.rootViewController;
     controller.managedObjectContext = self.coreDataHelper.context;
     
@@ -120,7 +121,20 @@
     }
     
     controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
-
+     */
+    
+    EAPInitialViewController *controller = (EAPInitialViewController *)self.window.rootViewController;
+    controller.managedObjectContext = self.coreDataHelper.context;
+    
+    if(![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+        [self.fetchedResultsController performFetch:nil];
+    }
+    else {
+        NSLog(@"il conto di fetchResult è diverso 0");
+    }
+    
+    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
+    
     return YES;
 }
 							

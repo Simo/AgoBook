@@ -38,11 +38,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2l1-VK-c4a"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBL-5v-a0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1682" y="-6"/>
+            <point key="canvasLocation" x="-708" y="-6"/>
         </scene>
         <!--Patients Table View Controller-->
         <scene sceneID="ji3-f9-RWj">
@@ -53,12 +54,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="eRp-tx-Obj">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="mk2-0x-7Ae">
                             <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="QGR-Ef-KA5" id="cZV-1B-Mq8"/>
+                                <outlet property="delegate" destination="QGR-Ef-KA5" id="ZJ7-Ia-4aN"/>
                             </connections>
                         </searchBar>
                         <prototypes>
@@ -86,19 +87,19 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="wzf-uf-KZj" id="MTM-wy-nk2"/>
+                        <outlet property="searchDisplayController" destination="5Q4-UO-Tog" id="95E-4I-xUc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3V-R0-3cW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="wzf-uf-KZj">
+                <searchDisplayController id="5Q4-UO-Tog">
                     <connections>
-                        <outlet property="delegate" destination="QGR-Ef-KA5" id="ZFG-5r-Ps6"/>
-                        <outlet property="searchBar" destination="eRp-tx-Obj" id="m2a-wf-9fM"/>
-                        <outlet property="searchContentsController" destination="QGR-Ef-KA5" id="u4t-kr-1NO"/>
-                        <outlet property="searchResultsDataSource" destination="QGR-Ef-KA5" id="PhB-0a-0P1"/>
-                        <outlet property="searchResultsDelegate" destination="QGR-Ef-KA5" id="W9g-KV-zEJ"/>
+                        <outlet property="delegate" destination="QGR-Ef-KA5" id="8O6-Ob-ZuE"/>
+                        <outlet property="searchBar" destination="mk2-0x-7Ae" id="cY6-MJ-rJm"/>
+                        <outlet property="searchContentsController" destination="QGR-Ef-KA5" id="pPE-Y0-X7F"/>
+                        <outlet property="searchResultsDataSource" destination="QGR-Ef-KA5" id="CgF-ou-oP7"/>
+                        <outlet property="searchResultsDelegate" destination="QGR-Ef-KA5" id="7Sp-A3-MLU"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -155,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="15"/>
+            <point key="canvasLocation" x="688" y="15"/>
         </scene>
         <!--Flipside View Controller-->
         <scene sceneID="7">
@@ -186,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976" y="-386"/>
+            <point key="canvasLocation" x="1856" y="-675"/>
         </scene>
         <!--Side Bar View Controller-->
         <scene sceneID="k9w-Ny-L99">
@@ -519,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXk-ry-ZeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2416" y="519"/>
+            <point key="canvasLocation" x="3390" y="519"/>
         </scene>
         <!--Storia Medica View Controller-->
         <scene sceneID="g2z-aL-2Sh">
@@ -630,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao2-OP-dAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="-552"/>
+            <point key="canvasLocation" x="3338" y="-552"/>
         </scene>
         <!--Storia Emotiva View Controller-->
         <scene sceneID="6Mf-Fv-mg4">
@@ -846,7 +847,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbv-b6-j9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="250"/>
+            <point key="canvasLocation" x="3338" y="250"/>
         </scene>
         <!--Trattamenti View Controller-->
         <scene sceneID="xtZ-IM-fun">
@@ -1325,7 +1326,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thg-hB-naF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5731" y="-675"/>
+            <point key="canvasLocation" x="6705" y="-675"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rlp-r4-uP8">

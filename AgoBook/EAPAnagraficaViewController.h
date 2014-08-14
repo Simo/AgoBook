@@ -15,9 +15,10 @@
 
 @end
 
-@interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate>
+@interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *lblProva;
 @property (weak, nonatomic) IBOutlet UITextField *txtNome;
 @property (weak, nonatomic) IBOutlet UITextField *txtCognome;
@@ -26,6 +27,7 @@
 
 @property (weak, nonatomic) id <EAPAnagraficaViewControllerDelegate> delegate;
 
+- (IBAction)takePhoto:  (UIButton *)sender;
 -(IBAction)btnPressed:(id)sender;
 
 @end

@@ -1,20 +1,18 @@
 //
-//  EAPAnagraficaViewController.m
+//  EAPPictureViewController.m
 //  AgoBook
 //
-//  Created by Simone Bierti on 04/12/13.
-//  Copyright (c) 2013 Simone Bierti. All rights reserved.
+//  Created by Simone Bierti on 10/08/14.
+//  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
-#import "EAPAnagraficaViewController.h"
-#import "Persona.h"
-#define debug 1
+#import "EAPPictureViewController.h"
 
-@interface EAPAnagraficaViewController ()
+@interface EAPPictureViewController ()
 
 @end
 
-@implementation EAPAnagraficaViewController
+@implementation EAPPictureViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,35 +23,16 @@
     return self;
 }
 
--(void) refreshInterface {
-    self.txtNome.text = self.selectedPerson.nome;
-    self.txtCognome.text = self.selectedPerson.cognome;
-    self.imageView.image = [[UIImage alloc] initWithData:self.selectedPerson.foto];
-}
-
--(void)updateContextFields{
-    self.selectedPerson.nome = self.txtNome.text;
-    self.selectedPerson.cognome = self.txtCognome.text;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    [self.txtNome setDelegate:self];
-    [self.txtCognome setDelegate:self];
-    //[self.delegate populateAnagraficaViewFields:self];
-    [self refreshInterface];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)textFieldDidEndEditing:(UITextField *)textField{
-    [self updateContextFields];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
@@ -71,8 +50,6 @@
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = chosenImage;
-    //aggiunge la persistenza su CD
-    self.selectedPerson.foto = UIImagePNGRepresentation(chosenImage);
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
@@ -84,10 +61,15 @@
     
 }
 
--(void)btnPressed:(id)sender
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    //[self.delegate changeAnagraficaFields:self];
-    [self updateContextFields];
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+*/
 
 @end

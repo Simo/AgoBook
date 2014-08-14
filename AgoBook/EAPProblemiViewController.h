@@ -16,8 +16,11 @@
 
 @end
 
-@interface EAPProblemiViewController : UIViewController
+@interface EAPProblemiViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak,nonatomic) id<EAPProblemiViewControllerDelegate> delegate;
+
+- (IBAction)takePhoto:  (UIButton *)sender;
 
 @end
