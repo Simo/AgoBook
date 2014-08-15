@@ -9,7 +9,6 @@
 #import "EAPInitialViewController.h"
 #import "EAPMainViewController.h"
 #import "Persona.h"
-#import "EAPPatientsTableViewController.h"
 
 
 #define DiaryIdentifier @"DiarySegue"
@@ -38,6 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.personaScelta = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,19 +52,30 @@
         self.mainController.personaScelta = self.personaScelta;
         [segue.destinationViewController didMoveToParentViewController:self];
     } else if([segue.identifier isEqualToString:ListaPazientiIdentifier]){
-        NSLog(@"all'interno dell prepare segue patients list");
-        self.patientsController = segue.destinationViewController;
+        [[segue destinationViewController] setDelegate:self];
+        UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+        self.pazientiPopoverController = popoverController;
+        popoverController.delegate = self;
+        
+        
+        
+        //self.popOverList = segue.destinationViewController;
         //self.popOver = [(UIStoryboardPopoverSegue *)segue popoverController];
-        self.patientsController.managedObjectContext = self.managedObjectContext;
-        self.patientsController.behaviorDelegate = self;
+        //self.popOverList.managedObjectContext = self.managedObjectContext;
+        //self.popOverList.delegate = self;
         //[segue.destinationViewController didMoveToParentViewController:self];
     }
 }
 
--(void)openPersonaDiary:(Persona *)persona fromController:(EAPPatientsTableViewController *)controller {
+-(void)openPersonaDiary:(Persona *)persona fromController:(EAPPopOverPazientiViewController *)controller {
     self.personaScelta = persona;
     [self performSegueWithIdentifier:DiaryIdentifier sender:self];
-    [self.popOver dismissPopoverAnimated:NO];
+    //[self.popOver dismissPopoverAnimated:NO];
+}
+
+-(void)aggiungiNuovaPersona:(EAPPopOverPazientiViewController *)controller {
+    self.personaScelta = [NSEntityDescription insertNewObjectForEntityForName:@"Persona" inManagedObjectContext:self.managedObjectContext];
+    [self performSegueWithIdentifier:DiaryIdentifier sender:self];
 }
 /*
 #pragma mark - Navigation
@@ -76,5 +87,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)pazientiPopoverDidFinish:(EAPPopOverPazientiViewController *)controller {
+    [self.pazientiPopoverController dismissPopoverAnimated:NO];
+    self.pazientiPopoverController = nil;
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.pazientiPopoverController = nil;
+}
 
 @end

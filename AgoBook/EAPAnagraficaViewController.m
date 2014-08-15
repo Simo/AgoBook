@@ -8,6 +8,7 @@
 
 #import "EAPAnagraficaViewController.h"
 #import "Persona.h"
+#import "Famiglia.h"
 #define debug 1
 
 @interface EAPAnagraficaViewController ()
@@ -26,9 +27,12 @@
 }
 
 -(void) refreshInterface {
-    self.txtNome.text = self.selectedPerson.nome;
-    self.txtCognome.text = self.selectedPerson.cognome;
+    self.txtNome.text = [self.selectedPerson.nome capitalizedString];
+    self.txtCognome.text = [self.selectedPerson.cognome capitalizedString];
     self.imageView.image = [[UIImage alloc] initWithData:self.selectedPerson.foto];
+    
+    self.textNucleo.text = self.selectedPerson.famiglia.nucleo;
+    self.textNucleoCommenti.text = self.selectedPerson.famiglia.commenti;
 }
 
 -(void)updateContextFields{
@@ -36,12 +40,24 @@
     self.selectedPerson.cognome = self.txtCognome.text;
 }
 
+-(void)updateContextTextViews{
+    self.selectedPerson.famiglia.nucleo = self.textNucleo.text;
+    self.selectedPerson.famiglia.commenti = self.textNucleoCommenti.text;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    if(self.selectedPerson.famiglia == NULL){
+        Famiglia *famiglia = [NSEntityDescription insertNewObjectForEntityForName:@"Famiglia" inManagedObjectContext:self.selectedPerson.managedObjectContext];
+        [self.selectedPerson setFamiglia:famiglia];
+    }
+
     [self.txtNome setDelegate:self];
     [self.txtCognome setDelegate:self];
+    [self.textNucleo setDelegate:self];
+    [self.textNucleoCommenti setDelegate:self];
     //[self.delegate populateAnagraficaViewFields:self];
     [self refreshInterface];
 }
@@ -54,6 +70,10 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     [self updateContextFields];
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView {
+    [self updateContextTextViews];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {

@@ -22,8 +22,21 @@
 
 @property (weak, nonatomic) id <EAPStoriaEmotivaViewControllerDelegate> delegate;
 
-@property (strong, nonatomic) IBOutlet UITextField *txtFieldAutoDescrizione;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UITextView *txtFieldStoriaPersonale;
+
+@property (strong, nonatomic) IBOutlet UITextView *autodescrizioneTextView;
+@property (strong, nonatomic) IBOutlet UITextView *storiaPersonaleTextView;
+@property (strong, nonatomic) IBOutlet UITextView *cosaNonPiaceTextView;
+
+@property (strong, nonatomic) IBOutlet UITextField *colorePreferitoTextField;
+@property (strong, nonatomic) IBOutlet UITextField *coloreInvisoTextField;
+@property (strong, nonatomic) IBOutlet UITextField *stagionePreferitaTextField;
+@property (strong, nonatomic) IBOutlet UITextField *stagioneInvisaTextField;
+@property (strong, nonatomic) IBOutlet UITextField *oraPreferitaTextField;
+@property (strong, nonatomic) IBOutlet UITextField *oraInvisaTextField;
+@property (strong, nonatomic) IBOutlet UITextField *saporePreferitoTextField;
+@property (strong, nonatomic) IBOutlet UITextField *saporeInvisoTextField;
+
 
 @end

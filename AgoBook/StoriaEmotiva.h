@@ -2,7 +2,7 @@
 //  StoriaEmotiva.h
 //  AgoBook
 //
-//  Created by Simone Bierti on 25/06/14.
+//  Created by Simone Bierti on 15/08/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
@@ -22,6 +22,8 @@
 @property (nonatomic, retain) NSString * stagioneOdiata;
 @property (nonatomic, retain) NSString * stagionePref;
 @property (nonatomic, retain) NSString * storiaPersonale;
+@property (nonatomic, retain) NSString * coloreOdiato;
+@property (nonatomic, retain) NSString * saporeOdiato;
 @property (nonatomic, retain) Persona *persona;
 
 @end

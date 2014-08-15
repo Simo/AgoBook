@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EAPPatientsTableViewController.h"
+#import "EAPPopOverPazientiViewController.h"
 
 @class Persona;
 
-@interface EAPInitialViewController : UIViewController <EAPPatientsTableViewControllerDelegate>
+@interface EAPInitialViewController : UIViewController <UIPopoverControllerDelegate, EAPPPopOverPazientiViewControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (weak, nonatomic) Persona *personaScelta;
-@property (strong, nonatomic) EAPPatientsTableViewController *popOverList;
-@property (strong, nonatomic) UIPopoverController *popOver;
+@property (strong, nonatomic) EAPPopOverPazientiViewController *popOverList;
+@property (strong, nonatomic) UIPopoverController *pazientiPopoverController;
 
 @end

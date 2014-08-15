@@ -62,7 +62,7 @@
     {
         self.progressView.progress += (kUpdateInterval / kSecondsForCompleteUpdate);
         self.secondsPassed += kUpdateInterval;
-        int minutes = self.secondsPassed / 60;
+        int minutes = (int) self.secondsPassed / 60;
         int seconds = self.secondsPassed % 60;
         
         NSString *time = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];

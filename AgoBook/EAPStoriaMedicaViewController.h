@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EAPContainedCommonViewController.h"
 
 @class StoriaMedica;
 @class EAPStoriaMedicaViewController;
@@ -18,9 +19,16 @@
 
 @end
 
-@interface EAPStoriaMedicaViewController : UIViewController <UITextFieldDelegate>
+@interface EAPStoriaMedicaViewController : EAPContainedCommonViewController <UITextViewDelegate>
 
 @property (weak, nonatomic) id <EAPStoriaMedicaViewControllerDelegate> delegate;
-@property (weak, nonatomic) IBOutlet UITextView *incidentiTxtView;
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UITextView *interventiTextView;
+@property (strong, nonatomic) IBOutlet UITextView *incidentiTextView;
+@property (strong, nonatomic) IBOutlet UITextView *ricoveriTextView;
+@property (strong, nonatomic) IBOutlet UITextView *partiColpiteTextView;
+@property (strong, nonatomic) IBOutlet UITextView *effettiCollateraliTextView;
+@property (strong, nonatomic) IBOutlet UITextView *storiaMFamigliaTextView;
 
 @end

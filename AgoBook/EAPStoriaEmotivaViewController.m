@@ -25,14 +25,63 @@
     return self;
 }
 
--(void) refreshInterface {
-    self.txtFieldAutoDescrizione.text = self.selectedPerson.storiaemotiva.autoDescrizione;
-    self.txtFieldStoriaPersonale.text = self.selectedPerson.storiaemotiva.storiaPersonale;
+#pragma mark - Esiste StoriaEmotiva
+
+-(void) recuperaStoriaEmotivaPersona:(Persona *)persona
+{
+    if(!persona.storiaemotiva){
+        StoriaEmotiva *storiaEmotiva = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaEmotiva" inManagedObjectContext:persona.managedObjectContext];
+        persona.storiaemotiva = storiaEmotiva;
+    }
 }
 
--(void)updateContextFields{
-    self.selectedPerson.storiaemotiva.autoDescrizione = self.txtFieldAutoDescrizione.text;
-    self.selectedPerson.storiaemotiva.storiaPersonale = self.txtFieldStoriaPersonale.text;
+-(void) impostaDelegato:(id)obj
+{
+    self.autodescrizioneTextView.delegate = obj;
+    self.storiaPersonaleTextView.delegate = obj;
+    self.cosaNonPiaceTextView.delegate = obj;
+    
+    self.colorePreferitoTextField.delegate = obj;
+    self.coloreInvisoTextField.delegate = obj;
+    self.stagionePreferitaTextField.delegate = obj;
+    self.stagioneInvisaTextField.delegate = obj;
+    self.oraPreferitaTextField.delegate = obj;
+    self.oraInvisaTextField.delegate = obj;
+    self.saporePreferitoTextField.delegate = obj;
+    self.saporeInvisoTextField.delegate = obj;
+}
+
+-(void) refreshInterface
+{
+    self.autodescrizioneTextView.text = self.selectedPerson.storiaemotiva.autoDescrizione;
+    self.storiaPersonaleTextView.text = self.selectedPerson.storiaemotiva.storiaPersonale;
+    self.cosaNonPiaceTextView.text = self.selectedPerson.storiaemotiva.cosaNonPiace;
+    
+    self.colorePreferitoTextField.text = self.selectedPerson.storiaemotiva.colorePref;
+    self.coloreInvisoTextField.text = self.selectedPerson.storiaemotiva.coloreOdiato;
+    self.stagionePreferitaTextField.text = self.selectedPerson.storiaemotiva.stagionePref;
+    self.stagioneInvisaTextField.text = self.selectedPerson.storiaemotiva.stagioneOdiata;
+    self.oraPreferitaTextField.text = self.selectedPerson.storiaemotiva.oraMigliore;
+    self.oraInvisaTextField.text = self.selectedPerson.storiaemotiva.oraPeggiore;
+    self.saporePreferitoTextField.text = self.selectedPerson.storiaemotiva.saporePref;
+    self.saporeInvisoTextField.text = self.selectedPerson.storiaemotiva.saporeOdiato;
+    
+}
+
+-(void)updateContextFields
+{
+    self.selectedPerson.storiaemotiva.autoDescrizione = self.autodescrizioneTextView.text;
+    self.selectedPerson.storiaemotiva.storiaPersonale = self.self.storiaPersonaleTextView.text;
+    self.selectedPerson.storiaemotiva.cosaNonPiace= self.cosaNonPiaceTextView.text;
+    
+    self.selectedPerson.storiaemotiva.colorePref = self.colorePreferitoTextField.text;
+    self.selectedPerson.storiaemotiva.coloreOdiato = self.coloreInvisoTextField.text;
+    self.selectedPerson.storiaemotiva.stagionePref = self.stagionePreferitaTextField.text;
+    self.selectedPerson.storiaemotiva.stagioneOdiata = self.stagioneInvisaTextField.text;
+    self.selectedPerson.storiaemotiva.oraMigliore = self.oraPreferitaTextField.text;
+    self.selectedPerson.storiaemotiva.oraPeggiore = self.oraInvisaTextField.text;
+    self.selectedPerson.storiaemotiva.saporePref = self.saporePreferitoTextField.text;
+    self.selectedPerson.storiaemotiva.saporeOdiato = self.saporeInvisoTextField.text;
 }
 
 - (void)viewDidLoad
@@ -40,6 +89,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //[self.delegate populateStoriaEmotivaFields:self];
+    [self recuperaStoriaEmotivaPersona:self.selectedPerson];
+    [self impostaDelegato:self];
     [self refreshInterface];
 }
 

@@ -2,7 +2,7 @@
 //  StoriaEmotiva.m
 //  AgoBook
 //
-//  Created by Simone Bierti on 25/06/14.
+//  Created by Simone Bierti on 15/08/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
@@ -21,6 +21,8 @@
 @dynamic stagioneOdiata;
 @dynamic stagionePref;
 @dynamic storiaPersonale;
+@dynamic coloreOdiato;
+@dynamic saporeOdiato;
 @dynamic persona;
 
 @end

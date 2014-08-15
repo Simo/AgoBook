@@ -90,10 +90,12 @@
     </entity>
     <entity name="StoriaEmotiva" representedClassName="StoriaEmotiva" syncable="YES">
         <attribute name="autoDescrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coloreOdiato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="colorePref" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cosaNonPiace" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="oraMigliore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="oraPeggiore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saporeOdiato" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="saporePref" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stagioneOdiata" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stagionePref" optional="YES" attributeType="String" syncable="YES"/>
@@ -134,7 +136,7 @@
         <element name="Segno" positionX="-252" positionY="29" width="128" height="133"/>
         <element name="SegnoPersonale" positionX="-11" positionY="198" width="128" height="103"/>
         <element name="SegnoTag" positionX="205" positionY="224" width="128" height="73"/>
-        <element name="StoriaEmotiva" positionX="-621" positionY="45" width="128" height="195"/>
+        <element name="StoriaEmotiva" positionX="-621" positionY="45" width="128" height="30"/>
         <element name="StoriaMedica" positionX="-234" positionY="-423" width="128" height="165"/>
         <element name="Trattamento" positionX="-63" positionY="-639" width="128" height="150"/>
     </elements>

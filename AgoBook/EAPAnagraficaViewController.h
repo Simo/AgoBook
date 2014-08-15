@@ -15,7 +15,7 @@
 
 @end
 
-@interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate,UITextViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtCognome;
 @property (strong, nonatomic) IBOutlet UIButton *btnVerifica;
 @property (weak, nonatomic) IBOutlet UILabel *lblPersonaNome;
+@property (strong, nonatomic) IBOutlet UITextView *textNucleo;
+@property (strong, nonatomic) IBOutlet UITextView *textNucleoCommenti;
 
 @property (weak, nonatomic) id <EAPAnagraficaViewControllerDelegate> delegate;
 

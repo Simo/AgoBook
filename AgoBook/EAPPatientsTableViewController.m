@@ -8,6 +8,8 @@
 
 #import "EAPPatientsTableViewController.h"
 #import "Persona.h"
+#import "EAPAppDelegate.h"
+#import "CoreDataHelper.h"
 
 @interface EAPPatientsTableViewController ()
 
@@ -25,7 +27,8 @@
 }
 
 - (void) configureFetch {
-    //CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    self.managedObjectContext = [cdh context];
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Persona"];
     //request.predicate = [NSPredicate predicateWithFormat:@"ZPERSONA = %i", self.selectedPersonId];
     request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"cognome"
@@ -41,16 +44,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    /*
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self];
     
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 300, 44)];
-    [nav.view addSubview:searchBar];
-    
-    searchBar.delegate = self;
-    
-    [self.view addSubview:nav.view];
-     */
     [self configureFetch];
     [self performFetch];
     self.searchResults = [NSMutableArray arrayWithCapacity:[[self.fetchedResultsController fetchedObjects] count]];
@@ -98,7 +92,7 @@
         persona = [self.fetchedResultsController objectAtIndexPath:indexPath];
     }
     
-    cell.textLabel.text = persona.nome;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",[persona.cognome capitalizedString], [persona.nome capitalizedString]];
     
     return cell;
     
@@ -132,9 +126,9 @@
     
 	for (Persona *persona in [self.fetchedResultsController fetchedObjects])
 	{
-		if ([scope isEqualToString:@"All"] || [persona.nome isEqualToString:scope])
+		if ([scope isEqualToString:@"All"] || [persona.cognome isEqualToString:scope])
 		{
-			NSComparisonResult result = [persona.nome compare:searchText
+			NSComparisonResult result = [persona.cognome compare:searchText
                                                    options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)
                                                      range:NSMakeRange(0, [searchText length])];
             if (result == NSOrderedSame)

@@ -90,6 +90,7 @@
     } else if ([segue.identifier isEqualToString:SegueIdentifierStoriaMedica]) {
         if(!self.storiaMedicaVC){
             self.storiaMedicaVC = segue.destinationViewController;
+            self.storiaMedicaVC.selectedPerson = self.persona;
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
@@ -97,8 +98,6 @@
             [self.view addSubview:((UIViewController *)segue.destinationViewController).view];
             [segue.destinationViewController didMoveToParentViewController:self];
             self.currentViewController = self.storiaMedicaVC;
-            
-            self.storiaMedicaVC.incidentiTxtView.text = self.persona.storiamedica.incidenti;
 
         } else {
             [self swapFromViewController:self.currentViewController toViewController:self.storiaMedicaVC];
@@ -109,7 +108,7 @@
             self.storiaEmotivaVC = segue.destinationViewController;
             self.storiaEmotivaVC.delegate = self;
             self.storiaEmotivaVC.selectedPerson = self.persona;
-            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];//[[NSNumber alloc] initWithInt:[self.childViewControllers count]];
+            NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
             ((UIViewController *)segue.destinationViewController).view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -218,17 +217,17 @@
 #pragma mark ∆ StoriaEmotiva
 
 -(void)populateStoriaEmotivaFields:(EAPStoriaEmotivaViewController *)controller {
-    controller.txtFieldAutoDescrizione.text = self.persona.storiaemotiva.autoDescrizione;
+   // controller.txtFieldAutoDescrizione.text = self.persona.storiaemotiva.autoDescrizione;
 }
 
 -(void)changeStoriaEmotivaFields:(EAPStoriaEmotivaViewController *)controller {
     CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
     if(!self.persona.storiaemotiva){
         StoriaEmotiva *storiaEmotiva = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaEmotiva" inManagedObjectContext:[cdh context]];
-        storiaEmotiva.autoDescrizione = controller.txtFieldAutoDescrizione.text;
+     //   storiaEmotiva.autoDescrizione = controller.txtFieldAutoDescrizione.text;
         self.persona.storiaemotiva = storiaEmotiva;
     } else {
-        self.persona.storiaemotiva.autoDescrizione = controller.txtFieldAutoDescrizione.text;
+     //   self.persona.storiaemotiva.autoDescrizione = controller.txtFieldAutoDescrizione.text;
     }
 }
 

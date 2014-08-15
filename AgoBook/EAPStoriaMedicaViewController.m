@@ -7,6 +7,8 @@
 //
 
 #import "EAPStoriaMedicaViewController.h"
+#import "Persona.h"
+#import "StoriaMedica.h"
 
 @interface EAPStoriaMedicaViewController ()
 
@@ -23,10 +25,50 @@
     return self;
 }
 
+-(void) activateDelegate
+{
+    self.incidentiTextView.delegate = self;
+    self.interventiTextView.delegate = self;
+    self.ricoveriTextView.delegate = self;
+    self.partiColpiteTextView.delegate = self;
+    self.effettiCollateraliTextView.delegate = self;
+    self.storiaMFamigliaTextView.delegate = self;
+}
+
+-(void) refreshInterface
+{
+    self.incidentiTextView.text = self.selectedPerson.storiamedica.incidenti;
+    self.interventiTextView.text = self.selectedPerson.storiamedica.interventi;
+    self.ricoveriTextView.text = self.selectedPerson.storiamedica.ricoveri;
+    self.partiColpiteTextView.text = self.selectedPerson.storiamedica.partiColpite;
+    self.effettiCollateraliTextView.text = self.selectedPerson.storiamedica.effettiCollaterali;
+    self.storiaMFamigliaTextView.text = self.selectedPerson.storiamedica.storiaMedicaFamiglia;
+}
+
+-(void)updateContextTextViews
+{
+    self.selectedPerson.storiamedica.incidenti = self.incidentiTextView.text;
+    self.selectedPerson.storiamedica.interventi = self.interventiTextView.text;
+    self.selectedPerson.storiamedica.ricoveri = self.ricoveriTextView.text;
+    self.selectedPerson.storiamedica.partiColpite = self.partiColpiteTextView.text;
+    self.selectedPerson.storiamedica.effettiCollaterali = self.effettiCollateraliTextView.text;
+    self.selectedPerson.storiamedica.storiaMedicaFamiglia = self.storiaMFamigliaTextView.text;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    if(!self.selectedPerson.storiamedica){
+        StoriaMedica *storiamedica = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaMedica" inManagedObjectContext:self.selectedPerson.managedObjectContext];
+        [self.selectedPerson setStoriamedica:storiamedica];
+    }
+    [self activateDelegate];
+    [self refreshInterface];
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView {
+    [self updateContextTextViews];
 }
 
 - (void)didReceiveMemoryWarning
