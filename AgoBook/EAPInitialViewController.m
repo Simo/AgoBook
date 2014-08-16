@@ -56,14 +56,6 @@
         UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
         self.pazientiPopoverController = popoverController;
         popoverController.delegate = self;
-        
-        
-        
-        //self.popOverList = segue.destinationViewController;
-        //self.popOver = [(UIStoryboardPopoverSegue *)segue popoverController];
-        //self.popOverList.managedObjectContext = self.managedObjectContext;
-        //self.popOverList.delegate = self;
-        //[segue.destinationViewController didMoveToParentViewController:self];
     }
 }
 

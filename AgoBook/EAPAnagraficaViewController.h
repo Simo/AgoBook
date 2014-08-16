@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "EAPContainedCommonViewController.h"
+#import "JVFloatLabeledTextField.h"
+#import "JVFloatLabeledTextView.h"
 
 @class EAPAnagraficaViewController;
 
@@ -26,6 +28,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblPersonaNome;
 @property (strong, nonatomic) IBOutlet UITextView *textNucleo;
 @property (strong, nonatomic) IBOutlet UITextView *textNucleoCommenti;
+
+@property (strong, nonatomic) JVFloatLabeledTextField *nomeTextField;
+
+@property (strong, nonatomic) JVFloatLabeledTextView *nucleoCommentiTextView;
+
+
 
 @property (weak, nonatomic) id <EAPAnagraficaViewControllerDelegate> delegate;
 

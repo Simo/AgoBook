@@ -12,6 +12,9 @@
 		250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */; };
 		2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
 		2519007618BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
+		252B4154199EA35E00CD5CA0 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */; };
+		252B4155199EA35E00CD5CA0 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */; };
+		252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */; };
 		2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		2537BB2B187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		25392D901997EA9E00C5C10A /* EAPPatientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25392D8F1997EA9E00C5C10A /* EAPPatientsTableViewController.m */; };
@@ -23,6 +26,7 @@
 		25463ABF187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
 		2565A194199CF04E004A1302 /* EAPPopOverPazientiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565A193199CF04E004A1302 /* EAPPopOverPazientiViewController.m */; };
 		256C96FC199E421B00CED613 /* StoriaEmotiva.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C96FB199E421B00CED613 /* StoriaEmotiva.m */; };
+		256C96FF199E565400CED613 /* EAPSidebarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C96FE199E565400CED613 /* EAPSidebarNavigationController.m */; };
 		256F316918FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
 		256F316A18FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
 		256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
@@ -173,6 +177,12 @@
 		250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPNuovaSedutaViewController.m; sourceTree = "<group>"; };
 		2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntiNuovaSedutaCell.h; sourceTree = "<group>"; };
 		2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntiNuovaSedutaCell.m; sourceTree = "<group>"; };
+		252B414E199EA35E00CD5CA0 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		252B4150199EA35E00CD5CA0 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		252B4152199EA35E00CD5CA0 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
 		2537BB28187C9D89009EB7F7 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		25392D8E1997EA9E00C5C10A /* EAPPatientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPatientsTableViewController.h; sourceTree = "<group>"; };
@@ -192,6 +202,8 @@
 		256C96F9199E40F000CED613 /* AgoBook 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 6.xcdatamodel"; sourceTree = "<group>"; };
 		256C96FA199E421B00CED613 /* StoriaEmotiva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriaEmotiva.h; sourceTree = "<group>"; };
 		256C96FB199E421B00CED613 /* StoriaEmotiva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriaEmotiva.m; sourceTree = "<group>"; };
+		256C96FD199E565400CED613 /* EAPSidebarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSidebarNavigationController.h; sourceTree = "<group>"; };
+		256C96FE199E565400CED613 /* EAPSidebarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSidebarNavigationController.m; sourceTree = "<group>"; };
 		256DE33E1902C0EA006DCF75 /* AgoBook 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 3.xcdatamodel"; sourceTree = "<group>"; };
 		256F316718FDCC50003114D5 /* SBRTTokenButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRTTokenButton.h; sourceTree = "<group>"; };
 		256F316818FDCC50003114D5 /* SBRTTokenButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenButton.m; sourceTree = "<group>"; };
@@ -389,6 +401,7 @@
 		250C285A18A6770B00164FDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				252B414D199EA31800CD5CA0 /* JVFloatLabeledTextField */,
 				25D3B401197C54D90080EFDC /* TextFields */,
 				256F316618FDCC08003114D5 /* Tokenized */,
 				2537BB27187C9D4C009EB7F7 /* CoreDataHelpers */,
@@ -406,6 +419,19 @@
 				25C6EE5C18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m */,
 			);
 			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		252B414D199EA31800CD5CA0 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				252B414E199EA35E00CD5CA0 /* JVFloatLabeledTextField.h */,
+				252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */,
+				252B4150199EA35E00CD5CA0 /* JVFloatLabeledTextView.h */,
+				252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */,
+				252B4152199EA35E00CD5CA0 /* NSString+TextDirectionality.h */,
+				252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */,
+			);
+			name = JVFloatLabeledTextField;
 			sourceTree = "<group>";
 		};
 		2537BB27187C9D4C009EB7F7 /* CoreDataHelpers */ = {
@@ -493,11 +519,19 @@
 			name = Tokenized;
 			sourceTree = "<group>";
 		};
-		25CE2319184FABAF00AD84F4 /* Contained */ = {
+		25A7C8BD199F2A0400CB18C1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				25F4898718B0F97900189EF6 /* EAPContainedCommonViewController.h */,
 				25F4898818B0F97900189EF6 /* EAPContainedCommonViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		25CE2319184FABAF00AD84F4 /* Contained */ = {
+			isa = PBXGroup;
+			children = (
+				25A7C8BD199F2A0400CB18C1 /* Common */,
 				25FC340618AFAF9400775243 /* NuovaSeduta */,
 				25CE232E184FC68100AD84F4 /* Trattamenti */,
 				25CE231A184FABCB00AD84F4 /* EAPAnagraficaViewController.h */,
@@ -709,6 +743,8 @@
 			children = (
 				25DCF238184E77300010F119 /* EAPSideBarViewController.h */,
 				25DCF239184E77300010F119 /* EAPSideBarViewController.m */,
+				256C96FD199E565400CED613 /* EAPSidebarNavigationController.h */,
+				256C96FE199E565400CED613 /* EAPSidebarNavigationController.m */,
 			);
 			name = SideBarMenu;
 			sourceTree = "<group>";
@@ -958,6 +994,7 @@
 				25BD2D67195B494A00A3EA37 /* Punto.m in Sources */,
 				25D983FE184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */,
 				25D3B404197C550D0080EFDC /* EAPTextField.m in Sources */,
+				256C96FF199E565400CED613 /* EAPSidebarNavigationController.m in Sources */,
 				25C6EE6118A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				25CE231C184FABCB00AD84F4 /* EAPAnagraficaViewController.m in Sources */,
 				25BD2D76195B494B00A3EA37 /* EsameObiettivo.m in Sources */,
@@ -971,6 +1008,7 @@
 				25FC340D18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */,
 				2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */,
 				25BD2D94195B494B00A3EA37 /* Diagnosi.m in Sources */,
+				252B4154199EA35E00CD5CA0 /* JVFloatLabeledTextField.m in Sources */,
 				25BD2D6A195B494B00A3EA37 /* Segno.m in Sources */,
 				25CE232C184FBEC300AD84F4 /* EAPTrattamentiViewController.m in Sources */,
 				25CE2333184FC6AD00AD84F4 /* EAPSeduteViewController.m in Sources */,
@@ -988,6 +1026,7 @@
 				25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				25ED828E1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */,
+				252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */,
 				25BD2D85195B494B00A3EA37 /* Rassegna.m in Sources */,
 				25ED82901852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
 				2544C14C1997496300460451 /* EAPPictureViewController.m in Sources */,
@@ -1023,6 +1062,7 @@
 				25ED82B41852FC73009C0EB9 /* MagicalRecord+iCloud.m in Sources */,
 				25ED82B61852FC73009C0EB9 /* MagicalRecord+Options.m in Sources */,
 				25ED82B81852FC73009C0EB9 /* MagicalRecord+Setup.m in Sources */,
+				252B4155199EA35E00CD5CA0 /* JVFloatLabeledTextView.m in Sources */,
 				25ED82BA1852FC73009C0EB9 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				25ED82BC1852FC73009C0EB9 /* MagicalRecord.m in Sources */,
 				25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */,

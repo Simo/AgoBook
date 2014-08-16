@@ -27,7 +27,6 @@
 */
 
 -(void)awakeFromNib {
-    NSLog(@"Dentro AwakeFromNib");
     self.contentSizeForViewInPopover = CGSizeMake(300.0, 500.0);
     [super awakeFromNib];
 }

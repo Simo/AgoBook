@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class JVFloatLabeledTextField;
+@class JVFloatLabeledTextView;
+
 @class Persona;
 
 @interface EAPContainedCommonViewController : UIViewController
@@ -16,5 +19,9 @@
 @property (strong, nonatomic) NSManagedObjectID *selectedPersonId;
 
 -(id) fetchObjectFromId:(NSManagedObjectID *) selectedObjectId;
+
+-(JVFloatLabeledTextField *) createJVFLTextFieldForElement:(JVFloatLabeledTextField *)element withLabel:(NSString *)label andFrame:(CGRect)frame;
+
+-(JVFloatLabeledTextView *) createJVFLTextViewForElement:(JVFloatLabeledTextView *)element withLabel:(NSString *)label andFrame:(CGRect)frame;
 
 @end

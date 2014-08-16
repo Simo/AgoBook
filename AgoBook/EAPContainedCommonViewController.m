@@ -9,6 +9,13 @@
 #import "EAPContainedCommonViewController.h"
 #import "CoreDataHelper.h"
 #import "EAPAppDelegate.h"
+#import "JVFloatLabeledTextField.h"
+#import "JVFloatLabeledTextView.h"
+
+const static CGFloat kJVFieldHeight = 44.0f;
+const static CGFloat kJVFieldHMargin = 10.0f;
+const static CGFloat kJVFieldFontSize = 16.0f;
+const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 
 @interface EAPContainedCommonViewController ()
 
@@ -41,6 +48,37 @@
     CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
     id obj = [cdh.context existingObjectWithID:self.selectedPersonId error:nil];
     return obj;
+}
+
+-(JVFloatLabeledTextField *) createJVFLTextFieldForElement:(JVFloatLabeledTextField *)element withLabel:(NSString *)label andFrame:(CGRect)frame
+{
+    UIColor *floatingLabelColor = [UIColor brownColor];
+    
+    JVFloatLabeledTextField *titleField = [[JVFloatLabeledTextField alloc] initWithFrame:frame];
+    titleField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:NSLocalizedString(label, @"")
+                                                                       attributes:@{NSForegroundColorAttributeName: [UIColor darkGrayColor]}];
+    titleField.font = [UIFont systemFontOfSize:kJVFieldFontSize];
+    titleField.floatingLabel.font = [UIFont boldSystemFontOfSize:kJVFieldFloatingLabelFontSize];
+    titleField.floatingLabelTextColor = floatingLabelColor;
+    titleField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    //    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 30.0f, 30.0f)];
+    //    titleField.leftView = leftView;
+    //    titleField.leftViewMode = UITextFieldViewModeAlways;
+    return titleField;
+}
+
+-(JVFloatLabeledTextView *) createJVFLTextViewForElement:(JVFloatLabeledTextView *)element withLabel:(NSString *)label andFrame:(CGRect)frame
+{
+    UIColor *floatingLabelColor = [UIColor brownColor];
+    
+    JVFloatLabeledTextView *descriptionField = [[JVFloatLabeledTextView alloc] initWithFrame:frame];
+    descriptionField.placeholder = NSLocalizedString(label, @"");
+    descriptionField.placeholderTextColor = [UIColor darkGrayColor];
+    descriptionField.font = [UIFont systemFontOfSize:kJVFieldFontSize];
+    descriptionField.floatingLabel.font = [UIFont boldSystemFontOfSize:kJVFieldFloatingLabelFontSize];
+    descriptionField.floatingLabelTextColor = floatingLabelColor;
+    
+    return descriptionField;
 }
 
 @end
