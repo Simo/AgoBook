@@ -24,4 +24,6 @@
 
 -(JVFloatLabeledTextView *) createJVFLTextViewForElement:(JVFloatLabeledTextView *)element withLabel:(NSString *)label andFrame:(CGRect)frame;
 
+-(UIView *) generateBorderForTextField:(JVFloatLabeledTextField *)element;
+-(UIView *) generateBorderForTextView:(JVFloatLabeledTextView *)element;
 @end

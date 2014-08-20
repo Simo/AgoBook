@@ -30,7 +30,14 @@
 @property (strong, nonatomic) IBOutlet UITextView *textNucleoCommenti;
 
 @property (strong, nonatomic) JVFloatLabeledTextField *nomeTextField;
+@property (strong, nonatomic) JVFloatLabeledTextField *cognomeTextField;
+@property (strong, nonatomic) JVFloatLabeledTextField *dataNascitaTextField;
 
+@property (strong, nonatomic) JVFloatLabeledTextField *descrizioneLavoroTextField;
+@property (strong, nonatomic) JVFloatLabeledTextField *localizzazioneLavoroTextField;
+@property (strong, nonatomic) JVFloatLabeledTextField *soddisfazioneLavoroTextField;
+
+@property (strong, nonatomic) JVFloatLabeledTextView *nucleoTextView;
 @property (strong, nonatomic) JVFloatLabeledTextView *nucleoCommentiTextView;
 
 

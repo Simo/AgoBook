@@ -81,4 +81,34 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     return descriptionField;
 }
 
+-(UIView *) generateBorderForTextField:(JVFloatLabeledTextField *)element
+{
+    UIView *div1 = [UIView new];
+    div1.frame = CGRectMake(element.frame.origin.x, element.frame.origin.y + element.frame.size.height,
+                            element.frame.size.width, 1.0f);
+    div1.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3f];
+    return div1;
+}
+
+-(UIView *) generateBorderForTextView:(JVFloatLabeledTextView *)element
+{
+    UIView * div = [UIView new];
+    div.frame = CGRectMake(element.frame.origin.x, element.frame.origin.y, element.frame.size.width, element.frame.size.height);
+    
+    UIView *div1 = [UIView new];
+    div1.frame = CGRectMake(element.frame.origin.x, element.frame.origin.y + element.frame.size.height + 10.0,
+                            element.frame.size.width, 1.0f);
+    div1.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3f];
+    
+    UIView *div2 = [UIView new];
+    div2.frame = CGRectMake( element.frame.origin.x + element.frame.size.width, element.frame.origin.y,
+                            1.0f, element.frame.size.height);
+    div2.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3f];
+    
+    [div addSubview:div1];
+    [div addSubview:div2];
+    
+    return div1;
+}
+
 @end

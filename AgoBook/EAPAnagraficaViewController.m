@@ -8,17 +8,13 @@
 
 #import "EAPAnagraficaViewController.h"
 #import "Persona.h"
+#import "Lavoro.h"
 #import "Famiglia.h"
 #import <QuartzCore/QuartzCore.h>
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
 
 #define debug 1
-
-const static CGFloat kJVFieldHeight = 44.0f;
-const static CGFloat kJVFieldHMargin = 20.0f;
-const static CGFloat kJVFieldFontSize = 16.0f;
-const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 
 @interface EAPAnagraficaViewController ()
 
@@ -35,11 +31,6 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     return self;
 }
 
--(void) addTextField:(JVFloatLabeledTextField *)element withLabel:(NSString *)label andFrame:(CGRect)fram toView:(UIView *)view
-{
-    
-}
-
 -(void) addTextView:(JVFloatLabeledTextView *)element withLabel:(NSString *)label andFrame:(CGRect)frame toView:(UIView *)view
 {
     element = [self createJVFLTextViewForElement:element withLabel:label andFrame:frame];
@@ -49,71 +40,80 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 }
 
 -(void) refreshInterface {
-    self.txtNome.text = [self.selectedPerson.nome capitalizedString];
-    self.txtCognome.text = [self.selectedPerson.cognome capitalizedString];
+    self.nomeTextField.text = [self.selectedPerson.nome capitalizedString];
+    self.cognomeTextField.text = [self.selectedPerson.cognome capitalizedString];
     self.imageView.image = [[UIImage alloc] initWithData:self.selectedPerson.foto];
     
-    self.textNucleo.text = self.selectedPerson.famiglia.nucleo;
-    self.textNucleoCommenti.text = self.selectedPerson.famiglia.commenti;
+    self.nucleoTextView.text = self.selectedPerson.famiglia.nucleo;
     self.nucleoCommentiTextView.text = self.selectedPerson.famiglia.commenti;
-    NSLog(@"questo e quello che: %@",self.nucleoCommentiTextView);
 }
 
 -(void)updateContextFields{
-    self.selectedPerson.nome = self.txtNome.text;
-    self.selectedPerson.cognome = self.txtCognome.text;
-}
-
--(void)updateContextTextViews{
-    self.selectedPerson.famiglia.nucleo = self.textNucleo.text;
-    self.selectedPerson.famiglia.commenti = self.textNucleoCommenti.text;
-    NSLog(@"questo e quello che: %@",self.nucleoCommentiTextView);
+    self.selectedPerson.nome = self.nomeTextField.text;
+    self.selectedPerson.cognome = self.cognomeTextField.text;
+    self.selectedPerson.famiglia.nucleo = self.nucleoTextView.text;
+    self.selectedPerson.famiglia.commenti = self.nucleoCommentiTextView.text;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    if(self.selectedPerson.famiglia == NULL){
+    
+    // crea un oggetto LAVORO in caso non esista
+    if(!self.selectedPerson.lavoro){
+        Lavoro *lavoro = [NSEntityDescription insertNewObjectForEntityForName:@"Lavoro" inManagedObjectContext:self.selectedPerson.managedObjectContext];
+        [self.selectedPerson setLavoro:lavoro];
+    }
+    // crea un oggetto FAMIGLIA in caso non esista
+    if(!self.selectedPerson.famiglia){
         Famiglia *famiglia = [NSEntityDescription insertNewObjectForEntityForName:@"Famiglia" inManagedObjectContext:self.selectedPerson.managedObjectContext];
         [self.selectedPerson setFamiglia:famiglia];
     }
 
-    [self.txtNome setDelegate:self];
-    [self.txtCognome setDelegate:self];
-    [self.textNucleo setDelegate:self];
-    //[self.textNucleoCommenti setDelegate:self];
-    //[self.delegate populateAnagraficaViewFields:self];
-    
-//    CGFloat topOffset = [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height;
-    
-    //UIColor *floatingLabelColor = [UIColor brownColor];
-    
-    // inserisce un textfield
-    self.nomeTextField = [self createJVFLTextFieldForElement:self.nomeTextField withLabel:@"Nome" andFrame:CGRectMake(442.0, 126.0, 175.0, 44.0)];
-    /*
-    self.nomeTextField = [[JVFloatLabeledTextField alloc] initWithFrame:
-                                           CGRectMake(200.0, 100.0, 200.0, 44.0)];
-    self.nomeTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Title", @"")
-                                                                       attributes:@{NSForegroundColorAttributeName: [UIColor darkGrayColor]}];
-    self.nomeTextField.font = [UIFont systemFontOfSize:kJVFieldFontSize];
-    self.nomeTextField.floatingLabel.font = [UIFont boldSystemFontOfSize:kJVFieldFloatingLabelFontSize];
-    self.nomeTextField.floatingLabelTextColor = floatingLabelColor;
-    self.nomeTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    //    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 30.0f, 30.0f)];
-    //    titleField.leftView = leftView;
-    //    titleField.leftViewMode = UITextFieldViewModeAlways;
-    */
+    // inserisce un textfield per il campo NOME
+    // imposta il delegato
+    // aggiunge l'oggetto alla scrollview
+    self.nomeTextField = [self createJVFLTextFieldForElement:self.nomeTextField withLabel:@"Nome" andFrame:CGRectMake(442.0, 125.0, 175.0, 44.0)];
     self.nomeTextField.delegate = self;
     [self.scrollView addSubview:self.nomeTextField];
+    [self.scrollView addSubview:[self generateBorderForTextField:self.nomeTextField]];
     
-    //[self addTextView:self.nucleoCommentiTextView withLabel:@"Commenti" andFrame:CGRectMake(20.0,300.0,200.0,132.0) toView:self.scrollView];
+    // inserisce un textfield per il campo COGNOME
+    // imposta il delegato
+    // aggiunge l'oggetto alla scrollview
+    self.cognomeTextField = [self createJVFLTextFieldForElement:self.cognomeTextField withLabel:@"Cognome" andFrame:CGRectMake(442.0, 176.0, 175.0, 44.0)];
+    self.cognomeTextField.delegate = self;
+    [self.scrollView addSubview:self.cognomeTextField];
+    [self.scrollView addSubview:[self generateBorderForTextField:self.cognomeTextField]];
     
-    self.nucleoCommentiTextView = [self createJVFLTextViewForElement:self.nucleoCommentiTextView withLabel:@"Commenti" andFrame:CGRectMake(20.0,300.0,200.0,132.0)];
+    // inserisce un textfield per il campo DATANASCITA
+    // imposta il delegato
+    // aggiunge l'oggetto alla scrollview
+    self.dataNascitaTextField = [self createJVFLTextFieldForElement:self.dataNascitaTextField withLabel:@"Data di nascita" andFrame:CGRectMake(442.0, 225.0, 175.0, 44.0)];
+    self.dataNascitaTextField.delegate = self;
+    [self.scrollView addSubview:self.dataNascitaTextField];
+    [self.scrollView addSubview:[self generateBorderForTextField:self.dataNascitaTextField]];
     
+    // inserisce un textfield per il campo NUCLEOFAMILIARE
+    // imposta il delegato
+    // aggiunge l'oggetto alla scrollview
+    self.nucleoTextView = [self createJVFLTextViewForElement:self.nucleoTextView withLabel:@"Nucleo familiare" andFrame:CGRectMake(20.0,424.0,650.0,88.0)];
+    self.nucleoTextView.delegate = self;
+    //[self.nucleoTextView setBackgroundColor:[UIColor lightGrayColor]];
+    
+    [self.scrollView addSubview:self.nucleoTextView];
+    [self.scrollView addSubview:[self generateBorderForTextView:self.nucleoTextView]];
+    
+    // inserisce un textfield per il campo COMMENTINUCLEO
+    // imposta il delegato
+    // aggiunge l'oggetto alla scrollview
+    self.nucleoCommentiTextView = [self createJVFLTextViewForElement:self.nucleoCommentiTextView withLabel:@"Commenti" andFrame:CGRectMake(20.0,540.0,650.0,88.0)];
     self.nucleoCommentiTextView.delegate = self;
     [self.scrollView addSubview:self.nucleoCommentiTextView];
+    [self.scrollView addSubview:[self generateBorderForTextView:self.nucleoCommentiTextView]];
     
+    // imposta i dati all'interno dei campi
     [self refreshInterface];
 }
 
@@ -128,7 +128,7 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
 }
 
 -(void)textViewDidEndEditing:(UITextView *)textView {
-    [self updateContextTextViews];
+    [self updateContextFields];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {

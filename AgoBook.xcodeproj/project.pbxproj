@@ -31,6 +31,7 @@
 		256F316A18FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
 		256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
 		256F316E18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
+		2591881019A5381B002A9261 /* EAPPuntoProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */; };
 		259E0DFA194C9DA300AF2E85 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259E0DF9194C9DA300AF2E85 /* CoreText.framework */; };
 		25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BC99281853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
@@ -209,6 +210,8 @@
 		256F316818FDCC50003114D5 /* SBRTTokenButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenButton.m; sourceTree = "<group>"; };
 		256F316B18FDCCF1003114D5 /* SBRTTokenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRTTokenView.h; sourceTree = "<group>"; };
 		256F316C18FDCCF1003114D5 /* SBRTTokenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenView.m; sourceTree = "<group>"; };
+		2591880E19A5381B002A9261 /* EAPPuntoProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntoProgressBar.h; sourceTree = "<group>"; };
+		2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntoProgressBar.m; sourceTree = "<group>"; };
 		259E0DF9194C9DA300AF2E85 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 5.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 2.xcdatamodel"; sourceTree = "<group>"; };
@@ -528,6 +531,15 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		25B603FA19A5352500063985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2591880E19A5381B002A9261 /* EAPPuntoProgressBar.h */,
+				2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		25CE2319184FABAF00AD84F4 /* Contained */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +677,7 @@
 		25DCF1F5184E71E80010F119 /* AgoBook */ = {
 			isa = PBXGroup;
 			children = (
+				25B603FA19A5352500063985 /* Views */,
 				250C285A18A6770B00164FDA /* Helpers */,
 				255AF5F718809B2400E533AD /* Models */,
 				25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */,
@@ -993,6 +1006,7 @@
 				25DCF23A184E77300010F119 /* EAPSideBarViewController.m in Sources */,
 				25BD2D67195B494A00A3EA37 /* Punto.m in Sources */,
 				25D983FE184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */,
+				2591881019A5381B002A9261 /* EAPPuntoProgressBar.m in Sources */,
 				25D3B404197C550D0080EFDC /* EAPTextField.m in Sources */,
 				256C96FF199E565400CED613 /* EAPSidebarNavigationController.m in Sources */,
 				25C6EE6118A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,

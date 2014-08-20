@@ -11,6 +11,7 @@
 #import "EAPAppDelegate.h"
 #import "Punto.h"
 #import "EAPPuntiNuovaSedutaCell.h"
+#import "EAPPuntoProgressBar.h"
 
 #define debug 1
 
@@ -80,6 +81,9 @@
     [cell.contentView addSubview:button];
     // aggiungiamo la funzionalita'
     [button addTarget:cell action:@selector(startProgressTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    EAPPuntoProgressBar *barra = [[EAPPuntoProgressBar alloc] initWithFrame:CGRectMake(200, 30, 200, 44)];
+    [cell.contentView addSubview:barra];
     
     cell.txtFieldPunto.delegate = cell;
     cell.punto = p;
