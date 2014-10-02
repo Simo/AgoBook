@@ -82,8 +82,9 @@
     // aggiungiamo la funzionalita'
     [button addTarget:cell action:@selector(startProgressTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    EAPPuntoProgressBar *barra = [[EAPPuntoProgressBar alloc] initWithFrame:CGRectMake(200, 30, 200, 44)];
+    EAPPuntoProgressBar *barra = [[EAPPuntoProgressBar alloc] initWithFrame:CGRectMake(200, 7, 200, 44)];
     [cell.contentView addSubview:barra];
+    cell.progressView = barra;
     
     cell.txtFieldPunto.delegate = cell;
     cell.punto = p;

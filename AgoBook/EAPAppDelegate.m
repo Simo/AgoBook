@@ -23,6 +23,9 @@
 #import "SegnoPersonale.h"
 #define debug 1
 
+#define APP_KEY @"pqaw2jqm6rd5j87"
+#define APP_SECRET @"u3c2wjsyzxvufo8"
+
 @implementation EAPAppDelegate
 /*
 @synthesize managedObjectContext = _managedObjectContext;
@@ -30,6 +33,18 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize fetchedResultsController = _fetchedResultsController;
 */
+
+- (BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    DBAccount *account = [[DBAccountManager sharedManager] handleOpenURL:url];
+    if(account){
+        DBFilesystem *filesystem = [[DBFilesystem alloc] initWithAccount:account];
+        [DBFilesystem setSharedFilesystem:filesystem];
+        NSLog(@"Linked to Dropbox!");
+        return YES;
+    }
+    return NO;
+}
 
 - (void) setupFetchedResultsController
 {
@@ -93,11 +108,10 @@
     return _coreDataHelper;
 }
 
+/*
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    /*
-     */
+ 
     [self cdh];
     
     [self setupFetchedResultsController];
@@ -109,19 +123,19 @@
     else {
         NSLog(@"There's stuff in the database so skipping the import of default data.");
     }
-    /*
-    EAPMainViewController *controller = (EAPMainViewController *)self.window.rootViewController;
-    controller.managedObjectContext = self.coreDataHelper.context;
-    
-    if(![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
-        [self.fetchedResultsController performFetch:nil];
-    }
-    else {
-        NSLog(@"il conto di fetchResult è diverso 0");
-    }
-    
-    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
-     */
+ 
+//    EAPMainViewController *controller = (EAPMainViewController *)self.window.rootViewController;
+//    controller.managedObjectContext = self.coreDataHelper.context;
+//
+//  if(![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+//        [self.fetchedResultsController performFetch:nil];
+//    }
+//    else {
+//        NSLog(@"il conto di fetchResult è diverso 0");
+//    }
+//
+//    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
+ 
     
     EAPInitialViewController *controller = (EAPInitialViewController *)self.window.rootViewController;
     controller.managedObjectContext = self.coreDataHelper.context;
@@ -137,7 +151,50 @@
     
     return YES;
 }
-							
+*/
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    if (debug==1) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
+    
+    DBAccountManager *accountMgr = [[DBAccountManager alloc] initWithAppKey:APP_KEY secret:APP_SECRET];
+    [DBAccountManager setSharedManager:accountMgr];
+    DBAccount *account = accountMgr.linkedAccount;
+    if (account) {
+        DBFilesystem *filesystem = [[DBFilesystem alloc] initWithAccount:account];
+        [DBFilesystem setSharedFilesystem:filesystem];
+    }
+     /* vecchio codice */
+    [self cdh];
+    
+    [self setupFetchedResultsController];
+    
+    if (![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+        NSLog(@"!!!!! ~~> There's nothing in the database so defaults will be inserted");
+        [self importCoreDataDefaultPeople];
+    }
+    else {
+        NSLog(@"There's stuff in the database so skipping the import of default data.");
+    }
+        
+    EAPInitialViewController *controller = (EAPInitialViewController *)self.window.rootViewController;
+    controller.managedObjectContext = self.coreDataHelper.context;
+    
+    if(![[self.fetchedResultsController fetchedObjects] count] > 0 ) {
+        [self.fetchedResultsController performFetch:nil];
+    }
+    else {
+        NSLog(@"il conto di fetchResult è diverso 0");
+    }
+    
+    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
+    /* fine vecchio codice */
+    
+    return YES;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

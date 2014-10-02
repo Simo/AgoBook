@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Dropbox/Dropbox.h>
 #import "CoreDataHelper.h"
 
 @interface EAPAppDelegate : UIResponder <UIApplicationDelegate>
