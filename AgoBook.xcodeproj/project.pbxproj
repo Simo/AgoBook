@@ -10,8 +10,15 @@
 		25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25071F4C199024F600A01A02 /* EAPInitialViewController.m */; };
 		25071F5119902DAE00A01A02 /* EAPListaPersoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25071F5019902DAE00A01A02 /* EAPListaPersoneTableViewController.m */; };
 		250C285E18A67EC900164FDA /* EAPNuovaSedutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */; };
+		2518810919CCB49E00A4F2CD /* EAPDropboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2518810819CCB49E00A4F2CD /* EAPDropboxTableViewController.m */; };
 		2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
 		2519007618BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */; };
+		251A012A19CB6EBC00813278 /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A012919CB6EBC00813278 /* Dropbox.framework */; };
+		251A012C19CB6F1C00813278 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A012B19CB6F1C00813278 /* libc++.dylib */; };
+		251A012E19CB6F2B00813278 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A012D19CB6F2B00813278 /* CFNetwork.framework */; };
+		251A013019CB6F3300813278 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A012F19CB6F3300813278 /* Security.framework */; };
+		251A013219CB6F4D00813278 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A013119CB6F4D00813278 /* SystemConfiguration.framework */; };
+		251A013419CB6F5800813278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A013319CB6F5800813278 /* QuartzCore.framework */; };
 		252B4154199EA35E00CD5CA0 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */; };
 		252B4155199EA35E00CD5CA0 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */; };
 		252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */; };
@@ -24,6 +31,7 @@
 		2545F7D018970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
 		25463ABF187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
+		2563BAA419CBA5CD007F7C0A /* DropboxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563BAA319CBA5CD007F7C0A /* DropboxHelper.m */; };
 		2565A194199CF04E004A1302 /* EAPPopOverPazientiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565A193199CF04E004A1302 /* EAPPopOverPazientiViewController.m */; };
 		256C96FC199E421B00CED613 /* StoriaEmotiva.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C96FB199E421B00CED613 /* StoriaEmotiva.m */; };
 		256C96FF199E565400CED613 /* EAPSidebarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C96FE199E565400CED613 /* EAPSidebarNavigationController.m */; };
@@ -100,6 +108,30 @@
 		25DCF235184E75700010F119 /* EAPEmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF233184E75700010F119 /* EAPEmptySegue.m */; };
 		25DCF23A184E77300010F119 /* EAPSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF239184E77300010F119 /* EAPSideBarViewController.m */; };
 		25DCF23B184E77300010F119 /* EAPSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCF239184E77300010F119 /* EAPSideBarViewController.m */; };
+		25E754AE19CDD89A00BFDF64 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7547F19CDD89A00BFDF64 /* FileInZipInfo.m */; };
+		25E754AF19CDD89A00BFDF64 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548219CDD89A00BFDF64 /* ioapi.c */; };
+		25E754B019CDD89A00BFDF64 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548419CDD89A00BFDF64 /* mztools.c */; };
+		25E754B119CDD89A00BFDF64 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548619CDD89A00BFDF64 /* unzip.c */; };
+		25E754B219CDD89A00BFDF64 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548819CDD89A00BFDF64 /* zip.c */; };
+		25E754B319CDD89A00BFDF64 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548C19CDD89A00BFDF64 /* ZipException.m */; };
+		25E754B419CDD89A00BFDF64 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7548E19CDD89A00BFDF64 /* ZipFile.m */; };
+		25E754B519CDD89A00BFDF64 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549019CDD89A00BFDF64 /* ZipReadStream.m */; };
+		25E754B619CDD89A00BFDF64 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549219CDD89A00BFDF64 /* ZipWriteStream.m */; };
+		25E754B719CDD89A00BFDF64 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549419CDD89A00BFDF64 /* adler32.c */; };
+		25E754B819CDD89A00BFDF64 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549519CDD89A00BFDF64 /* compress.c */; };
+		25E754B919CDD89A00BFDF64 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549619CDD89A00BFDF64 /* crc32.c */; };
+		25E754BA19CDD89A00BFDF64 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549819CDD89A00BFDF64 /* deflate.c */; };
+		25E754BB19CDD89A00BFDF64 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549A19CDD89A00BFDF64 /* gzclose.c */; };
+		25E754BC19CDD89A00BFDF64 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549C19CDD89A00BFDF64 /* gzlib.c */; };
+		25E754BD19CDD89A00BFDF64 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549D19CDD89A00BFDF64 /* gzread.c */; };
+		25E754BE19CDD89A00BFDF64 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549E19CDD89A00BFDF64 /* gzwrite.c */; };
+		25E754BF19CDD89A00BFDF64 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E7549F19CDD89A00BFDF64 /* infback.c */; };
+		25E754C019CDD89A00BFDF64 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A019CDD89A00BFDF64 /* inffast.c */; };
+		25E754C119CDD89A00BFDF64 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A319CDD89A00BFDF64 /* inflate.c */; };
+		25E754C219CDD89A00BFDF64 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A519CDD89A00BFDF64 /* inftrees.c */; };
+		25E754C319CDD89A00BFDF64 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A719CDD89A00BFDF64 /* trees.c */; };
+		25E754C419CDD89A00BFDF64 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A919CDD89A00BFDF64 /* uncompr.c */; };
+		25E754C519CDD89A00BFDF64 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754AC19CDD89A00BFDF64 /* zutil.c */; };
 		25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED82521852FC73009C0EB9 /* MagicalImportFunctions.m */; };
 		25ED828B1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED82521852FC73009C0EB9 /* MagicalImportFunctions.m */; };
 		25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED82541852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m */; };
@@ -176,8 +208,16 @@
 		25071F5019902DAE00A01A02 /* EAPListaPersoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPListaPersoneTableViewController.m; sourceTree = "<group>"; };
 		250C285C18A67EC900164FDA /* EAPNuovaSedutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPNuovaSedutaViewController.h; sourceTree = "<group>"; };
 		250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPNuovaSedutaViewController.m; sourceTree = "<group>"; };
+		2518810719CCB49E00A4F2CD /* EAPDropboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPDropboxTableViewController.h; sourceTree = "<group>"; };
+		2518810819CCB49E00A4F2CD /* EAPDropboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPDropboxTableViewController.m; sourceTree = "<group>"; };
 		2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntiNuovaSedutaCell.h; sourceTree = "<group>"; };
 		2519007418BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntiNuovaSedutaCell.m; sourceTree = "<group>"; };
+		251A012919CB6EBC00813278 /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dropbox.framework; sourceTree = "<group>"; };
+		251A012B19CB6F1C00813278 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		251A012D19CB6F2B00813278 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		251A012F19CB6F3300813278 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		251A013119CB6F4D00813278 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		251A013319CB6F5800813278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		252B414E199EA35E00CD5CA0 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		252B4150199EA35E00CD5CA0 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
@@ -197,6 +237,8 @@
 		25463ABC187DF199001F9D2C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		255CB5E9196B20DD00269949 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2563BAA219CBA5CD007F7C0A /* DropboxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxHelper.h; sourceTree = "<group>"; };
+		2563BAA319CBA5CD007F7C0A /* DropboxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxHelper.m; sourceTree = "<group>"; };
 		2565A192199CF04E004A1302 /* EAPPopOverPazientiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPopOverPazientiViewController.h; sourceTree = "<group>"; };
 		2565A193199CF04E004A1302 /* EAPPopOverPazientiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPopOverPazientiViewController.m; sourceTree = "<group>"; };
 		256BD5791953755700AE9106 /* AgoBook 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 4.xcdatamodel"; sourceTree = "<group>"; };
@@ -304,6 +346,53 @@
 		25DCF233184E75700010F119 /* EAPEmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPEmptySegue.m; sourceTree = "<group>"; };
 		25DCF238184E77300010F119 /* EAPSideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSideBarViewController.h; sourceTree = "<group>"; };
 		25DCF239184E77300010F119 /* EAPSideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSideBarViewController.m; sourceTree = "<group>"; };
+		25E7547D19CDD89A00BFDF64 /* ARCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCHelper.h; sourceTree = "<group>"; };
+		25E7547E19CDD89A00BFDF64 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		25E7547F19CDD89A00BFDF64 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
+		25E7548119CDD89A00BFDF64 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		25E7548219CDD89A00BFDF64 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		25E7548319CDD89A00BFDF64 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		25E7548419CDD89A00BFDF64 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		25E7548519CDD89A00BFDF64 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		25E7548619CDD89A00BFDF64 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		25E7548719CDD89A00BFDF64 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		25E7548819CDD89A00BFDF64 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		25E7548919CDD89A00BFDF64 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		25E7548A19CDD89A00BFDF64 /* Objective-Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Zip.h"; sourceTree = "<group>"; };
+		25E7548B19CDD89A00BFDF64 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		25E7548C19CDD89A00BFDF64 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
+		25E7548D19CDD89A00BFDF64 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		25E7548E19CDD89A00BFDF64 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
+		25E7548F19CDD89A00BFDF64 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		25E7549019CDD89A00BFDF64 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
+		25E7549119CDD89A00BFDF64 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		25E7549219CDD89A00BFDF64 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
+		25E7549419CDD89A00BFDF64 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		25E7549519CDD89A00BFDF64 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		25E7549619CDD89A00BFDF64 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		25E7549719CDD89A00BFDF64 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		25E7549819CDD89A00BFDF64 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		25E7549919CDD89A00BFDF64 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		25E7549A19CDD89A00BFDF64 /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
+		25E7549B19CDD89A00BFDF64 /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		25E7549C19CDD89A00BFDF64 /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
+		25E7549D19CDD89A00BFDF64 /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
+		25E7549E19CDD89A00BFDF64 /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
+		25E7549F19CDD89A00BFDF64 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		25E754A019CDD89A00BFDF64 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		25E754A119CDD89A00BFDF64 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		25E754A219CDD89A00BFDF64 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		25E754A319CDD89A00BFDF64 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		25E754A419CDD89A00BFDF64 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		25E754A519CDD89A00BFDF64 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		25E754A619CDD89A00BFDF64 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		25E754A719CDD89A00BFDF64 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		25E754A819CDD89A00BFDF64 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		25E754A919CDD89A00BFDF64 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		25E754AA19CDD89A00BFDF64 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		25E754AB19CDD89A00BFDF64 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		25E754AC19CDD89A00BFDF64 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		25E754AD19CDD89A00BFDF64 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		25ED82511852FC73009C0EB9 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		25ED82521852FC73009C0EB9 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		25ED82531852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -371,7 +460,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251A013419CB6F5800813278 /* QuartzCore.framework in Frameworks */,
+				251A013219CB6F4D00813278 /* SystemConfiguration.framework in Frameworks */,
+				251A013019CB6F3300813278 /* Security.framework in Frameworks */,
+				251A012E19CB6F2B00813278 /* CFNetwork.framework in Frameworks */,
+				251A012C19CB6F1C00813278 /* libc++.dylib in Frameworks */,
 				259E0DFA194C9DA300AF2E85 /* CoreText.framework in Frameworks */,
+				251A012A19CB6EBC00813278 /* Dropbox.framework in Frameworks */,
 				25DCF1EE184E71E80010F119 /* UIKit.framework in Frameworks */,
 				25DCF1F0184E71E80010F119 /* Foundation.framework in Frameworks */,
 				25DCF1F2184E71E80010F119 /* CoreGraphics.framework in Frameworks */,
@@ -404,6 +499,7 @@
 		250C285A18A6770B00164FDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2563BAA119CBA5A7007F7C0A /* DropboxHelper */,
 				252B414D199EA31800CD5CA0 /* JVFloatLabeledTextField */,
 				25D3B401197C54D90080EFDC /* TextFields */,
 				256F316618FDCC08003114D5 /* Tokenized */,
@@ -422,6 +518,15 @@
 				25C6EE5C18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m */,
 			);
 			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		2518810619CCB47B00A4F2CD /* DropBox */ = {
+			isa = PBXGroup;
+			children = (
+				2518810719CCB49E00A4F2CD /* EAPDropboxTableViewController.h */,
+				2518810819CCB49E00A4F2CD /* EAPDropboxTableViewController.m */,
+			);
+			name = DropBox;
 			sourceTree = "<group>";
 		};
 		252B414D199EA31800CD5CA0 /* JVFloatLabeledTextField */ = {
@@ -509,6 +614,15 @@
 				2543C26819726B5200EAB5DD /* SegnoTag.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2563BAA119CBA5A7007F7C0A /* DropboxHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2563BAA219CBA5CD007F7C0A /* DropboxHelper.h */,
+				2563BAA319CBA5CD007F7C0A /* DropboxHelper.m */,
+			);
+			name = DropboxHelper;
 			sourceTree = "<group>";
 		};
 		256F316618FDCC08003114D5 /* Tokenized */ = {
@@ -644,6 +758,7 @@
 		25DCF1E1184E71E80010F119 = {
 			isa = PBXGroup;
 			children = (
+				25E7547B19CDD89A00BFDF64 /* Objective-Zip */,
 				25ED824E1852FC73009C0EB9 /* MagicalRecord */,
 				25DCF1F5184E71E80010F119 /* AgoBook */,
 				25DCF220184E71E80010F119 /* AgoBookTests */,
@@ -664,6 +779,12 @@
 		25DCF1EC184E71E80010F119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				251A013319CB6F5800813278 /* QuartzCore.framework */,
+				251A013119CB6F4D00813278 /* SystemConfiguration.framework */,
+				251A012F19CB6F3300813278 /* Security.framework */,
+				251A012D19CB6F2B00813278 /* CFNetwork.framework */,
+				251A012B19CB6F1C00813278 /* libc++.dylib */,
+				251A012919CB6EBC00813278 /* Dropbox.framework */,
 				255CB5E9196B20DD00269949 /* XCTest.framework */,
 				259E0DF9194C9DA300AF2E85 /* CoreText.framework */,
 				25DCF1ED184E71E80010F119 /* UIKit.framework */,
@@ -742,6 +863,7 @@
 		25DCF236184E77170010F119 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2518810619CCB47B00A4F2CD /* DropBox */,
 				25392D8D1997EA6E00C5C10A /* PatientsList */,
 				2544C1491997492E00460451 /* Pictures */,
 				25071F4E19902D6300A01A02 /* Home */,
@@ -760,6 +882,84 @@
 				256C96FE199E565400CED613 /* EAPSidebarNavigationController.m */,
 			);
 			name = SideBarMenu;
+			sourceTree = "<group>";
+		};
+		25E7547B19CDD89A00BFDF64 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				25E7547C19CDD89A00BFDF64 /* ARCHelper */,
+				25E7547E19CDD89A00BFDF64 /* FileInZipInfo.h */,
+				25E7547F19CDD89A00BFDF64 /* FileInZipInfo.m */,
+				25E7548019CDD89A00BFDF64 /* MiniZip */,
+				25E7548A19CDD89A00BFDF64 /* Objective-Zip.h */,
+				25E7548B19CDD89A00BFDF64 /* ZipException.h */,
+				25E7548C19CDD89A00BFDF64 /* ZipException.m */,
+				25E7548D19CDD89A00BFDF64 /* ZipFile.h */,
+				25E7548E19CDD89A00BFDF64 /* ZipFile.m */,
+				25E7548F19CDD89A00BFDF64 /* ZipReadStream.h */,
+				25E7549019CDD89A00BFDF64 /* ZipReadStream.m */,
+				25E7549119CDD89A00BFDF64 /* ZipWriteStream.h */,
+				25E7549219CDD89A00BFDF64 /* ZipWriteStream.m */,
+				25E7549319CDD89A00BFDF64 /* ZLib */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		25E7547C19CDD89A00BFDF64 /* ARCHelper */ = {
+			isa = PBXGroup;
+			children = (
+				25E7547D19CDD89A00BFDF64 /* ARCHelper.h */,
+			);
+			path = ARCHelper;
+			sourceTree = "<group>";
+		};
+		25E7548019CDD89A00BFDF64 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				25E7548119CDD89A00BFDF64 /* crypt.h */,
+				25E7548219CDD89A00BFDF64 /* ioapi.c */,
+				25E7548319CDD89A00BFDF64 /* ioapi.h */,
+				25E7548419CDD89A00BFDF64 /* mztools.c */,
+				25E7548519CDD89A00BFDF64 /* mztools.h */,
+				25E7548619CDD89A00BFDF64 /* unzip.c */,
+				25E7548719CDD89A00BFDF64 /* unzip.h */,
+				25E7548819CDD89A00BFDF64 /* zip.c */,
+				25E7548919CDD89A00BFDF64 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		25E7549319CDD89A00BFDF64 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				25E7549419CDD89A00BFDF64 /* adler32.c */,
+				25E7549519CDD89A00BFDF64 /* compress.c */,
+				25E7549619CDD89A00BFDF64 /* crc32.c */,
+				25E7549719CDD89A00BFDF64 /* crc32.h */,
+				25E7549819CDD89A00BFDF64 /* deflate.c */,
+				25E7549919CDD89A00BFDF64 /* deflate.h */,
+				25E7549A19CDD89A00BFDF64 /* gzclose.c */,
+				25E7549B19CDD89A00BFDF64 /* gzguts.h */,
+				25E7549C19CDD89A00BFDF64 /* gzlib.c */,
+				25E7549D19CDD89A00BFDF64 /* gzread.c */,
+				25E7549E19CDD89A00BFDF64 /* gzwrite.c */,
+				25E7549F19CDD89A00BFDF64 /* infback.c */,
+				25E754A019CDD89A00BFDF64 /* inffast.c */,
+				25E754A119CDD89A00BFDF64 /* inffast.h */,
+				25E754A219CDD89A00BFDF64 /* inffixed.h */,
+				25E754A319CDD89A00BFDF64 /* inflate.c */,
+				25E754A419CDD89A00BFDF64 /* inflate.h */,
+				25E754A519CDD89A00BFDF64 /* inftrees.c */,
+				25E754A619CDD89A00BFDF64 /* inftrees.h */,
+				25E754A719CDD89A00BFDF64 /* trees.c */,
+				25E754A819CDD89A00BFDF64 /* trees.h */,
+				25E754A919CDD89A00BFDF64 /* uncompr.c */,
+				25E754AA19CDD89A00BFDF64 /* zconf.h */,
+				25E754AB19CDD89A00BFDF64 /* zlib.h */,
+				25E754AC19CDD89A00BFDF64 /* zutil.c */,
+				25E754AD19CDD89A00BFDF64 /* zutil.h */,
+			);
+			path = ZLib;
 			sourceTree = "<group>";
 		};
 		25ED824E1852FC73009C0EB9 /* MagicalRecord */ = {
@@ -932,6 +1132,11 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Simone Bierti";
+				TargetAttributes = {
+					25DCF1E9184E71E80010F119 = {
+						DevelopmentTeam = 3DX44U277G;
+					};
+				};
 			};
 			buildConfigurationList = 25DCF1E5184E71E80010F119 /* Build configuration list for PBXProject "AgoBook" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -995,6 +1200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E754C119CDD89A00BFDF64 /* inflate.c in Sources */,
+				25E754AE19CDD89A00BFDF64 /* FileInZipInfo.m in Sources */,
 				25DCF1FC184E71E80010F119 /* main.m in Sources */,
 				25DCF200184E71E80010F119 /* EAPAppDelegate.m in Sources */,
 				25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */,
@@ -1005,22 +1212,33 @@
 				2543C26919726B5300EAB5DD /* SegnoTag.m in Sources */,
 				25DCF23A184E77300010F119 /* EAPSideBarViewController.m in Sources */,
 				25BD2D67195B494A00A3EA37 /* Punto.m in Sources */,
+				2518810919CCB49E00A4F2CD /* EAPDropboxTableViewController.m in Sources */,
 				25D983FE184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */,
+				25E754B819CDD89A00BFDF64 /* compress.c in Sources */,
+				25E754BE19CDD89A00BFDF64 /* gzwrite.c in Sources */,
 				2591881019A5381B002A9261 /* EAPPuntoProgressBar.m in Sources */,
 				25D3B404197C550D0080EFDC /* EAPTextField.m in Sources */,
 				256C96FF199E565400CED613 /* EAPSidebarNavigationController.m in Sources */,
+				25E754B519CDD89A00BFDF64 /* ZipReadStream.m in Sources */,
 				25C6EE6118A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				25CE231C184FABCB00AD84F4 /* EAPAnagraficaViewController.m in Sources */,
 				25BD2D76195B494B00A3EA37 /* EsameObiettivo.m in Sources */,
 				25BD2D70195B494B00A3EA37 /* Famiglia.m in Sources */,
+				25E754BF19CDD89A00BFDF64 /* infback.c in Sources */,
+				25E754B619CDD89A00BFDF64 /* ZipWriteStream.m in Sources */,
 				25CE2320184FBC6900AD84F4 /* EAPStoriaMedicaViewController.m in Sources */,
+				25E754C519CDD89A00BFDF64 /* zutil.c in Sources */,
 				256C96FC199E421B00CED613 /* StoriaEmotiva.m in Sources */,
+				25E754C319CDD89A00BFDF64 /* trees.c in Sources */,
 				25CE2324184FBD8000AD84F4 /* EAPStoriaEmotivaViewController.m in Sources */,
 				256F316918FDCC50003114D5 /* SBRTTokenButton.m in Sources */,
+				2563BAA419CBA5CD007F7C0A /* DropboxHelper.m in Sources */,
 				25CE2328184FBEAD00AD84F4 /* EAPRassegnaSegniViewController.m in Sources */,
 				25F4898918B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */,
+				25E754BC19CDD89A00BFDF64 /* gzlib.c in Sources */,
 				25FC340D18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */,
 				2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */,
+				25E754C019CDD89A00BFDF64 /* inffast.c in Sources */,
 				25BD2D94195B494B00A3EA37 /* Diagnosi.m in Sources */,
 				252B4154199EA35E00CD5CA0 /* JVFloatLabeledTextField.m in Sources */,
 				25BD2D6A195B494B00A3EA37 /* Segno.m in Sources */,
@@ -1028,18 +1246,24 @@
 				25CE2333184FC6AD00AD84F4 /* EAPSeduteViewController.m in Sources */,
 				25BD2D7C195B494B00A3EA37 /* Anamnesi.m in Sources */,
 				25CE2337184FC6BC00AD84F4 /* EAPPuntiViewController.m in Sources */,
+				25E754B919CDD89A00BFDF64 /* crc32.c in Sources */,
 				25BD2D97195B494B00A3EA37 /* SegnoPersonale.m in Sources */,
 				25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				25BD2D6D195B494B00A3EA37 /* Lavoro.m in Sources */,
+				25E754B419CDD89A00BFDF64 /* ZipFile.m in Sources */,
 				25CE233B184FC6D500AD84F4 /* EAPProblemiViewController.m in Sources */,
 				25071F5119902DAE00A01A02 /* EAPListaPersoneTableViewController.m in Sources */,
+				25E754B219CDD89A00BFDF64 /* zip.c in Sources */,
 				25CE233F184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */,
 				25CE2345184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */,
+				25E754B119CDD89A00BFDF64 /* unzip.c in Sources */,
 				25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */,
 				25BD2D73195B494B00A3EA37 /* Allegato.m in Sources */,
+				25E754BB19CDD89A00BFDF64 /* gzclose.c in Sources */,
 				25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				25ED828E1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */,
+				25E754BA19CDD89A00BFDF64 /* deflate.c in Sources */,
 				252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */,
 				25BD2D85195B494B00A3EA37 /* Rassegna.m in Sources */,
 				25ED82901852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
@@ -1049,6 +1273,7 @@
 				25ED82921852FC73009C0EB9 /* NSObject+MagicalDataImport.m in Sources */,
 				25BE8689194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m in Sources */,
 				2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */,
+				25E754BD19CDD89A00BFDF64 /* gzread.c in Sources */,
 				2545F7CF18970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */,
 				25ED82941852FC73009C0EB9 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				25ED82961852FC73009C0EB9 /* NSString+MagicalDataImport.m in Sources */,
@@ -1064,14 +1289,19 @@
 				25392D901997EA9E00C5C10A /* EAPPatientsTableViewController.m in Sources */,
 				25ED82A61852FC73009C0EB9 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				25BD2D82195B494B00A3EA37 /* StoriaMedica.m in Sources */,
+				25E754C219CDD89A00BFDF64 /* inftrees.c in Sources */,
 				25BD2D8E195B494B00A3EA37 /* Seduta.m in Sources */,
+				25E754B719CDD89A00BFDF64 /* adler32.c in Sources */,
 				25ED82A81852FC73009C0EB9 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				25E754C419CDD89A00BFDF64 /* uncompr.c in Sources */,
+				25E754B019CDD89A00BFDF64 /* mztools.c in Sources */,
 				25ED82AA1852FC73009C0EB9 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				25ED82AC1852FC73009C0EB9 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				25ED82AE1852FC73009C0EB9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				25ED82B01852FC73009C0EB9 /* MagicalRecord+Actions.m in Sources */,
 				25BD2D8B195B494B00A3EA37 /* Elemento.m in Sources */,
 				25ED82B21852FC73009C0EB9 /* MagicalRecord+ErrorHandling.m in Sources */,
+				25E754AF19CDD89A00BFDF64 /* ioapi.c in Sources */,
 				256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */,
 				25ED82B41852FC73009C0EB9 /* MagicalRecord+iCloud.m in Sources */,
 				25ED82B61852FC73009C0EB9 /* MagicalRecord+Options.m in Sources */,
@@ -1080,6 +1310,7 @@
 				25ED82BA1852FC73009C0EB9 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				25ED82BC1852FC73009C0EB9 /* MagicalRecord.m in Sources */,
 				25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */,
+				25E754B319CDD89A00BFDF64 /* ZipException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1243,6 +1474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoBook/AgoBook-Prefix.pch";
@@ -1258,6 +1490,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
