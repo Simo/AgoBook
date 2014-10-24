@@ -12,6 +12,7 @@
 #import "Persona.h"
 #import "Trattamento.h"
 #import "Seduta.h"
+#import "NSDate+StringConverter.h"
 
 
 @interface EAPListaTrattamentiViewController ()
@@ -22,18 +23,25 @@
 
 #define debug 1
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void) configureFetch {
+    //CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    //self.managedObjectContext = [cdh context];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Trattamento"];
+    request.predicate = [NSPredicate predicateWithFormat:@"persona = %@", self.personaScelta];
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"dataInizio"
+                                                                                     ascending:NO
+                                                                                      selector:@selector(compare:)]];
+    [request setFetchBatchSize:50];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[self.personaScelta managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedResultsController.delegate = self;
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self configureFetch];
+    [self performFetch];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -59,15 +67,26 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.listaTrattamenti count];
+    return [[self.fetchedResultsController fetchedObjects] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"listaTrattamentiCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = [self.listaTrattamenti objectAtIndex:indexPath.row];
+    if (cell == nil && tableView != self.tableView) {
+        cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    }
+    
+    Trattamento *trattamento = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(200, 12, 100, 22)];
+    label.text = [NSString stringWithFormat:@"%@",[trattamento.dataInizio stringFromDate]];
+    [cell.contentView addSubview:label];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",trattamento.descrizione];
     
     return cell;
 }
@@ -115,14 +134,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.behaviorDelegate listaTrattamentiRowSelected:self withIndexPath:indexPath];
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    //[self.behaviorDelegate listaTrattamentiRowSelected:self withIndexPath:indexPath];
+    Trattamento *trattamento = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [self.behaviorDelegate trattamentoSelected:trattamento inController:self];
 }
 
 @end

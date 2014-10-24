@@ -22,7 +22,7 @@
 
 @interface EAPPopOverPazientiViewController : UIViewController <EAPPatientsTableViewControllerDelegate>
 
-@property (weak, nonatomic) id<EAPPPopOverPazientiViewControllerDelegate> delegate;
+@property (weak, nonatomic) id<EAPPPopOverPazientiViewControllerDelegate> delegateAddresser;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) EAPPatientsTableViewController *patientsController;

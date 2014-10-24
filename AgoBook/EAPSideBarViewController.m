@@ -7,6 +7,11 @@
 //
 
 #import "EAPSideBarViewController.h"
+#import "Persona.h"
+#import "Trattamento.h"
+#import "NSDate+StringConverter.h"
+
+#define BACKHOME @"backHomeSegue"
 
 @interface EAPSideBarViewController ()
 
@@ -27,6 +32,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"dataInizio" ascending:NO]];
+    
+    NSArray *sortedTrattamenti = [[self.personaScelta.trattamenti allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    Trattamento *trattamento = [sortedTrattamenti objectAtIndex:0];
+    
+    NSString *titolo = [NSString stringWithFormat:@"%@ (del %@)",trattamento.descrizione,[trattamento.dataInizio stringFromDate]];
+    
+    self.ultimoTrattamento.textLabel.text = titolo;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,6 +57,16 @@
     //    [self openAnagraficaView];
     //}
     //[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:BACKHOME]) {
+        // codice da eseguire
+    }
 }
 
 @end

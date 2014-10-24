@@ -2,14 +2,14 @@
 //  Punto.h
 //  AgoBook
 //
-//  Created by Simone Bierti on 25/06/14.
+//  Created by Simone Bierti on 23/10/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Seduta;
+@class AcuPoint, Seduta;
 
 @interface Punto : NSManagedObject
 
@@ -20,5 +20,6 @@
 @property (nonatomic, retain) NSString * punto;
 @property (nonatomic, retain) NSString * tempoAppl;
 @property (nonatomic, retain) Seduta *seduta;
+@property (nonatomic, retain) AcuPoint *acupoint;
 
 @end

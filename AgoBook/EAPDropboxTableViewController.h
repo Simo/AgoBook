@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) NSMutableArray *contents;
 @property (assign, nonatomic) BOOL loading;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
 
 @property (strong, nonatomic) UIActionSheet *options;
 @property (strong, nonatomic) UIAlertView *confirmRestore;

@@ -53,8 +53,12 @@
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-    // inserisce il tag per il segnoPersonale della cella
-    [self insertSegnoTagWithDescrizione:textField.text];
+    // inserisce il tag per il segnoPersonale della cella solo se il testo non e' vuoto o solo composto da spazi
+    if(![[textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""])
+    {
+        [self insertSegnoTagWithDescrizione:textField.text];
+    }
+    
     //[self.delegate reloadDataOnTableView:self];
     //textField.text = @"";
     //textField.placeholder = @"placeholder3";

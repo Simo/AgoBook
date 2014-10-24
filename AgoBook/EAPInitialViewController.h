@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EAPMainViewController.h"
 #import "EAPPopOverPazientiViewController.h"
 
 @class Persona;

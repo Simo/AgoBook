@@ -26,6 +26,12 @@
     self.sideBarChildViewController.delegate = self;
     [self.sideBarViewContainer addSubview:self.sideBarChildViewController.view];
      */
+    if (!self.personaScelta.nome) {
+        [self.navBarTitle setTitle:[NSString stringWithFormat:@"Inserisci nome e cognome del paziente"]];
+    } else {
+        [self.navBarTitle setTitle:[NSString stringWithFormat:@"Cartella di %@ %@", self.personaScelta.nome, self.personaScelta.cognome]];
+    }
+    
     
 }
 
@@ -81,10 +87,12 @@
         popoverController.delegate = self;
     } else if ([segue.identifier isEqualToString:@"embedContentContainer"]) {
         self.contentContainer = segue.destinationViewController;
+        self.contentContainer.delegate = self;
         self.contentContainer.persona = self.personaScelta;
     } else if ([segue.identifier isEqualToString:@"sideBarSegue"]){
         self.sideBarChildViewController = segue.destinationViewController;
         self.sideBarChildViewController.delegate2 = self;
+        self.sideBarChildViewController.personaScelta = self.personaScelta;
     }
 }
 
@@ -96,6 +104,12 @@
     } else {
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
+}
+
+-(void)modifyTitleBarWithString:(NSString *)testo
+{
+    [self.navBarTitle setTitle:[NSString stringWithFormat:@"%@",testo]];
+    NSLog(@"dentro main");
 }
 
 @end

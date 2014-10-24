@@ -7,16 +7,19 @@
 //
 
 #import "EAPFlipsideViewController.h"
+#import "EAPContentContainerViewController.h"
 #import "EAPSideBarViewController.h"
 #import "EAPContentContainerViewController.h"
 
 @class Persona;
 
-@interface EAPMainViewController : UIViewController <EAPFlipsideViewControllerDelegate, UIPopoverControllerDelegate, EAPSideBarViewControllerDelegate>
+
+@interface EAPMainViewController : UIViewController <EAPFlipsideViewControllerDelegate, UIPopoverControllerDelegate, EAPSideBarViewControllerDelegate,EAPContentContainerViewControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (weak, nonatomic) Persona *personaScelta;
 
+@property (strong, nonatomic) IBOutlet UINavigationItem *navBarTitle;
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
 @property (strong, nonatomic) IBOutlet UIView *sideBarViewContainer;

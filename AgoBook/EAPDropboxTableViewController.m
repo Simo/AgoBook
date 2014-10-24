@@ -8,6 +8,10 @@
 
 #import "EAPDropboxTableViewController.h"
 
+#define BACKUP_CREATED @"A backup has been created. It will appear in the Apps/Grocery Dude directory of your Dropbox. Consider removing old backups when you no longer require them"
+#define SUCCESS @"Success"
+#define FAILED @"Failed"
+
 @interface EAPDropboxTableViewController ()
 
 @end
@@ -89,6 +93,21 @@ NSInteger sort(DBFileInfo *a, DBFileInfo *b, void *ctx)
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *dropbox = [[UIBarButtonItem alloc]initWithTitle:@"Backup"
+                                                             style:UIBarButtonItemStylePlain
+                                                            target:self
+                                                              action:@selector(backup:)];
+    
+    UIBarButtonItem *fixedItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    fixedItem.width = 20.0f;
+    
+    UIBarButtonItem *restore = [[UIBarButtonItem alloc]initWithTitle:@"Carica"
+                                                               style:UIBarButtonItemStylePlain
+                                                              target:self
+                                                              action:@selector(restore)];
+    
+    self.navItem.rightBarButtonItems = [NSArray arrayWithObjects:dropbox,fixedItem,restore, nil];
+    
     _contents = [NSMutableArray new];
     _loading = NO;
     DBAccount *account = [[DBAccountManager sharedManager] linkedAccount];
@@ -148,10 +167,10 @@ NSInteger sort(DBFileInfo *a, DBFileInfo *b, void *ctx)
     NSString *title;
     NSString *message;
     if (success) {
-        title = [NSString stringWithFormat:@"Success"];
-        message = [NSString stringWithFormat:@"A backup has been created. It will appear in the Apps/Grocery Dude directory of your Dropbox. Consider removing old backups when you no longer require them"];
+        title = [NSString stringWithFormat:SUCCESS];
+        message = [NSString stringWithFormat:BACKUP_CREATED];
     } else {
-        title = [NSString stringWithFormat:@"Fail"];
+        title = [NSString stringWithFormat:FAILED];
         message = @"You must be logged in to Dropbox to create backups";
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
@@ -166,10 +185,14 @@ NSInteger sort(DBFileInfo *a, DBFileInfo *b, void *ctx)
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
+
+
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section {
     return [_contents count];
 }
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Backup Cell";
@@ -295,7 +318,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                                   cancelButtonTitle:@"Cancel"
                              destructiveButtonTitle:nil
                                   otherButtonTitles:toggleLink,restore, nil];
-    [_options showFromTabBar:self.navigationController.tabBarController.tabBar];
+    //[_options showFromTabBar:self.navigationController.tabBarController.tabBar];
+    [_options showFromBarButtonItem:sender animated:YES];
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     DBAccount *account = [[DBAccountManager sharedManager] linkedAccount];

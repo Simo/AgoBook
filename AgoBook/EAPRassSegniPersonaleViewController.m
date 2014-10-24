@@ -15,6 +15,10 @@
 #import "SegnoPersonale.h"
 #import "SegnoTag.h"
 #import "Elemento.h"
+#import "NSDate+StringConverter.h"
+#import "EAPRassegnaGenerator.h"
+
+#define RassegneIdentifier @"popOverRassegne"
 
 @interface EAPRassSegniPersonaleViewController ()
 
@@ -35,33 +39,47 @@
 
 #pragma mark - DATA
 
-- (void) configureFetch {
-    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+- (void) configureFetch:(Rassegna *)rassegna {
+    //CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    //NSArray *au = [self.selectedPersona.rassegnaSegni allObjects];
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SegnoPersonale"];
-    //request.predicate = [NSPredicate predicateWithFormat:@"ZPERSONA = %i", self.selectedPersonId];
+    request.predicate = [NSPredicate predicateWithFormat:@"rassegna = %@",rassegna];
+    //NSLog(@"%@", [self.selectedPersona.rassegnaSegni all]);
     request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"segno.priority"
                                                                                      ascending:YES
-                                                                                      selector:@selector(localizedCaseInsensitiveCompare:)]];;
+                                                                                      selector:@selector(compare:)]];;
     [request setFetchBatchSize:50];
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:cdh.context sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[self.selectedPersona managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
      self.fetchedResultsController.delegate = self;
     
 }
 
 - (void) fetchTags {
-    CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    //CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SegnoTag"];
     request.sortDescriptors = @[];
-    self.fetchedTags = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:cdh.context sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedTags = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[self.selectedPersona managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self configureFetch];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"dataInserimento" ascending:NO]];
+    
+    NSArray *sortedRassegna = [[self.selectedPersona.rassegnaSegni allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    
+    [self configureFetch:[sortedRassegna objectAtIndex:0]];
     [self performFetch];
     self.rass = [self.fetchedResultsController fetchedObjects];
+    
+    self.UINavItem.title = [NSString stringWithFormat:@"Rassegna segni del %@", [[[sortedRassegna objectAtIndex:0] dataInserimento] stringFromDate]];
+    self.UINavItem.rightBarButtonItem.title = [NSString stringWithFormat:@"Rassegne (%lu)", (unsigned long)[sortedRassegna count]];
+
+    //NSArray *au = [self.selectedPersona.rassegnaSegni allObjects];
+    //self.rass = [[[au objectAtIndex:0] segnipersonali] allObjects];
+    
     //NSLog(@"questo e il frutto del fetch: %lu", (unsigned long)[self.rass count]);
     //Rassegna *rass = [[(Rassegna *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0] ]];
 }
@@ -114,7 +132,8 @@
     SegnoPersonale *segno = (SegnoPersonale *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     [cell setSegnoPersonale:segno];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 250, 45)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 5, 250, 45)];
+    [label setFont:[UIFont fontWithName:@"HFFZeldomZen" size:22]];
     [cell.contentView addSubview:label];
     
     // imposta il nome del segno nel label
@@ -213,15 +232,39 @@
     [self.tableView reloadData];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:RassegneIdentifier])
+    {
+        self.popOverRassegne = segue.destinationViewController;
+        self.popOverRassegne.personaScelta = self.selectedPersona;
+        self.popOverRassegne.behaviorDelegate = self;
+    }
 }
-*/
+
+- (void)openRassegna:(Rassegna *)rassegna fromController:(EAPPopOverRassegneViewController *)controller
+{
+    [self configureFetch:rassegna];
+    [self performFetch];
+    self.rass = [self.fetchedResultsController fetchedObjects];
+    self.UINavItem.title = [NSString stringWithFormat:@"Rassegna segni del %@", [[rassegna dataInserimento] stringFromDate]];
+    [self.tableView reloadData];
+}
+
+- (IBAction)aggiungiRassegna:(id)sender
+{
+    EAPRassegnaGenerator *generatore = [[EAPRassegnaGenerator alloc] initWithPersona:self.selectedPersona];
+    Rassegna *nuovaRassegna = [generatore creaRassegnaPerPersona:self.selectedPersona];
+    [self configureFetch:nuovaRassegna];
+    [self performFetch];
+    self.rass = [self.fetchedResultsController fetchedObjects];
+    self.UINavItem.title = [NSString stringWithFormat:@"Rassegna segni del %@", [[nuovaRassegna dataInserimento] stringFromDate]];
+    self.UINavItem.rightBarButtonItem.title = [NSString stringWithFormat:@"Rassegne (%lu)", (unsigned long)[[self.selectedPersona.rassegnaSegni allObjects] count]];
+    [self.tableView reloadData];
+}
 
 @end

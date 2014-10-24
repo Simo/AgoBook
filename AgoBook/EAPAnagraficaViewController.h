@@ -14,7 +14,7 @@
 @class EAPAnagraficaViewController;
 
 @protocol EAPAnagraficaViewControllerDelegate
-
+- (void) modifyTitleBarWithString:(NSString *)testo;
 @end
 
 @interface EAPAnagraficaViewController : EAPContainedCommonViewController <UITextFieldDelegate,UITextViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>

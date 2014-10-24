@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CoreDataHelper : NSObject
+@interface CoreDataHelper : NSObject <UIAlertViewDelegate,NSXMLParserDelegate>
 
 @property (nonatomic, readonly) NSManagedObjectContext       *parentContext;
 @property (nonatomic, readonly) NSManagedObjectContext       *context;
@@ -23,6 +23,7 @@
 @property (nonatomic, readonly) NSPersistentStore            *sourceStore;
 
 //@property (nonatomic, retain) MigrationVC *migrationVC;
+@property (nonatomic, strong) NSXMLParser *parser;
 
 @property (nonatomic, retain) UIAlertView *importAlertView;
 

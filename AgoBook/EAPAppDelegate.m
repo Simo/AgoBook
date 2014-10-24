@@ -21,6 +21,8 @@
 #import "Rassegna.h"
 #import "SegnoTag.h"
 #import "SegnoPersonale.h"
+#import "NSString+DateConverter.h"
+#import "EAPTrattamentoGenerator.h"
 #define debug 1
 
 #define APP_KEY @"pqaw2jqm6rd5j87"
@@ -78,7 +80,7 @@
     
     request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"priority"
                                                                                      ascending:YES
-                                                                                      selector:@selector(localizedCaseInsensitiveCompare:)]];
+                                                                                      selector:@selector(compare:)]];
     
     
     
@@ -191,6 +193,17 @@
     
     controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
     /* fine vecchio codice */
+    
+    
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
     
     return YES;
 }
@@ -339,12 +352,12 @@
     
     [diagnosi setSedute:setSedute];
     
-    Trattamento *trattamento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Trattamento" inManagedObjectContext:[[self cdh] context]];
-    [trattamento1 setDiagnosi:diagnosi];
+    //Trattamento *trattamento1 = [NSEntityDescription insertNewObjectForEntityForName:@"Trattamento" inManagedObjectContext:[[self cdh] context]];
+    //[trattamento1 setDiagnosi:diagnosi];
     
-    NSSet *setTrattamenti = [[NSSet alloc] initWithObjects:trattamento1, nil];
+   // NSSet *setTrattamenti = [[NSSet alloc] initWithObjects:trattamento1, nil];
     
-    [persona setTrattamenti:setTrattamenti];
+    //[persona setTrattamenti:setTrattamenti];
     
     return persona;
 }
@@ -352,6 +365,8 @@
 
 -(void) insertRassegnaForPersona:(Persona *)persona {
     Rassegna *rassegna = [NSEntityDescription insertNewObjectForEntityForName:@"Rassegna" inManagedObjectContext:[[self cdh] context]];
+    NSString * dataIns = [NSString stringWithFormat:@"14/10/2014"];
+    [rassegna setDataInserimento:[dataIns dateFromString]];
     // recupera la lista dei segni disponibili
     NSArray * segni = [self listaSegni];
     // per ognuno dei segni stabiliti creo un riferimento
@@ -366,9 +381,30 @@
         segnoP.tags = [[NSSet alloc] initWithObjects:tag1, nil];
         [rassegna addSegnipersonaliObject:segnoP];
     }
-        persona.rassegnaSegni = rassegna;
-    
+        //persona.rassegnaSegni = rassegna;
+    [persona addRassegnaSegniObject:rassegna];
+}
 
+-(void) insertRassegna2ForPersona:(Persona *)persona2 {
+    Rassegna *rassegna2 = [NSEntityDescription insertNewObjectForEntityForName:@"Rassegna" inManagedObjectContext:[[self cdh] context]];
+    NSString * dataIns2 = [NSString stringWithFormat:@"12/10/2014"];
+    [rassegna2 setDataInserimento:[dataIns2 dateFromString]];
+    // recupera la lista dei segni disponibili
+    NSArray * segni2 = [self listaSegni];
+    // per ognuno dei segni stabiliti creo un riferimento
+    for (Segno *segno2 in segni2) {
+        //crea un segno personale al quale appendere il segno in questione
+        SegnoPersonale *segnoP2 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoPersonale" inManagedObjectContext:[[self cdh] context]];
+        [segnoP2 setSegno:segno2];
+        // crea un tag da aggiungere al set dei tag
+        SegnoTag *tag12 = [NSEntityDescription insertNewObjectForEntityForName:@"SegnoTag" inManagedObjectContext:[[self cdh] context]];
+        // diamo una prima stringa al tag
+        [tag12 setDescrizione:[NSString stringWithFormat:@"%@", @([segno2.priority intValue] * 100)]];
+        segnoP2.tags = [[NSSet alloc] initWithObjects:tag12, nil];
+        [rassegna2 addSegnipersonaliObject:segnoP2];
+    }
+    //persona.rassegnaSegni = rassegna;
+    [persona2 addRassegnaSegniObject:rassegna2];
 }
 
 -(void) importCoreDataDefaultPeople {
@@ -402,8 +438,12 @@
     [self insertSegnoWithNome:@"LINGUA" descrizione:@"" priority:@24];
     
     [[self cdh] saveContext];
+    
     [self insertRassegnaForPersona:persona];
-   [[self cdh] saveContext]; 
+    [self insertRassegna2ForPersona:persona];
+    EAPTrattamentoGenerator *trattGen = [[EAPTrattamentoGenerator alloc] initWithMoc:persona.managedObjectContext];
+    [trattGen creaTrattamentoPerPersona:persona];
+    [[self cdh] saveContext];
     
 }
 

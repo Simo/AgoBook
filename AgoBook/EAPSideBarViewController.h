@@ -9,16 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @class EAPSideBarViewController;
+@class Persona;
 
 @protocol EAPSideBarViewControllerDelegate
 @optional
--(void) willLoadAnagraficaViewController:(EAPSideBarViewController *)controller;
--(void) willLoadRespectiveViewController:(EAPSideBarViewController *)controller indexPath:(NSIndexPath *)indexPath;
+- (void) willLoadAnagraficaViewController:(EAPSideBarViewController *)controller;
+- (void) willLoadRespectiveViewController:(EAPSideBarViewController *)controller indexPath:(NSIndexPath *)indexPath;
 @end
 
 @interface EAPSideBarViewController : UITableViewController  <UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet id <EAPSideBarViewControllerDelegate> delegate2;
 
+@property (strong, nonatomic) Persona *personaScelta;
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *ultimoTrattamento;
 
 @end

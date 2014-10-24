@@ -9,6 +9,8 @@
 #import "CoreDataTableViewController.h"
 #import "EAPSegnoPersonaleTableViewCell.h"
 #import "Persona.h"
+#import "Rassegna.h"
+#import "EAPPopOverRassegneViewController.h"
 
 @class EAPRassSegniPersonaleViewController;
 
@@ -19,14 +21,20 @@
 
 @end
 
-@interface EAPRassSegniPersonaleViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,EAPSegnoPersonaleTableViewCellDelegate>
+@interface EAPRassSegniPersonaleViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,EAPSegnoPersonaleTableViewCellDelegate,EAPPopOverRassegneViewControllerDelegate>
 
 @property (weak,nonatomic) id<EAPRassSegniPersonaleViewControllerDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UINavigationBar *tableNavBar;
+@property (strong, nonatomic) IBOutlet UINavigationItem *UINavItem;
+
 @property (strong,nonatomic) Persona *selectedPersona;
 @property (strong, nonatomic) NSManagedObjectID *selectedPersonId;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedTags;
 @property (strong, nonatomic) NSArray *fetchedSegni;
+@property (strong, nonatomic) Rassegna * rassegna;
 
+@property (strong, nonatomic) EAPPopOverRassegneViewController *popOverRassegne;
 
 -(void)reloadDataOnTableView:(EAPSegnoPersonaleTableViewCell *)controller;
 

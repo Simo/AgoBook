@@ -13,10 +13,18 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
+#import "NSDate+StringConverter.h"
+#import "NSString+DateConverter.h"
 
+#define NOMEPERSONA @"Nome?"
+#define COGNOMEPERSONA @"Cognome?"
 #define debug 1
 
+
 @interface EAPAnagraficaViewController ()
+
+@property (strong, nonatomic) NSString *nomeInserito;
+@property (strong, nonatomic) NSString *cognomeInserito;
 
 @end
 
@@ -43,14 +51,25 @@
     self.nomeTextField.text = [self.selectedPerson.nome capitalizedString];
     self.cognomeTextField.text = [self.selectedPerson.cognome capitalizedString];
     self.imageView.image = [[UIImage alloc] initWithData:self.selectedPerson.foto];
-    
+    self.dataNascitaTextField.text = [self.selectedPerson.dataNascita stringFromDate];
     self.nucleoTextView.text = self.selectedPerson.famiglia.nucleo;
     self.nucleoCommentiTextView.text = self.selectedPerson.famiglia.commenti;
+    if(!self.selectedPerson.nome){
+        self.nomeInserito = NOMEPERSONA;
+    } else {
+        self.nomeInserito = self.selectedPerson.nome;
+    }
+    if(!self.selectedPerson.cognome){
+        self.cognomeInserito = COGNOMEPERSONA;
+    } else {
+        self.cognomeInserito = self.selectedPerson.cognome;
+    }
 }
 
 -(void)updateContextFields{
     self.selectedPerson.nome = self.nomeTextField.text;
     self.selectedPerson.cognome = self.cognomeTextField.text;
+    self.selectedPerson.dataNascita = [self.dataNascitaTextField.text dateFromString];
     self.selectedPerson.famiglia.nucleo = self.nucleoTextView.text;
     self.selectedPerson.famiglia.commenti = self.nucleoCommentiTextView.text;
 }
@@ -76,6 +95,7 @@
     // aggiunge l'oggetto alla scrollview
     self.nomeTextField = [self createJVFLTextFieldForElement:self.nomeTextField withLabel:@"Nome" andFrame:CGRectMake(442.0, 125.0, 175.0, 44.0)];
     self.nomeTextField.delegate = self;
+    [self.nomeTextField setTag:1001];
     [self.scrollView addSubview:self.nomeTextField];
     [self.scrollView addSubview:[self generateBorderForTextField:self.nomeTextField]];
     
@@ -84,6 +104,7 @@
     // aggiunge l'oggetto alla scrollview
     self.cognomeTextField = [self createJVFLTextFieldForElement:self.cognomeTextField withLabel:@"Cognome" andFrame:CGRectMake(442.0, 176.0, 175.0, 44.0)];
     self.cognomeTextField.delegate = self;
+    [self.cognomeTextField setTag:1002];
     [self.scrollView addSubview:self.cognomeTextField];
     [self.scrollView addSubview:[self generateBorderForTextField:self.cognomeTextField]];
     
@@ -124,6 +145,17 @@
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
+    if([self.nomeInserito isEqualToString:NOMEPERSONA] || [self.cognomeInserito isEqualToString:COGNOMEPERSONA]){
+        if(textField.tag == 1001){
+            self.nomeInserito = textField.text;
+            NSString *titoloCompleto = [NSString stringWithFormat:@"Cartella di %@ %@",[self.nomeInserito capitalizedString],[self.cognomeInserito capitalizedString]];
+            [self.delegate modifyTitleBarWithString:titoloCompleto];
+        } else if(textField.tag == 1002) {
+            self.cognomeInserito = textField.text;
+            NSString *titoloCompleto = [NSString stringWithFormat:@"Cartella di %@ %@",[self.nomeInserito capitalizedString],[self.cognomeInserito capitalizedString]];
+            [self.delegate modifyTitleBarWithString:titoloCompleto];
+        }
+    }
     [self updateContextFields];
 }
 

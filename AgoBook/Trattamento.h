@@ -2,7 +2,7 @@
 //  Trattamento.h
 //  AgoBook
 //
-//  Created by Simone Bierti on 25/06/14.
+//  Created by Simone Bierti on 19/10/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSNumber * concluso;
 @property (nonatomic, retain) NSDate * dataFine;
 @property (nonatomic, retain) NSDate * dataInizio;
+@property (nonatomic, retain) NSString * descrizione;
 @property (nonatomic, retain) Anamnesi *anamnesi;
 @property (nonatomic, retain) Diagnosi *diagnosi;
 @property (nonatomic, retain) EsameObiettivo *esameObiettivo;

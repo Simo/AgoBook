@@ -27,7 +27,8 @@
 */
 
 -(void)awakeFromNib {
-    self.contentSizeForViewInPopover = CGSizeMake(300.0, 500.0);
+    //self.contentSizeForViewInPopover = CGSizeMake(300.0, 500.0);
+    self.preferredContentSize = CGSizeMake(300.0, 500.0);
     [super awakeFromNib];
 }
 
@@ -59,17 +60,17 @@
 }
 
 -(void) openPersonaDiary:(Persona *)persona fromController:(EAPPatientsTableViewController *)controller {
-    [self.delegate openPersonaDiary:persona fromController:self];
     [self done:nil];
+    [self.delegateAddresser openPersonaDiary:persona fromController:self];
 }
 
 -(IBAction) aggiungiNuovaPersona:(id) sender {
-    [self.delegate aggiungiNuovaPersona:self];
     [self done:nil];
+    [self.delegateAddresser aggiungiNuovaPersona:self];
 }
 
 -(void)done:(id)sender {
-    [self.delegate pazientiPopoverDidFinish:self];
+    [self.delegateAddresser pazientiPopoverDidFinish:self];
 }
 
 @end

@@ -15,11 +15,20 @@
 #import "EAPNuovaSedutaViewController.h"
 #import "EAPRassSegniPersonaleViewController.h"
 
+@class EAPContentContainerViewController;
 @class Persona;
+
+@protocol EAPContentContainerViewControllerDelegate <NSObject>
+
+- (void) modifyTitleBarWithString:(NSString *)testo;
+
+@end
 
 @interface EAPContentContainerViewController : UIViewController <EAPAnagraficaViewControllerDelegate, EAPStoriaMedicaViewControllerDelegate ,EAPStoriaEmotivaViewControllerDelegate, EAPRassSegniPersonaleViewControllerDelegate, EAPTrattamentiViewControllerDelegate>
 
 @property (weak, nonatomic) Persona *persona;
+
+@property (weak, nonatomic) id<EAPContentContainerViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) EAPAnagraficaViewController *anagraficaVC;
 @property (strong, nonatomic) EAPStoriaMedicaViewController *storiaMedicaVC;

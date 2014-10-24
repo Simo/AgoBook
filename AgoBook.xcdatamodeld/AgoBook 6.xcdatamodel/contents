@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Allegato" representedClassName="Allegato" syncable="YES">
         <attribute name="dataInsert" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
@@ -136,7 +136,7 @@
         <element name="Segno" positionX="-252" positionY="29" width="128" height="133"/>
         <element name="SegnoPersonale" positionX="-11" positionY="198" width="128" height="103"/>
         <element name="SegnoTag" positionX="205" positionY="224" width="128" height="73"/>
-        <element name="StoriaEmotiva" positionX="-621" positionY="45" width="128" height="30"/>
+        <element name="StoriaEmotiva" positionX="-623" positionY="99" width="128" height="223"/>
         <element name="StoriaMedica" positionX="-234" positionY="-423" width="128" height="165"/>
         <element name="Trattamento" positionX="-63" positionY="-639" width="128" height="150"/>
     </elements>

@@ -28,6 +28,8 @@
 
 @property (strong, nonatomic) NSArray *array;
 
+@property (strong, nonatomic) Persona *selectedPerson;
+
 - (IBAction)segmentChanged:(UISegmentedControl *)sender;
 
 @end

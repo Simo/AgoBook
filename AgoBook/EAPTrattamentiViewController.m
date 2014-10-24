@@ -45,7 +45,8 @@
     if ([segue.identifier isEqualToString:@"ListaTrattamentiSegue"]) {
         self.listaTrattamentiVC = segue.destinationViewController;
         self.listaTrattamentiVC.behaviorDelegate = self;
-        self.listaTrattamentiVC.listaTrattamenti = [[NSArray alloc] initWithObjects:@"Trattamento 1",@"Trattamento 2",nil];
+        self.listaTrattamentiVC.personaScelta = self.selectedPerson;
+        //self.listaTrattamentiVC.listaTrattamenti = [[NSArray alloc] initWithObjects:@"Trattamento 1",@"Trattamento 2",nil];
     } else if ([segue.identifier isEqualToString:@"DettaglioTrattamentoSegue"]){
         self.dettaglioTrattamentoVC = segue.destinationViewController;
         self.dettaglioTrattamentoVC.behaviorDelegate = self;
@@ -58,6 +59,11 @@
 {
     self.dettaglioTrattamentoVC.listaSedutePerSeduteVC = [self.array objectAtIndex:indexPath.row];
     [self.dettaglioTrattamentoVC caricaChildVC:@"ProblemiSegue"];
+}
+
+- (void)trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller
+{
+    
 }
 
 #pragma mark - DettaglioContainer delegate's methods

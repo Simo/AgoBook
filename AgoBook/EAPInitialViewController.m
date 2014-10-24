@@ -7,8 +7,10 @@
 //
 
 #import "EAPInitialViewController.h"
-#import "EAPMainViewController.h"
+#import "EAPAppDelegate.h"
+#import "CoreDataHelper.h"
 #import "Persona.h"
+#import "EAPRassegnaGenerator.h"
 
 
 #define DiaryIdentifier @"DiarySegue"
@@ -28,7 +30,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -38,6 +39,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.personaScelta = nil;
+    if (!_managedObjectContext) {
+        CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+        _managedObjectContext = [cdh context];
+    }
+    UIImage *image = [UIImage imageNamed:@"base.png"];
+    //UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [self.view insertSubview:imageView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +61,7 @@
         self.mainController.personaScelta = self.personaScelta;
         [segue.destinationViewController didMoveToParentViewController:self];
     } else if([segue.identifier isEqualToString:ListaPazientiIdentifier]){
-        [[segue destinationViewController] setDelegate:self];
+        [[segue destinationViewController] setDelegateAddresser:self];
         UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
         self.pazientiPopoverController = popoverController;
         popoverController.delegate = self;
@@ -66,19 +75,14 @@
 }
 
 -(void)aggiungiNuovaPersona:(EAPPopOverPazientiViewController *)controller {
+    NSLog(@"moc: %@",self.managedObjectContext);
+    NSLog(@"ps: %@",self.personaScelta);
     self.personaScelta = [NSEntityDescription insertNewObjectForEntityForName:@"Persona" inManagedObjectContext:self.managedObjectContext];
+    EAPRassegnaGenerator *generatore = [[EAPRassegnaGenerator alloc] initWithPersona:self.personaScelta];
+    Rassegna *nuovaRassegna = [generatore creaRassegnaPerPersona:self.personaScelta];
+    [self.personaScelta addRassegnaSegniObject:nuovaRassegna];
     [self performSegueWithIdentifier:DiaryIdentifier sender:self];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(void)pazientiPopoverDidFinish:(EAPPopOverPazientiViewController *)controller {
     [self.pazientiPopoverController dismissPopoverAnimated:NO];

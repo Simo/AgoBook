@@ -82,6 +82,8 @@
     self.selectedPerson.storiaemotiva.oraPeggiore = self.oraInvisaTextField.text;
     self.selectedPerson.storiaemotiva.saporePref = self.saporePreferitoTextField.text;
     self.selectedPerson.storiaemotiva.saporeOdiato = self.saporeInvisoTextField.text;
+    
+    NSLog(@"%@",self.selectedPerson.storiaemotiva.colorePref);
 }
 
 - (void)viewDidLoad
@@ -89,8 +91,55 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //[self.delegate populateStoriaEmotivaFields:self];
-    [self recuperaStoriaEmotivaPersona:self.selectedPerson];
-    [self impostaDelegato:self];
+    if(!self.selectedPerson.storiaemotiva){
+        StoriaEmotiva *storiaEmotiva = [NSEntityDescription insertNewObjectForEntityForName:@"StoriaEmotiva" inManagedObjectContext:self.selectedPerson.managedObjectContext];
+        self.selectedPerson.storiaemotiva = storiaEmotiva;
+    }
+    //[self recuperaStoriaEmotivaPersona:self.selectedPerson];
+    self.autodescrizioneTextView = [self createJVFLTextViewForElement:self.autodescrizioneTextView withLabel:@"Autodescrizione" andFrame:CGRectMake(20, 70, 650, 88)];
+    [self.autodescrizioneTextView setDelegate:self];
+    [self.scrollView addSubview:self.autodescrizioneTextView];
+    
+    self.storiaPersonaleTextView = [self createJVFLTextViewForElement:self.storiaPersonaleTextView withLabel:@"Storia Emotiva Personale" andFrame:CGRectMake(20, 170, 650, 88)];
+    [self.storiaPersonaleTextView setDelegate:self];
+    [self.scrollView addSubview:self.storiaPersonaleTextView];
+    
+    self.cosaNonPiaceTextView = [self createJVFLTextViewForElement:self.cosaNonPiaceTextView withLabel:@"Cosa non piace" andFrame:CGRectMake(20, 560, 650, 88)];
+    [self.cosaNonPiaceTextView setDelegate:self];
+    [self.scrollView addSubview:self.cosaNonPiaceTextView];
+    
+    self.colorePreferitoTextField = [self createJVFLTextFieldForElement:self.colorePreferitoTextField withLabel:@"Colore preferito" andFrame:CGRectMake(132, 314, 208, 30)];
+    [self.colorePreferitoTextField setDelegate:self];
+    [self.scrollView addSubview:self.colorePreferitoTextField];
+    
+    self.coloreInvisoTextField = [self createJVFLTextFieldForElement:self.coloreInvisoTextField withLabel:@"Colore inviso" andFrame:CGRectMake(364, 314, 208, 30)];
+    [self.coloreInvisoTextField setDelegate:self];
+    [self.scrollView addSubview:self.coloreInvisoTextField];
+    
+    self.stagionePreferitaTextField = [self createJVFLTextFieldForElement:self.stagionePreferitaTextField withLabel:@"Stagione preferita" andFrame:CGRectMake(132, 375, 208, 30)];
+    [self.stagionePreferitaTextField setDelegate:self];
+    [self.scrollView addSubview:self.stagionePreferitaTextField];
+    
+    self.stagioneInvisaTextField = [self createJVFLTextFieldForElement:self.stagioneInvisaTextField withLabel:@"Stagione invisa" andFrame:CGRectMake(364, 375, 208, 30)];
+    [self.stagioneInvisaTextField setDelegate:self];
+    [self.scrollView addSubview:self.stagioneInvisaTextField];
+    
+    self.oraPreferitaTextField = [self createJVFLTextFieldForElement:self.oraPreferitaTextField withLabel:@"Ora preferita" andFrame:CGRectMake(132, 436, 208, 30)];
+    [self.oraPreferitaTextField setDelegate:self];
+    [self.scrollView addSubview:self.oraPreferitaTextField];
+    
+    self.oraInvisaTextField = [self createJVFLTextFieldForElement:self.oraInvisaTextField withLabel:@"Ora invisa" andFrame:CGRectMake(364, 436, 208, 30)];
+    [self.oraInvisaTextField setDelegate:self];
+    [self.scrollView addSubview:self.oraInvisaTextField];
+    
+    self.saporePreferitoTextField = [self createJVFLTextFieldForElement:self.saporePreferitoTextField withLabel:@"Sapore preferito" andFrame:CGRectMake(132, 503, 208, 30)];
+    [self.saporePreferitoTextField setDelegate:self];
+    [self.scrollView addSubview:self.saporePreferitoTextField];
+    
+    self.saporeInvisoTextField = [self createJVFLTextFieldForElement:self.saporeInvisoTextField withLabel:@"Sapore inviso" andFrame:CGRectMake(364, 503, 208, 30)];
+    [self.saporeInvisoTextField setDelegate:self];
+    [self.scrollView addSubview:self.saporeInvisoTextField];
+    
     [self refreshInterface];
 }
 

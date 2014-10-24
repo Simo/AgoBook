@@ -44,7 +44,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    NSLog(@"%@",self.behaviorDelegate);
     [self configureFetch];
     [self performFetch];
     self.searchResults = [NSMutableArray arrayWithCapacity:[[self.fetchedResultsController fetchedObjects] count]];

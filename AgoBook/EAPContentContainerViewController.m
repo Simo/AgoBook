@@ -123,6 +123,7 @@
         if(!self.rassegnaSegniVC){
             self.rassegnaSegniVC = segue.destinationViewController;
             self.rassegnaSegniVC.delegate = self;
+            self.rassegnaSegniVC.selectedPersona = self.persona;
             self.rassegnaSegniVC.selectedPersonId = [self.persona objectID];
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
@@ -139,6 +140,7 @@
         if(!self.trattamentiVC){
             self.trattamentiVC = segue.destinationViewController;
             self.trattamentiVC.delegate = self;
+            self.trattamentiVC.selectedPerson = self.persona;
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
@@ -245,6 +247,12 @@
 
 -(void)apriNuovaSedutaViewController:(EAPTrattamentiViewController *)controller {
     [self performSegueWithIdentifier:SegueIdentifierNuovaSeduta sender:nil];
+}
+
+- (void) modifyTitleBarWithString:(NSString *)testo
+{
+    [self.delegate modifyTitleBarWithString:testo];
+    NSLog(@"dentro container");
 }
 
 @end

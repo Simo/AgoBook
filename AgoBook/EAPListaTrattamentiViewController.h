@@ -10,10 +10,13 @@
 #import "CoreDataTableViewController.h"
 
 @class EAPListaTrattamentiViewController;
+@class Persona;
+@class Trattamento;
 
 @protocol EAPListaTrattamentiViewControllerDelegate
 
 -(void) listaTrattamentiRowSelected:(EAPListaTrattamentiViewController *)controller withIndexPath:(NSIndexPath *)indexPath;
+- (void) trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller;
 
 @end
 
@@ -23,5 +26,7 @@
 @property (strong,nonatomic) NSArray *listaTrattamenti;
 
 @property (weak, nonatomic) id<EAPListaTrattamentiViewControllerDelegate> behaviorDelegate;
+
+@property (strong, nonatomic) Persona *personaScelta;
 
 @end

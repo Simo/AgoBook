@@ -2,7 +2,7 @@
 //  Persona.h
 //  AgoBook
 //
-//  Created by Simone Bierti on 25/06/14.
+//  Created by Simone Bierti on 14/10/14.
 //  Copyright (c) 2014 Simone Bierti. All rights reserved.
 //
 
@@ -20,13 +20,18 @@
 @property (nonatomic, retain) NSString * sesso;
 @property (nonatomic, retain) Famiglia *famiglia;
 @property (nonatomic, retain) Lavoro *lavoro;
-@property (nonatomic, retain) Rassegna *rassegnaSegni;
+@property (nonatomic, retain) NSSet *rassegnaSegni;
 @property (nonatomic, retain) StoriaEmotiva *storiaemotiva;
 @property (nonatomic, retain) StoriaMedica *storiamedica;
 @property (nonatomic, retain) NSSet *trattamenti;
 @end
 
 @interface Persona (CoreDataGeneratedAccessors)
+
+- (void)addRassegnaSegniObject:(Rassegna *)value;
+- (void)removeRassegnaSegniObject:(Rassegna *)value;
+- (void)addRassegnaSegni:(NSSet *)values;
+- (void)removeRassegnaSegni:(NSSet *)values;
 
 - (void)addTrattamentiObject:(Trattamento *)value;
 - (void)removeTrattamentiObject:(Trattamento *)value;
