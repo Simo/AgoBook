@@ -32,7 +32,9 @@
                                                                                      ascending:NO
                                                                                       selector:@selector(compare:)]];
     [request setFetchBatchSize:50];
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[self.personaScelta managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                        managedObjectContext:[self.personaScelta managedObjectContext]
+                                                                          sectionNameKeyPath:nil cacheName:nil];
     self.fetchedResultsController.delegate = self;
     
 }

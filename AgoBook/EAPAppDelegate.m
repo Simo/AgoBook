@@ -9,6 +9,7 @@
 #import "EAPAppDelegate.h"
 #import "EAPMainViewController.h"
 #import "EAPInitialViewController.h"
+#import "AcuPoint.h"
 #import "Persona.h"
 #import "StoriaMedica.h"
 #import "StoriaEmotiva.h"
@@ -47,7 +48,7 @@
     }
     return NO;
 }
-
+/*
 - (void) setupFetchedResultsController
 {
     // 1 - Decide what Entity you want
@@ -71,6 +72,37 @@
                                                                                    cacheName:nil];
     
     [self.fetchedResultsController performFetch:nil];
+}
+*/
+
+- (void) setupFetchedResultsController
+{
+    // 1 - Decide what Entity you want
+    NSString *entityName = @"AcuPoint"; // Put your entity name here
+    NSLog(@"Setting up a Fetched Results Controller for the Entity named %@", entityName);
+    
+    // 2 - Request that Entity
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    
+    // 3 - Filter it if you want
+    //request.predicate = [NSPredicate predicateWithFormat:@"Person.name = Blah"];
+    
+    // 4 - Sort it if you want
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name"
+                                                                                     ascending:YES
+                                                                                      selector:@selector(localizedCaseInsensitiveCompare:)]];
+    // 5 - Fetch it
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                        managedObjectContext:[[self cdh] context]
+                                                                          sectionNameKeyPath:nil
+                                                                                   cacheName:nil];
+    
+    [self.fetchedResultsController performFetch:nil];
+}
+
+- (NSArray *) acupoints
+{
+    return [self.fetchedResultsController fetchedObjects];
 }
 
 - (NSArray *) listaSegni{
@@ -191,7 +223,7 @@
         NSLog(@"il conto di fetchResult è diverso 0");
     }
     
-    controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
+    //controller.personaScelta = (Persona *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:0];
     /* fine vecchio codice */
     
     

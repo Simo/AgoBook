@@ -30,51 +30,51 @@
 <point name="LI-18" chinese-name="扶突(?)" western-name="Futu" english="Support the Prominence" pinyin="fú tū(?)" han-geul="bu dol 부돌" romaji="fu totsu(?)" alternative="" meridian="LI" num="18" ></point>
 <point name="LI-19" chinese-name="口禾髎" western-name="Kouheliao" english="Mouth Grain Crevice" pinyin="kǒu hé liáo" han-geul="hwa ryo 화료" romaji="ka ryō(?)" alternative="" meridian="LI" num="19" ></point>
 <point name="LI-20" chinese-name="迎香" western-name="Yingxiang" english="Welcome Fragrance" pinyin="yíng xiāng" han-geul="yeong hyang 영향" romaji="gei ko" alternative="" meridian="LI" num="20" ></point>
-<point name="St-1" chinese-name="承泣" western-name="Chengqi" english="Container of Tears" pinyin="chéng qì" han-geul="seung eup 승읍" romaji="shō kyū" alternative="" meridian="ST" num="1" ></point>
-<point name="St-2" chinese-name="四白(?)" western-name="Sibai" english="Four Whites" pinyin="sì bái" han-geul="sa baek 사백" romaji="shi haku" alternative="" meridian="ST" num="2" ></point>
-<point name="St-3" chinese-name="巨髎" western-name="Juliao" english="Great Crevice" pinyin="jù liáo" han-geul="geo ryo 거료" romaji="ko ryō" alternative="" meridian="ST" num="3" ></point>
-<point name="St-4" chinese-name="地倉" western-name="Dicang" english="Earth Granary" pinyin="dì cāng" han-geul="ji chang 지창" romaji="chi so" alternative="" meridian="ST" num="4" ></point>
-<point name="St-5" chinese-name="大迎" western-name="Daying" english="Great Welcome" pinyin="dà yíng" han-geul="dae yeong 대영" romaji="da gei" alternative="" meridian="ST" num="5" ></point>
-<point name="St-6" chinese-name="頰車" western-name="Jiache" english="Jaw Bone" pinyin="jiá chē" han-geul="hyeop geo 협거" romaji="kyō sha" alternative="" meridian="ST" num="6" ></point>
-<point name="St-7" chinese-name="下關" western-name="Xiaguan" english="Below the Joint" pinyin="xià guān" han-geul="ha gwan 하관" romaji="ge kan" alternative="" meridian="ST" num="7" ></point>
-<point name="St-8" chinese-name="頭維" western-name="Touwei" english="Head's Binding" pinyin="tóu wéi" han-geul="du yu 두유" romaji="zu i" alternative="" meridian="ST" num="8" ></point>
-<point name="St-9" chinese-name="人迎" western-name="Renying" english="Man's Welcome" pinyin="rén yíng" han-geul="in yeong 인영" romaji="jin gei" alternative="" meridian="ST" num="9" ></point>
-<point name="St-10" chinese-name="水突(?)" western-name="Shuitu" english="Water Prominence" pinyin="shǔi tū(?)" han-geul="su dol 수돌" romaji="sui totsu(?)" alternative="" meridian="ST" num="10" ></point>
-<point name="St-11" chinese-name="氣舍" western-name="Qishe" english="Abode of Qi" pinyin="qì shè" han-geul="gi sa 기사" romaji="ki sha(?)" alternative="" meridian="ST" num="11" ></point>
-<point name="St-12" chinese-name="缺盆" western-name="Quepen" english="Empty Basin" pinyin="quē pén" han-geul="gyeol bun 결분" romaji="ketsu bon" alternative="" meridian="ST" num="12" ></point>
-<point name="St-13" chinese-name="氣戶" western-name="Qihu" english="Qi Door" pinyin="qì hù" han-geul="gi ho 기호" romaji="ki ko(?)" alternative="" meridian="ST" num="13" ></point>
-<point name="St-14" chinese-name="库房(?)" western-name="Kufang" english="Storehouse" pinyin="kù fáng(?)" han-geul="go bang 고방" romaji="ko bō?" alternative="" meridian="ST" num="14" ></point>
-<point name="St-15" chinese-name="屋翳(?)" western-name="Wuyi" english="Room Screen" pinyin="wū yì(?)" han-geul="ok ye 옥예" romaji="o kuei?" alternative="" meridian="ST" num="15" ></point>
-<point name="St-16" chinese-name="膺窗(?)" western-name="Yingchuang" english="Breast Window" pinyin="yìng chuāng?" han-geul="eung chang 응창" romaji="yō sō?" alternative="" meridian="ST" num="16" ></point>
-<point name="St-17" chinese-name="乳中(?)" western-name="Ruzhong" english="Middle of the Breast" pinyin="rǔ zhōng(?)" han-geul="yu jung 유중" romaji="nyū chū?" alternative="" meridian="ST" num="17" ></point>
-<point name="St-18" chinese-name="乳根" western-name="Rugen" english="Root of the Breast" pinyin="rǔ gēn" han-geul="yu geun 유근" romaji="nyū kon?" alternative="" meridian="ST" num="18" ></point>
-<point name="St-19" chinese-name="不容(?)" western-name="Burong" english="Not Contained" pinyin="bù róng" han-geul="bul yong 불용" romaji="fu yō" alternative="" meridian="ST" num="19" ></point>
-<point name="St-20" chinese-name="承满(?)" western-name="Chengman" english="Supporting Fullness" pinyin="chéng mǎn" han-geul="seng man 승만" romaji="shō man" alternative="" meridian="ST" num="20" ></point>
-<point name="St-21" chinese-name="梁門(?)" western-name="Liangmen" english="Beam Gate" pinyin="liáng mén" han-geul="yang mun 양문" romaji="ryō mon" alternative="" meridian="ST" num="21" ></point>
-<point name="St-22" chinese-name="關門" western-name="Guanmen" english="Pass Gate" pinyin="guān mén" han-geul="gwan mun 관문" romaji="kan mon?" alternative="" meridian="ST" num="22" ></point>
-<point name="St-23" chinese-name="太乙(?)" western-name="Taiyi" english="Supreme Unity" pinyin="tài yǐ(?)" han-geul="tae eul 태을" romaji="tai itsu(?)" alternative="" meridian="ST" num="23" ></point>
-<point name="St-24" chinese-name="滑肉門(?)" western-name="Huaroumen" english="Slippery Flesh Gate" pinyin="huá ròu mén" han-geul="hwal yung mun 활육문" romaji="katsu niku mon" alternative="" meridian="ST" num="24" ></point>
-<point name="St-25" chinese-name="天樞" western-name="Tianshu" english="Heaven's Pivot" pinyin="tiān shū" han-geul="cheon chu 천추" romaji="ten sū" alternative="" meridian="ST" num="25" ></point>
-<point name="St-26" chinese-name="外陵(?)" western-name="Wailing" english="Outer Mound" pinyin="wài líng(?)" han-geul="woe neung 외릉" romaji="gai ryō?" alternative="" meridian="ST" num="26" ></point>
-<point name="St-27" chinese-name="大巨(?)" western-name="Daju" english="The Great" pinyin="dà jù" han-geul="dae geo 대거" romaji="dai ko" alternative="" meridian="ST" num="27" ></point>
-<point name="St-28" chinese-name="水道(?)" western-name="Shuidao" english="Water Passage" pinyin="shuǐ dào?" han-geul="su do 수도" romaji="sui do(?)" alternative="" meridian="ST" num="28" ></point>
-<point name="St-29" chinese-name="归来(?)" western-name="Guilai" english="Return" pinyin="guī lái?" han-geul="gui rae 귀래" romaji="ki rai(?)" alternative="" meridian="ST" num="29" ></point>
-<point name="St-30" chinese-name="氣沖" western-name="Qichong" english="Rushing Qi" pinyin="qì chōng" han-geul="gi chung 기충" romaji="ki shō" alternative="" meridian="ST" num="30" ></point>
-<point name="St-31" chinese-name="髀關" western-name="Biguan" english="Thigh Gate" pinyin="bì guān" han-geul="bi gwan 비관" romaji="hi kan(?)" alternative="" meridian="ST" num="31" ></point>
-<point name="St-32" chinese-name="伏兔(?)" western-name="Futu" english="Crouching Rabbit" pinyin="fú tù" han-geul="bok to 복토" romaji="fuku to" alternative="" meridian="ST" num="32" ></point>
-<point name="St-33" chinese-name="阴市(?)" western-name="Yinshi" english="Yin Market" pinyin="yīn shì(?)" han-geul="eum si 음시" romaji="in shi(?)" alternative="" meridian="ST" num="33" ></point>
-<point name="St-34" chinese-name="梁丘(?)" western-name="Liangqiu" english="Ridge Mound" pinyin="liáng qīu" han-geul="yang gu 양구" romaji="ryō kyū" alternative="" meridian="ST" num="34" ></point>
-<point name="St-35" chinese-name="犊鼻(?)" western-name="Dubi" english="Calf's Nose" pinyin="dú bí" han-geul="dok bi 독비" romaji="toku bi" alternative="" meridian="ST" num="35" ></point>
-<point name="St-36" chinese-name="足三里" western-name="Zusanli" english="Leg Three Miles" pinyin="zú sān lǐ" han-geul="[jok] sam ni [족] 삼리" romaji="ashi san ri" alternative="" meridian="ST" num="36" ></point>
-<point name="St-37" chinese-name="上巨虛" western-name="Shangjuxu" english="Upper Great Void" pinyin="shàng jù xū" han-geul="sang geo heo 상거허" romaji="jō ko kyu" alternative="" meridian="ST" num="37" ></point>
-<point name="St-38" chinese-name="條口(?)" western-name="Tiaokou" english="Lines Opening" pinyin="tiáo kǒu(?)" han-geul="jo gu 조구" romaji="jō kō?" alternative="" meridian="ST" num="38" ></point>
-<point name="St-39" chinese-name="下巨虛" western-name="Xiajuxu" english="Lower Great Void" pinyin="xià jù xū" han-geul="ha geo heo 하거허" romaji="ge ko kyu?" alternative="" meridian="ST" num="39" ></point>
-<point name="St-40" chinese-name="豐隆" western-name="Fenglong" english="Abundant Bulge" pinyin="fēng lóng" han-geul="pung nyung 풍륭" romaji="hō ryū" alternative="" meridian="ST" num="40" ></point>
-<point name="St-41" chinese-name="解谿" western-name="Jiexi" english="Stream Divide" pinyin="jiě xī" han-geul="hae gye 해계" romaji="kai kei" alternative="" meridian="ST" num="41" ></point>
-<point name="St-42" chinese-name="沖陽" western-name="Chongyang" english="Rushing Yang" pinyin="chōng yáng" han-geul="chung yang 충양" romaji="shō yō" alternative="" meridian="ST" num="42" ></point>
-<point name="St-43" chinese-name="陷谷(?)" western-name="Xiangu" english="Sunken Valley" pinyin="xiàn gǔ(?)" han-geul="ham gok 함곡" romaji="kan koku(?)" alternative="" meridian="ST" num="43" ></point>
-<point name="St-44" chinese-name="内庭" western-name="Neiting" english="Inner Courtyard" pinyin="nèi tíng" han-geul="nae jeong 내정" romaji="nai tei(?)" alternative="" meridian="ST" num="44" ></point>
-<point name="St-45" chinese-name="厲兌" western-name="Lidui" english="Strict Exchange" pinyin="lì duì" han-geul="ye tae 예태" romaji="rei da" alternative="" meridian="ST" num="45" ></point>
+<point name="ST-1" chinese-name="承泣" western-name="Chengqi" english="Container of Tears" pinyin="chéng qì" han-geul="seung eup 승읍" romaji="shō kyū" alternative="" meridian="ST" num="1" ></point>
+<point name="ST-2" chinese-name="四白(?)" western-name="Sibai" english="Four Whites" pinyin="sì bái" han-geul="sa baek 사백" romaji="shi haku" alternative="" meridian="ST" num="2" ></point>
+<point name="ST-3" chinese-name="巨髎" western-name="Juliao" english="Great Crevice" pinyin="jù liáo" han-geul="geo ryo 거료" romaji="ko ryō" alternative="" meridian="ST" num="3" ></point>
+<point name="ST-4" chinese-name="地倉" western-name="Dicang" english="Earth Granary" pinyin="dì cāng" han-geul="ji chang 지창" romaji="chi so" alternative="" meridian="ST" num="4" ></point>
+<point name="ST-5" chinese-name="大迎" western-name="Daying" english="Great Welcome" pinyin="dà yíng" han-geul="dae yeong 대영" romaji="da gei" alternative="" meridian="ST" num="5" ></point>
+<point name="ST-6" chinese-name="頰車" western-name="Jiache" english="Jaw Bone" pinyin="jiá chē" han-geul="hyeop geo 협거" romaji="kyō sha" alternative="" meridian="ST" num="6" ></point>
+<point name="ST-7" chinese-name="下關" western-name="Xiaguan" english="Below the Joint" pinyin="xià guān" han-geul="ha gwan 하관" romaji="ge kan" alternative="" meridian="ST" num="7" ></point>
+<point name="ST-8" chinese-name="頭維" western-name="Touwei" english="Head's Binding" pinyin="tóu wéi" han-geul="du yu 두유" romaji="zu i" alternative="" meridian="ST" num="8" ></point>
+<point name="ST-9" chinese-name="人迎" western-name="Renying" english="Man's Welcome" pinyin="rén yíng" han-geul="in yeong 인영" romaji="jin gei" alternative="" meridian="ST" num="9" ></point>
+<point name="ST-10" chinese-name="水突(?)" western-name="Shuitu" english="Water Prominence" pinyin="shǔi tū(?)" han-geul="su dol 수돌" romaji="sui totsu(?)" alternative="" meridian="ST" num="10" ></point>
+<point name="ST-11" chinese-name="氣舍" western-name="Qishe" english="Abode of Qi" pinyin="qì shè" han-geul="gi sa 기사" romaji="ki sha(?)" alternative="" meridian="ST" num="11" ></point>
+<point name="ST-12" chinese-name="缺盆" western-name="Quepen" english="Empty Basin" pinyin="quē pén" han-geul="gyeol bun 결분" romaji="ketsu bon" alternative="" meridian="ST" num="12" ></point>
+<point name="ST-13" chinese-name="氣戶" western-name="Qihu" english="Qi Door" pinyin="qì hù" han-geul="gi ho 기호" romaji="ki ko(?)" alternative="" meridian="ST" num="13" ></point>
+<point name="ST-14" chinese-name="库房(?)" western-name="Kufang" english="Storehouse" pinyin="kù fáng(?)" han-geul="go bang 고방" romaji="ko bō?" alternative="" meridian="ST" num="14" ></point>
+<point name="ST-15" chinese-name="屋翳(?)" western-name="Wuyi" english="Room Screen" pinyin="wū yì(?)" han-geul="ok ye 옥예" romaji="o kuei?" alternative="" meridian="ST" num="15" ></point>
+<point name="ST-16" chinese-name="膺窗(?)" western-name="Yingchuang" english="Breast Window" pinyin="yìng chuāng?" han-geul="eung chang 응창" romaji="yō sō?" alternative="" meridian="ST" num="16" ></point>
+<point name="ST-17" chinese-name="乳中(?)" western-name="Ruzhong" english="Middle of the Breast" pinyin="rǔ zhōng(?)" han-geul="yu jung 유중" romaji="nyū chū?" alternative="" meridian="ST" num="17" ></point>
+<point name="ST-18" chinese-name="乳根" western-name="Rugen" english="Root of the Breast" pinyin="rǔ gēn" han-geul="yu geun 유근" romaji="nyū kon?" alternative="" meridian="ST" num="18" ></point>
+<point name="ST-19" chinese-name="不容(?)" western-name="Burong" english="Not Contained" pinyin="bù róng" han-geul="bul yong 불용" romaji="fu yō" alternative="" meridian="ST" num="19" ></point>
+<point name="ST-20" chinese-name="承满(?)" western-name="Chengman" english="Supporting Fullness" pinyin="chéng mǎn" han-geul="seng man 승만" romaji="shō man" alternative="" meridian="ST" num="20" ></point>
+<point name="ST-21" chinese-name="梁門(?)" western-name="Liangmen" english="Beam Gate" pinyin="liáng mén" han-geul="yang mun 양문" romaji="ryō mon" alternative="" meridian="ST" num="21" ></point>
+<point name="ST-22" chinese-name="關門" western-name="Guanmen" english="Pass Gate" pinyin="guān mén" han-geul="gwan mun 관문" romaji="kan mon?" alternative="" meridian="ST" num="22" ></point>
+<point name="ST-23" chinese-name="太乙(?)" western-name="Taiyi" english="Supreme Unity" pinyin="tài yǐ(?)" han-geul="tae eul 태을" romaji="tai itsu(?)" alternative="" meridian="ST" num="23" ></point>
+<point name="ST-24" chinese-name="滑肉門(?)" western-name="Huaroumen" english="Slippery Flesh Gate" pinyin="huá ròu mén" han-geul="hwal yung mun 활육문" romaji="katsu niku mon" alternative="" meridian="ST" num="24" ></point>
+<point name="ST-25" chinese-name="天樞" western-name="Tianshu" english="Heaven's Pivot" pinyin="tiān shū" han-geul="cheon chu 천추" romaji="ten sū" alternative="" meridian="ST" num="25" ></point>
+<point name="ST-26" chinese-name="外陵(?)" western-name="Wailing" english="Outer Mound" pinyin="wài líng(?)" han-geul="woe neung 외릉" romaji="gai ryō?" alternative="" meridian="ST" num="26" ></point>
+<point name="ST-27" chinese-name="大巨(?)" western-name="Daju" english="The Great" pinyin="dà jù" han-geul="dae geo 대거" romaji="dai ko" alternative="" meridian="ST" num="27" ></point>
+<point name="ST-28" chinese-name="水道(?)" western-name="Shuidao" english="Water Passage" pinyin="shuǐ dào?" han-geul="su do 수도" romaji="sui do(?)" alternative="" meridian="ST" num="28" ></point>
+<point name="ST-29" chinese-name="归来(?)" western-name="Guilai" english="Return" pinyin="guī lái?" han-geul="gui rae 귀래" romaji="ki rai(?)" alternative="" meridian="ST" num="29" ></point>
+<point name="ST-30" chinese-name="氣沖" western-name="Qichong" english="Rushing Qi" pinyin="qì chōng" han-geul="gi chung 기충" romaji="ki shō" alternative="" meridian="ST" num="30" ></point>
+<point name="ST-31" chinese-name="髀關" western-name="Biguan" english="Thigh Gate" pinyin="bì guān" han-geul="bi gwan 비관" romaji="hi kan(?)" alternative="" meridian="ST" num="31" ></point>
+<point name="ST-32" chinese-name="伏兔(?)" western-name="Futu" english="Crouching Rabbit" pinyin="fú tù" han-geul="bok to 복토" romaji="fuku to" alternative="" meridian="ST" num="32" ></point>
+<point name="ST-33" chinese-name="阴市(?)" western-name="Yinshi" english="Yin Market" pinyin="yīn shì(?)" han-geul="eum si 음시" romaji="in shi(?)" alternative="" meridian="ST" num="33" ></point>
+<point name="ST-34" chinese-name="梁丘(?)" western-name="Liangqiu" english="Ridge Mound" pinyin="liáng qīu" han-geul="yang gu 양구" romaji="ryō kyū" alternative="" meridian="ST" num="34" ></point>
+<point name="ST-35" chinese-name="犊鼻(?)" western-name="Dubi" english="Calf's Nose" pinyin="dú bí" han-geul="dok bi 독비" romaji="toku bi" alternative="" meridian="ST" num="35" ></point>
+<point name="ST-36" chinese-name="足三里" western-name="Zusanli" english="Leg Three Miles" pinyin="zú sān lǐ" han-geul="[jok] sam ni [족] 삼리" romaji="ashi san ri" alternative="" meridian="ST" num="36" ></point>
+<point name="ST-37" chinese-name="上巨虛" western-name="Shangjuxu" english="Upper Great Void" pinyin="shàng jù xū" han-geul="sang geo heo 상거허" romaji="jō ko kyu" alternative="" meridian="ST" num="37" ></point>
+<point name="ST-38" chinese-name="條口(?)" western-name="Tiaokou" english="Lines Opening" pinyin="tiáo kǒu(?)" han-geul="jo gu 조구" romaji="jō kō?" alternative="" meridian="ST" num="38" ></point>
+<point name="ST-39" chinese-name="下巨虛" western-name="Xiajuxu" english="Lower Great Void" pinyin="xià jù xū" han-geul="ha geo heo 하거허" romaji="ge ko kyu?" alternative="" meridian="ST" num="39" ></point>
+<point name="ST-40" chinese-name="豐隆" western-name="Fenglong" english="Abundant Bulge" pinyin="fēng lóng" han-geul="pung nyung 풍륭" romaji="hō ryū" alternative="" meridian="ST" num="40" ></point>
+<point name="ST-41" chinese-name="解谿" western-name="Jiexi" english="Stream Divide" pinyin="jiě xī" han-geul="hae gye 해계" romaji="kai kei" alternative="" meridian="ST" num="41" ></point>
+<point name="ST-42" chinese-name="沖陽" western-name="Chongyang" english="Rushing Yang" pinyin="chōng yáng" han-geul="chung yang 충양" romaji="shō yō" alternative="" meridian="ST" num="42" ></point>
+<point name="ST-43" chinese-name="陷谷(?)" western-name="Xiangu" english="Sunken Valley" pinyin="xiàn gǔ(?)" han-geul="ham gok 함곡" romaji="kan koku(?)" alternative="" meridian="ST" num="43" ></point>
+<point name="ST-44" chinese-name="内庭" western-name="Neiting" english="Inner Courtyard" pinyin="nèi tíng" han-geul="nae jeong 내정" romaji="nai tei(?)" alternative="" meridian="ST" num="44" ></point>
+<point name="ST-45" chinese-name="厲兌" western-name="Lidui" english="Strict Exchange" pinyin="lì duì" han-geul="ye tae 예태" romaji="rei da" alternative="" meridian="ST" num="45" ></point>
 <point name="SP-1" chinese-name="隱白" western-name="Yinbai" english="Hidden White" pinyin="yǐn bái" han-geul="eun baek 은백" romaji="im paku" alternative="" meridian="SP" num="1" ></point>
 <point name="SP-2" chinese-name="大都" western-name="Dadu" english="Great Metropolis" pinyin="dà dū" han-geul="dae do 대도" romaji="dai to" alternative="" meridian="SP" num="2" ></point>
 <point name="SP-3" chinese-name="太白" western-name="Taibai" english="Supreme White" pinyin="taì bái" han-geul="tae baek 태백" romaji="tai haku" alternative="" meridian="SP" num="3" ></point>
@@ -191,42 +191,42 @@
 <point name="Bl-65" chinese-name="束骨(?)" western-name="Shugu" english="Restraining Bone" pinyin="shù gǔ(?)" han-geul="sok gol 속골" romaji="sok kotsu?" alternative="" meridian="BL" num="65" ></point>
 <point name="Bl-66" chinese-name="足通谷" western-name="Zutonggu" english="Foot Connecting Valley" pinyin="zú tōng gǔ" han-geul="[jok] tong gok [족]통곡" romaji="ahsi tsū koku?" alternative="" meridian="BL" num="66" ></point>
 <point name="Bl-67" chinese-name="至陰" western-name="Zhiyin" english="Reaching Yin" pinyin="zhì yīn" han-geul="ji eum 지음" romaji="shi in" alternative="" meridian="BL" num="67" ></point>
-<point name="Kd-1" chinese-name="涌泉" western-name="Yong Quan" english="Gushing Spring" pinyin="yǒng quán" han-geul="yong cheon 용천" romaji="yu sen" alternative="" meridian="KD" num="1" ></point>
-<point name="Kd-2" chinese-name="然谷" western-name="Rangu" english="Blazing Valley" pinyin="rán gǔ" han-geul="yeon gok 연곡" romaji="nen koku" alternative="" meridian="KD" num="2" ></point>
-<point name="Kd-3" chinese-name="太谿" western-name="Taixi" english="Supreme Stream" pinyin="taì xī" han-geul="tae yeon 태계" romaji="tai kei" alternative="" meridian="KD" num="3" ></point>
-<point name="Kd-4" chinese-name="大鐘" western-name="Dazhong" english="Great Bell" pinyin="dà zhōng(?)" han-geul="dae jong 대종" romaji="dai shō?" alternative="" meridian="KD" num="4" ></point>
-<point name="Kd-5" chinese-name="水泉" western-name="Shuiquan" english="Water Spring" pinyin="shuǐ quán" han-geul="su cheon 수천" romaji="sui sen" alternative="" meridian="KD" num="5" ></point>
-<point name="Kd-6" chinese-name="照海" western-name="Zhaohai" english="Shining Sea" pinyin="zhào hǎi" han-geul="joh hae 조해" romaji="shō kai" alternative="" meridian="KD" num="6" ></point>
-<point name="Kd-7" chinese-name="復溜" western-name="Fuliu" english="Returning Current" pinyin="fù liū" han-geul="bong nyu 복류" romaji="fuku ryū" alternative="" meridian="KD" num="7" ></point>
-<point name="Kd-8" chinese-name="交信" western-name="Jiaoxin" english="Exchange Belief" pinyin="jiāo xìn(?)" han-geul="gyo sin 교신" romaji="kō shin?" alternative="" meridian="KD" num="8" ></point>
-<point name="Kd-9" chinese-name="築賓" western-name="Zhubin" english="Guest House" pinyin="zhú bīn" han-geul="chuk bin 축빈" romaji="chiku hin" alternative="" meridian="KD" num="9" ></point>
-<point name="Kd-10" chinese-name="陰谷" western-name="Yingu" english="Yin Valley" pinyin="yīn gǔ" han-geul="eum gok 음곡" romaji="in koku" alternative="" meridian="KD" num="10" ></point>
-<point name="Kd-11" chinese-name="橫骨" western-name="Henggu" english="Pubic Bone" pinyin="héng gǔ" han-geul="hoeng gol 횡골" romaji="ō kotsu" alternative="" meridian="KD" num="11" ></point>
-<point name="Kd-12" chinese-name="大赫(?)" western-name="Dahe" english="Great Luminance" pinyin="dà hè" han-geul="dae hyeok 대혁" romaji="tai kaku" alternative="" meridian="KD" num="12" ></point>
-<point name="Kd-13" chinese-name="氣穴" western-name="Qixue" english="Qi Cave" pinyin="qì xué?" han-geul="gi hyeol 기혈" romaji="ki ketsu" alternative="" meridian="KD" num="13" ></point>
-<point name="Kd-14" chinese-name="四滿" western-name="Siman" english="Four Fullnesses" pinyin="sì mǎn" han-geul="sa man 사만" romaji="shi man" alternative="" meridian="KD" num="14" ></point>
-<point name="Kd-15" chinese-name="中注(?)" western-name="Zhongzhu" english="Middle Flow" pinyin="zhōng zhù(?)" han-geul="jung ju 중주" romaji="chū chū" alternative="" meridian="KD" num="15" ></point>
-<point name="Kd-16" chinese-name="肓俞" western-name="Huangshu" english="Vitals Transporter" pinyin="huāng shū" han-geul="hwang yu 황유" romaji="kō yu" alternative="" meridian="KD" num="16" ></point>
-<point name="Kd-17" chinese-name="商曲(?)" western-name="Shangqu" english="Shang Bend" pinyin="shāng qū(?)" han-geul="sang gok 상곡" romaji="shō kyoku" alternative="" meridian="KD" num="17" ></point>
-<point name="Kd-18" chinese-name="石關(?)" western-name="Shiguan" english="Stone Pass" pinyin="shí guān(?)" han-geul="seok gwan 석관" romaji="seki kan" alternative="" meridian="KD" num="18" ></point>
-<point name="Kd-19" chinese-name="陰都" western-name="Yindu" english="Yin Metropolis" pinyin="yīn dū" han-geul="eum do 음도" romaji="in to" alternative="" meridian="KD" num="19" ></point>
-<point name="Kd-20" chinese-name="腹通谷" western-name="Futonggu" english="Abdomen Connecting Valley" pinyin="fù tōng gǔ(?)" han-geul="tong gok 통곡" romaji="hara no tsū koku" alternative="" meridian="KD" num="20" ></point>
-<point name="Kd-21" chinese-name="幽門" western-name="Youmen" english="Hidden Gate" pinyin="yōu mén" han-geul="yu mun 유문" romaji="yū mon" alternative="" meridian="KD" num="21" ></point>
-<point name="Kd-22" chinese-name="步廊(?)" western-name="Bulang" english="Walking Corridor" pinyin="bù láng(?)" han-geul="po rang 포랑" romaji="hō ro?" alternative="" meridian="KD" num="22" ></point>
-<point name="Kd-23" chinese-name="神封" western-name="Shenfeng" english="Spirit Seal" pinyin="shén fēng" han-geul="sin bong 신봉" romaji="shim pō" alternative="" meridian="KD" num="23" ></point>
-<point name="Kd-24" chinese-name="靈墟" western-name="Lingxu" english="Spirit Ruin" pinyin="líng xū(?)" han-geul="yeong heo 영허" romaji="rei kyo(?)" alternative="" meridian="KD" num="24" ></point>
-<point name="Kd-25" chinese-name="神藏" western-name="Shencang" english="Spirit Storehouse" pinyin="shén cáng" han-geul="sin jang 신장" romaji="shin zō" alternative="" meridian="KD" num="25" ></point>
-<point name="Kd-26" chinese-name="彧中" western-name="Yuzhong" english="Comfortable Chest" pinyin="yù zhōng" han-geul="uk jung 욱중/hok jung 혹중" romaji="waku chū" alternative="" meridian="KD" num="26" ></point>
-<point name="Kd-27" chinese-name="俞府" western-name="Shufu" english="Shu Mansion" pinyin="shū fǔ" han-geul="yu bu 유부" romaji="yu fu" alternative="" meridian="KD" num="27" ></point>
-<point name="Pc-1" chinese-name="天池" western-name="Tianchi" english="Heavenly Pool" pinyin="tiān chí" han-geul="cheon ji 천지" romaji="ten chi" alternative="" meridian="PC" num="1" ></point>
-<point name="Pc-2" chinese-name="天泉(?)" western-name="Tianquan" english="Heavenly Spring" pinyin="tiān quán(?)" han-geul="cheon cheon 천천" romaji="ten sen(?)" alternative="" meridian="PC" num="2" ></point>
-<point name="Pc-3" chinese-name="曲澤" western-name="Quze" english="Marsh at the Crook" pinyin="qū zé" han-geul="gok taek 곡택" romaji="kyoku taku(?)" alternative="" meridian="PC" num="3" ></point>
-<point name="Pc-4" chinese-name="郄門" western-name="Ximen" english="Xi-Cleft Gate" pinyin="xī mén" han-geul="geung mun 극문" romaji="geki mon" alternative="" meridian="PC" num="4" ></point>
-<point name="Pc-5" chinese-name="間使" western-name="Jianshi" english="Intermediate Messenger" pinyin="jiān shǐ" han-geul="gan sa 간사" romaji="kan shi(?)" alternative="" meridian="PC" num="5" ></point>
-<point name="Pc-6" chinese-name="內關" western-name="Neiguan" english="Inner Pass" pinyin="nèi guān" han-geul="nae gwan 내관" romaji="nai kan" alternative="" meridian="PC" num="6" ></point>
-<point name="Pc-7" chinese-name="大陵" western-name="Daling" english="Great Mound" pinyin="dà líng" han-geul="dae reung 대릉" romaji="dai ryō" alternative="" meridian="PC" num="7" ></point>
-<point name="Pc-8" chinese-name="勞宮" western-name="Laogong" english="Palace of Toil" pinyin="láo gōng" han-geul="no gung 노궁" romaji="rō kyū" alternative="" meridian="PC" num="8" ></point>
-<point name="Pc-9" chinese-name="中衝" western-name="Zhongchong" english="Middle Rushing" pinyin="zhōng chōng" han-geul="jung chung 중충" romaji="chū shō" alternative="" meridian="PC" num="9" ></point>
+<point name="KD-1" chinese-name="涌泉" western-name="Yong Quan" english="Gushing Spring" pinyin="yǒng quán" han-geul="yong cheon 용천" romaji="yu sen" alternative="" meridian="KD" num="1" ></point>
+<point name="KD-2" chinese-name="然谷" western-name="Rangu" english="Blazing Valley" pinyin="rán gǔ" han-geul="yeon gok 연곡" romaji="nen koku" alternative="" meridian="KD" num="2" ></point>
+<point name="KD-3" chinese-name="太谿" western-name="Taixi" english="Supreme Stream" pinyin="taì xī" han-geul="tae yeon 태계" romaji="tai kei" alternative="" meridian="KD" num="3" ></point>
+<point name="KD-4" chinese-name="大鐘" western-name="Dazhong" english="Great Bell" pinyin="dà zhōng(?)" han-geul="dae jong 대종" romaji="dai shō?" alternative="" meridian="KD" num="4" ></point>
+<point name="KD-5" chinese-name="水泉" western-name="Shuiquan" english="Water Spring" pinyin="shuǐ quán" han-geul="su cheon 수천" romaji="sui sen" alternative="" meridian="KD" num="5" ></point>
+<point name="KD-6" chinese-name="照海" western-name="Zhaohai" english="Shining Sea" pinyin="zhào hǎi" han-geul="joh hae 조해" romaji="shō kai" alternative="" meridian="KD" num="6" ></point>
+<point name="KD-7" chinese-name="復溜" western-name="Fuliu" english="Returning Current" pinyin="fù liū" han-geul="bong nyu 복류" romaji="fuku ryū" alternative="" meridian="KD" num="7" ></point>
+<point name="KD-8" chinese-name="交信" western-name="Jiaoxin" english="Exchange Belief" pinyin="jiāo xìn(?)" han-geul="gyo sin 교신" romaji="kō shin?" alternative="" meridian="KD" num="8" ></point>
+<point name="KD-9" chinese-name="築賓" western-name="Zhubin" english="Guest House" pinyin="zhú bīn" han-geul="chuk bin 축빈" romaji="chiku hin" alternative="" meridian="KD" num="9" ></point>
+<point name="KD-10" chinese-name="陰谷" western-name="Yingu" english="Yin Valley" pinyin="yīn gǔ" han-geul="eum gok 음곡" romaji="in koku" alternative="" meridian="KD" num="10" ></point>
+<point name="KD-11" chinese-name="橫骨" western-name="Henggu" english="Pubic Bone" pinyin="héng gǔ" han-geul="hoeng gol 횡골" romaji="ō kotsu" alternative="" meridian="KD" num="11" ></point>
+<point name="KD-12" chinese-name="大赫(?)" western-name="Dahe" english="Great Luminance" pinyin="dà hè" han-geul="dae hyeok 대혁" romaji="tai kaku" alternative="" meridian="KD" num="12" ></point>
+<point name="KD-13" chinese-name="氣穴" western-name="Qixue" english="Qi Cave" pinyin="qì xué?" han-geul="gi hyeol 기혈" romaji="ki ketsu" alternative="" meridian="KD" num="13" ></point>
+<point name="KD-14" chinese-name="四滿" western-name="Siman" english="Four Fullnesses" pinyin="sì mǎn" han-geul="sa man 사만" romaji="shi man" alternative="" meridian="KD" num="14" ></point>
+<point name="KD-15" chinese-name="中注(?)" western-name="Zhongzhu" english="Middle Flow" pinyin="zhōng zhù(?)" han-geul="jung ju 중주" romaji="chū chū" alternative="" meridian="KD" num="15" ></point>
+<point name="KD-16" chinese-name="肓俞" western-name="Huangshu" english="Vitals Transporter" pinyin="huāng shū" han-geul="hwang yu 황유" romaji="kō yu" alternative="" meridian="KD" num="16" ></point>
+<point name="KD-17" chinese-name="商曲(?)" western-name="Shangqu" english="Shang Bend" pinyin="shāng qū(?)" han-geul="sang gok 상곡" romaji="shō kyoku" alternative="" meridian="KD" num="17" ></point>
+<point name="KD-18" chinese-name="石關(?)" western-name="Shiguan" english="Stone Pass" pinyin="shí guān(?)" han-geul="seok gwan 석관" romaji="seki kan" alternative="" meridian="KD" num="18" ></point>
+<point name="KD-19" chinese-name="陰都" western-name="Yindu" english="Yin Metropolis" pinyin="yīn dū" han-geul="eum do 음도" romaji="in to" alternative="" meridian="KD" num="19" ></point>
+<point name="KD-20" chinese-name="腹通谷" western-name="Futonggu" english="Abdomen Connecting Valley" pinyin="fù tōng gǔ(?)" han-geul="tong gok 통곡" romaji="hara no tsū koku" alternative="" meridian="KD" num="20" ></point>
+<point name="KD-21" chinese-name="幽門" western-name="Youmen" english="Hidden Gate" pinyin="yōu mén" han-geul="yu mun 유문" romaji="yū mon" alternative="" meridian="KD" num="21" ></point>
+<point name="KD-22" chinese-name="步廊(?)" western-name="Bulang" english="Walking Corridor" pinyin="bù láng(?)" han-geul="po rang 포랑" romaji="hō ro?" alternative="" meridian="KD" num="22" ></point>
+<point name="KD-23" chinese-name="神封" western-name="Shenfeng" english="Spirit Seal" pinyin="shén fēng" han-geul="sin bong 신봉" romaji="shim pō" alternative="" meridian="KD" num="23" ></point>
+<point name="KD-24" chinese-name="靈墟" western-name="Lingxu" english="Spirit Ruin" pinyin="líng xū(?)" han-geul="yeong heo 영허" romaji="rei kyo(?)" alternative="" meridian="KD" num="24" ></point>
+<point name="KD-25" chinese-name="神藏" western-name="Shencang" english="Spirit Storehouse" pinyin="shén cáng" han-geul="sin jang 신장" romaji="shin zō" alternative="" meridian="KD" num="25" ></point>
+<point name="KD-26" chinese-name="彧中" western-name="Yuzhong" english="Comfortable Chest" pinyin="yù zhōng" han-geul="uk jung 욱중/hok jung 혹중" romaji="waku chū" alternative="" meridian="KD" num="26" ></point>
+<point name="KD-27" chinese-name="俞府" western-name="Shufu" english="Shu Mansion" pinyin="shū fǔ" han-geul="yu bu 유부" romaji="yu fu" alternative="" meridian="KD" num="27" ></point>
+<point name="PC-1" chinese-name="天池" western-name="Tianchi" english="Heavenly Pool" pinyin="tiān chí" han-geul="cheon ji 천지" romaji="ten chi" alternative="" meridian="PC" num="1" ></point>
+<point name="PC-2" chinese-name="天泉(?)" western-name="Tianquan" english="Heavenly Spring" pinyin="tiān quán(?)" han-geul="cheon cheon 천천" romaji="ten sen(?)" alternative="" meridian="PC" num="2" ></point>
+<point name="PC-3" chinese-name="曲澤" western-name="Quze" english="Marsh at the Crook" pinyin="qū zé" han-geul="gok taek 곡택" romaji="kyoku taku(?)" alternative="" meridian="PC" num="3" ></point>
+<point name="PC-4" chinese-name="郄門" western-name="Ximen" english="Xi-Cleft Gate" pinyin="xī mén" han-geul="geung mun 극문" romaji="geki mon" alternative="" meridian="PC" num="4" ></point>
+<point name="PC-5" chinese-name="間使" western-name="Jianshi" english="Intermediate Messenger" pinyin="jiān shǐ" han-geul="gan sa 간사" romaji="kan shi(?)" alternative="" meridian="PC" num="5" ></point>
+<point name="PC-6" chinese-name="內關" western-name="Neiguan" english="Inner Pass" pinyin="nèi guān" han-geul="nae gwan 내관" romaji="nai kan" alternative="" meridian="PC" num="6" ></point>
+<point name="PC-7" chinese-name="大陵" western-name="Daling" english="Great Mound" pinyin="dà líng" han-geul="dae reung 대릉" romaji="dai ryō" alternative="" meridian="PC" num="7" ></point>
+<point name="PC-8" chinese-name="勞宮" western-name="Laogong" english="Palace of Toil" pinyin="láo gōng" han-geul="no gung 노궁" romaji="rō kyū" alternative="" meridian="PC" num="8" ></point>
+<point name="PC-9" chinese-name="中衝" western-name="Zhongchong" english="Middle Rushing" pinyin="zhōng chōng" han-geul="jung chung 중충" romaji="chū shō" alternative="" meridian="PC" num="9" ></point>
 <point name="SJ-1" chinese-name="關衝" western-name="Guanchong" english="Rushing Pass" pinyin="guān chōng" han-geul="gwan chung 관충" romaji="kan shō" alternative="" meridian="SJ" num="1" ></point>
 <point name="SJ-2" chinese-name="液門(?)" western-name="Yemen" english="Fluid Gate" pinyin="yè mén(?)" han-geul="aeng mun 액문" romaji="eki mon(?)" alternative="" meridian="SJ" num="2" ></point>
 <point name="SJ-3" chinese-name="中渚(?)" western-name="Zhongzhu" english="Central Islet" pinyin="zhōng zhǔ" han-geul="jung jeo 중저" romaji="chū sho" alternative="" meridian="SJ" num="3" ></point>
@@ -250,50 +250,50 @@
 <point name="SJ-21" chinese-name="耳門(?)" western-name="Ermen" english="Ear Gate" pinyin="ěr mén(?)" han-geul="i mun 이문" romaji="ji mon(?)" alternative="" meridian="SJ" num="21" ></point>
 <point name="SJ-22" chinese-name="耳和髎" western-name="Erheliao" english="Ear Harmony Crevice" pinyin="ěr hé liáo" han-geul="hwa ryo 화료" romaji="ji wa ryō?" alternative="" meridian="SJ" num="22" ></point>
 <point name="SJ-23" chinese-name="絲竹空" western-name="Sizhukong" english="Silken Bamboo Hollow" pinyin="sī zhú kōng" han-geul="sa juk gong 사죽공" romaji="shi chiku kū" alternative="" meridian="SJ" num="23" ></point>
-<point name="Gb-1" chinese-name="瞳子髎" western-name="Tongziliao" english="Pupil Crevice" pinyin="tóng zǐ liáo" han-geul="dong ja ryo 동자료" romaji="dō shi ryō" alternative="" meridian="GB" num="1" ></point>
-<point name="Gb-2" chinese-name="聽會" western-name="Tinghui" english="Meeting of Hearing" pinyin="tīng huì" han-geul="cheong hoe 청회" romaji="chō e" alternative="" meridian="GB" num="2" ></point>
-<point name="Gb-3" chinese-name="上關" western-name="Shangguan" english="Above the Joint" pinyin="shàng guān" han-geul="sang gwan 상관/gaek ju in 객주인" romaji="kyaku shu jin" alternative="客主人 kè zhǔ rén" meridian="GB" num="3" ></point>
-<point name="Gb-4" chinese-name="頷厭" western-name="Hanyan" english="Jaw Serenity" pinyin="hàn yàn" han-geul="ha yeom 함염" romaji="gan en" alternative="" meridian="GB" num="4" ></point>
-<point name="Gb-5" chinese-name="懸顱" western-name="Xuanlu" english="Suspended Skull" pinyin="xuán lú" han-geul="hyeol lo 현로" romaji="ken ro" alternative="" meridian="GB" num="5" ></point>
-<point name="Gb-6" chinese-name="懸厘" western-name="Xuanli" english="Suspended Hair" pinyin="xuán lí" han-geul="hyeol li 현리" romaji="ken ri" alternative="" meridian="GB" num="6" ></point>
-<point name="Gb-7" chinese-name="曲鬢" western-name="Qubin" english="Crook of the Temple" pinyin="qū bìn" han-geul="gok bin 곡빈" romaji="kyoku bin(?)" alternative="" meridian="GB" num="7" ></point>
-<point name="Gb-8" chinese-name="率谷" western-name="Shuaigu" english="Leading Valley" pinyin="shuài gǔ" han-geul="sol gok 솔곡" romaji="sok koku?" alternative="" meridian="GB" num="8" ></point>
-<point name="Gb-9" chinese-name="天沖" western-name="Tianchong" english="Heavenly Rushing" pinyin="tiān chōng" han-geul="cheon chung 천충" romaji="ten shō?" alternative="" meridian="GB" num="9" ></point>
-<point name="Gb-10" chinese-name="浮白" western-name="Fubai" english="Floating White" pinyin="fú bái" han-geul="bu baek 부백" romaji="fu haku(?)" alternative="" meridian="GB" num="10" ></point>
-<point name="Gb-11" chinese-name="頭竅陰" western-name="Touqiaoyin" english="Yin Portals of the Head" pinyin="tóu qiào yīn" han-geul="[du] gyu eum [두] 규음" romaji="atama kyō in" alternative="" meridian="GB" num="11" ></point>
-<point name="Gb-12" chinese-name="完骨" western-name="Wangu" english="Mastoid Process" pinyin="wán gǔ" han-geul="wan gol 완골" romaji="kan kotsu" alternative="" meridian="GB" num="12" ></point>
-<point name="Gb-13" chinese-name="本神" western-name="Benshen" english="Root of the Spirit" pinyin="běn shén" han-geul="bon sin 본신" romaji="hon jin" alternative="" meridian="GB" num="13" ></point>
-<point name="Gb-14" chinese-name="陽白" western-name="Yangbai" english="Yang White" pinyin="yáng bái" han-geul="yang baek 양백" romaji="yō haku" alternative="" meridian="GB" num="14" ></point>
-<point name="Gb-15" chinese-name="頭臨泣" western-name="Toulinqi" english="Head Governor of Tears" pinyin="tóu lín qì" han-geul="[du] im eup [두] 임읍" romaji="atama no rin kyū" alternative="" meridian="GB" num="15" ></point>
-<point name="Gb-16" chinese-name="目窗(?)" western-name="Muchuang" english="Window of the Eye" pinyin="mù chuāng(?)" han-geul="mok chang 목창" romaji="moku sō" alternative="" meridian="GB" num="16" ></point>
-<point name="Gb-17" chinese-name="正營" western-name="Zhengying" english="Upright Nutrition" pinyin="zhèng yíng" han-geul="jyeong yeong 정영" romaji="shō ei" alternative="" meridian="GB" num="17" ></point>
-<point name="Gb-18" chinese-name="承靈" western-name="Chengling" english="Support Spirit" pinyin="chéng líng" han-geul="seung nyeong 승령" romaji="shō rei" alternative="" meridian="GB" num="18" ></point>
-<point name="Gb-19" chinese-name="腦空" western-name="Naokong" english="Brain Hollow" pinyin="nǎo kōng" han-geul="noe gong 뇌공" romaji="nō kū" alternative="" meridian="GB" num="19" ></point>
-<point name="Gb-20" chinese-name="風池" western-name="Fengchi" english="Wind Pool" pinyin="fēng chí" han-geul="pung ji 풍지" romaji="fū chi" alternative="" meridian="GB" num="20" ></point>
-<point name="Gb-21" chinese-name="肩井" western-name="Jianjing" english="Shoulder Well" pinyin="jīan jǐng" han-geul="gyeon jeong 견정" romaji="ken sei" alternative="" meridian="GB" num="21" ></point>
-<point name="Gb-22" chinese-name="淵腋" western-name="Yuanye" english="Armpit Abyss" pinyin="yuān yè" han-geul="yeon aek 연액" romaji="en eki(?)" alternative="" meridian="GB" num="22" ></point>
-<point name="Gb-23" chinese-name="輒筋" western-name="Zhejin" english="Flank Sinews" pinyin="zhé jīn" han-geul="cheop geun 첩근" romaji="chō kin?" alternative="" meridian="GB" num="23" ></point>
-<point name="Gb-24" chinese-name="日月" western-name="Riyue" english="Sun and Moon" pinyin="rì yuè" han-geul="il weol 일월" romaji="jitsu getsu" alternative="" meridian="GB" num="24" ></point>
-<point name="Gb-25" chinese-name="京門" western-name="Jingmen" english="Capital Gate" pinyin="jīng mén" han-geul="gyeong mun 경문" romaji="kei mon" alternative="" meridian="GB" num="25" ></point>
-<point name="Gb-26" chinese-name="帶脈" western-name="Daimai" english="Girdling Vessel" pinyin="dài mài" han-geul="dae maek 대맥" romaji="tai myaku" alternative="" meridian="GB" num="26" ></point>
-<point name="Gb-27" chinese-name="五樞" western-name="Wushu" english="Five Pivots" pinyin="wǔ shū" han-geul="o chu 오추" romaji="gō sū" alternative="" meridian="GB" num="27" ></point>
-<point name="Gb-28" chinese-name="維道" western-name="Weidao" english="Linking Path" pinyin="wéi dào" han-geul="yu do 유도" romaji="yui dō" alternative="" meridian="GB" num="28" ></point>
-<point name="Gb-29" chinese-name="居髎" western-name="Juliao" english="Stationary Crevice" pinyin="jū liáo" han-geul="geo ryo 거료" romaji="kyo ryō" alternative="" meridian="GB" num="29" ></point>
-<point name="Gb-30" chinese-name="環跳" western-name="Huantiao" english="Jumping Circle" pinyin="huán tiào" han-geul="hwan do 환도" romaji="kan chō" alternative="" meridian="GB" num="30" ></point>
-<point name="Gb-31" chinese-name="風市" western-name="Fengshi" english="Wind Market" pinyin="fēng shì" han-geul="pung si 풍시" romaji="fū shi" alternative="" meridian="GB" num="31" ></point>
-<point name="Gb-32" chinese-name="中瀆" western-name="Zhongdu" english="Middle Ditch" pinyin="zhōng dú" han-geul="jung dok 중독" romaji="chū toku?" alternative="" meridian="GB" num="32" ></point>
-<point name="Gb-33" chinese-name="膝陽關" western-name="Xiyangguan" english="Knee Yang Gate" pinyin="xī yáng guān" han-geul="[seul] yang gwan [슬] 양관" romaji="hiza no yō kan?" alternative="" meridian="GB" num="33" ></point>
-<point name="Gb-34" chinese-name="陽陵泉" western-name="Yanglingquan" english="Yang Mound Spring" pinyin="yáng líng quán" han-geul="yang neung cheon 양릉천" romaji="yō ryō sen" alternative="" meridian="GB" num="34" ></point>
-<point name="Gb-35" chinese-name="陽交" western-name="Yangjiao" english="Yang Intersection" pinyin="yáng jiāo" han-geul="yang gyo 양교" romaji="yō ko" alternative="" meridian="GB" num="35" ></point>
-<point name="Gb-36" chinese-name="外丘(?)" western-name="Waiqiu" english="Outer Hill" pinyin="wài qiū(?)" han-geul="woe gu 외구" romaji="gai kyū" alternative="" meridian="GB" num="36" ></point>
-<point name="Gb-37" chinese-name="光明(?)" western-name="Guangming" english="Bright Light" pinyin="guāng míng(?)" han-geul="gwang myeong 광명" romaji="kō mei?" alternative="" meridian="GB" num="37" ></point>
-<point name="Gb-38" chinese-name="陽輔" western-name="Yangfu" english="Yang Assistance" pinyin="yáng fǔ" han-geul="yang bo 양보" romaji="yō ho" alternative="" meridian="GB" num="38" ></point>
-<point name="Gb-39" chinese-name="懸鐘" western-name="Xuanzhong" english="Suspended Bell" pinyin="xuán zhōng" han-geul="hyeon jong 현종/jeol gol 절골" romaji="ken shō" alternative="絶骨 jué gǔ" meridian="GB" num="39" ></point>
-<point name="Gb-40" chinese-name="丘墟" western-name="Qiuxu" english="Mound of Ruins" pinyin="qiū xū" han-geul="gu heo 구허" romaji="kyū kyo" alternative="" meridian="GB" num="40" ></point>
-<point name="Gb-41" chinese-name="足臨泣" western-name="Zulinqi" english="Foot Governor of Tears" pinyin="zú lín qì" han-geul="[jok] im eup [족] 임읍" romaji="ashi no rin kyū" alternative="" meridian="GB" num="41" ></point>
-<point name="Gb-42" chinese-name="地五會" western-name="Diwuhui" english="Earth Five Meetings" pinyin="dì wǔ huì" han-geul="ji o hoe 지오회" romaji="chi go e(?)" alternative="" meridian="GB" num="42" ></point>
-<point name="Gb-43" chinese-name="俠谿" western-name="Xiaxi" english="Clamped Stream" pinyin="xiá xī" han-geul="hyeop gye 협계" romaji="kyō kei?" alternative="" meridian="GB" num="43" ></point>
-<point name="Gb-44" chinese-name="足竅陰" western-name="Zuqiaoyin" english="Yin Portals of the Foot" pinyin="zú qiào yīn" han-geul="[jok] gyu eum [족] 규음" romaji="ashi no kyō in" alternative="" meridian="GB" num="44" ></point>
+<point name="GB-1" chinese-name="瞳子髎" western-name="Tongziliao" english="Pupil Crevice" pinyin="tóng zǐ liáo" han-geul="dong ja ryo 동자료" romaji="dō shi ryō" alternative="" meridian="GB" num="1" ></point>
+<point name="GB-2" chinese-name="聽會" western-name="Tinghui" english="Meeting of Hearing" pinyin="tīng huì" han-geul="cheong hoe 청회" romaji="chō e" alternative="" meridian="GB" num="2" ></point>
+<point name="GB-3" chinese-name="上關" western-name="Shangguan" english="Above the Joint" pinyin="shàng guān" han-geul="sang gwan 상관/gaek ju in 객주인" romaji="kyaku shu jin" alternative="客主人 kè zhǔ rén" meridian="GB" num="3" ></point>
+<point name="GB-4" chinese-name="頷厭" western-name="Hanyan" english="Jaw Serenity" pinyin="hàn yàn" han-geul="ha yeom 함염" romaji="gan en" alternative="" meridian="GB" num="4" ></point>
+<point name="GB-5" chinese-name="懸顱" western-name="Xuanlu" english="Suspended Skull" pinyin="xuán lú" han-geul="hyeol lo 현로" romaji="ken ro" alternative="" meridian="GB" num="5" ></point>
+<point name="GB-6" chinese-name="懸厘" western-name="Xuanli" english="Suspended Hair" pinyin="xuán lí" han-geul="hyeol li 현리" romaji="ken ri" alternative="" meridian="GB" num="6" ></point>
+<point name="GB-7" chinese-name="曲鬢" western-name="Qubin" english="Crook of the Temple" pinyin="qū bìn" han-geul="gok bin 곡빈" romaji="kyoku bin(?)" alternative="" meridian="GB" num="7" ></point>
+<point name="GB-8" chinese-name="率谷" western-name="Shuaigu" english="Leading Valley" pinyin="shuài gǔ" han-geul="sol gok 솔곡" romaji="sok koku?" alternative="" meridian="GB" num="8" ></point>
+<point name="GB-9" chinese-name="天沖" western-name="Tianchong" english="Heavenly Rushing" pinyin="tiān chōng" han-geul="cheon chung 천충" romaji="ten shō?" alternative="" meridian="GB" num="9" ></point>
+<point name="GB-10" chinese-name="浮白" western-name="Fubai" english="Floating White" pinyin="fú bái" han-geul="bu baek 부백" romaji="fu haku(?)" alternative="" meridian="GB" num="10" ></point>
+<point name="GB-11" chinese-name="頭竅陰" western-name="Touqiaoyin" english="Yin Portals of the Head" pinyin="tóu qiào yīn" han-geul="[du] gyu eum [두] 규음" romaji="atama kyō in" alternative="" meridian="GB" num="11" ></point>
+<point name="GB-12" chinese-name="完骨" western-name="Wangu" english="Mastoid Process" pinyin="wán gǔ" han-geul="wan gol 완골" romaji="kan kotsu" alternative="" meridian="GB" num="12" ></point>
+<point name="GB-13" chinese-name="本神" western-name="Benshen" english="Root of the Spirit" pinyin="běn shén" han-geul="bon sin 본신" romaji="hon jin" alternative="" meridian="GB" num="13" ></point>
+<point name="GB-14" chinese-name="陽白" western-name="Yangbai" english="Yang White" pinyin="yáng bái" han-geul="yang baek 양백" romaji="yō haku" alternative="" meridian="GB" num="14" ></point>
+<point name="GB-15" chinese-name="頭臨泣" western-name="Toulinqi" english="Head Governor of Tears" pinyin="tóu lín qì" han-geul="[du] im eup [두] 임읍" romaji="atama no rin kyū" alternative="" meridian="GB" num="15" ></point>
+<point name="GB-16" chinese-name="目窗(?)" western-name="Muchuang" english="Window of the Eye" pinyin="mù chuāng(?)" han-geul="mok chang 목창" romaji="moku sō" alternative="" meridian="GB" num="16" ></point>
+<point name="GB-17" chinese-name="正營" western-name="Zhengying" english="Upright Nutrition" pinyin="zhèng yíng" han-geul="jyeong yeong 정영" romaji="shō ei" alternative="" meridian="GB" num="17" ></point>
+<point name="GB-18" chinese-name="承靈" western-name="Chengling" english="Support Spirit" pinyin="chéng líng" han-geul="seung nyeong 승령" romaji="shō rei" alternative="" meridian="GB" num="18" ></point>
+<point name="GB-19" chinese-name="腦空" western-name="Naokong" english="Brain Hollow" pinyin="nǎo kōng" han-geul="noe gong 뇌공" romaji="nō kū" alternative="" meridian="GB" num="19" ></point>
+<point name="GB-20" chinese-name="風池" western-name="Fengchi" english="Wind Pool" pinyin="fēng chí" han-geul="pung ji 풍지" romaji="fū chi" alternative="" meridian="GB" num="20" ></point>
+<point name="GB-21" chinese-name="肩井" western-name="Jianjing" english="Shoulder Well" pinyin="jīan jǐng" han-geul="gyeon jeong 견정" romaji="ken sei" alternative="" meridian="GB" num="21" ></point>
+<point name="GB-22" chinese-name="淵腋" western-name="Yuanye" english="Armpit Abyss" pinyin="yuān yè" han-geul="yeon aek 연액" romaji="en eki(?)" alternative="" meridian="GB" num="22" ></point>
+<point name="GB-23" chinese-name="輒筋" western-name="Zhejin" english="Flank Sinews" pinyin="zhé jīn" han-geul="cheop geun 첩근" romaji="chō kin?" alternative="" meridian="GB" num="23" ></point>
+<point name="GB-24" chinese-name="日月" western-name="Riyue" english="Sun and Moon" pinyin="rì yuè" han-geul="il weol 일월" romaji="jitsu getsu" alternative="" meridian="GB" num="24" ></point>
+<point name="GB-25" chinese-name="京門" western-name="Jingmen" english="Capital Gate" pinyin="jīng mén" han-geul="gyeong mun 경문" romaji="kei mon" alternative="" meridian="GB" num="25" ></point>
+<point name="GB-26" chinese-name="帶脈" western-name="Daimai" english="Girdling Vessel" pinyin="dài mài" han-geul="dae maek 대맥" romaji="tai myaku" alternative="" meridian="GB" num="26" ></point>
+<point name="GB-27" chinese-name="五樞" western-name="Wushu" english="Five Pivots" pinyin="wǔ shū" han-geul="o chu 오추" romaji="gō sū" alternative="" meridian="GB" num="27" ></point>
+<point name="GB-28" chinese-name="維道" western-name="Weidao" english="Linking Path" pinyin="wéi dào" han-geul="yu do 유도" romaji="yui dō" alternative="" meridian="GB" num="28" ></point>
+<point name="GB-29" chinese-name="居髎" western-name="Juliao" english="Stationary Crevice" pinyin="jū liáo" han-geul="geo ryo 거료" romaji="kyo ryō" alternative="" meridian="GB" num="29" ></point>
+<point name="GB-30" chinese-name="環跳" western-name="Huantiao" english="Jumping Circle" pinyin="huán tiào" han-geul="hwan do 환도" romaji="kan chō" alternative="" meridian="GB" num="30" ></point>
+<point name="GB-31" chinese-name="風市" western-name="Fengshi" english="Wind Market" pinyin="fēng shì" han-geul="pung si 풍시" romaji="fū shi" alternative="" meridian="GB" num="31" ></point>
+<point name="GB-32" chinese-name="中瀆" western-name="Zhongdu" english="Middle Ditch" pinyin="zhōng dú" han-geul="jung dok 중독" romaji="chū toku?" alternative="" meridian="GB" num="32" ></point>
+<point name="GB-33" chinese-name="膝陽關" western-name="Xiyangguan" english="Knee Yang Gate" pinyin="xī yáng guān" han-geul="[seul] yang gwan [슬] 양관" romaji="hiza no yō kan?" alternative="" meridian="GB" num="33" ></point>
+<point name="GB-34" chinese-name="陽陵泉" western-name="Yanglingquan" english="Yang Mound Spring" pinyin="yáng líng quán" han-geul="yang neung cheon 양릉천" romaji="yō ryō sen" alternative="" meridian="GB" num="34" ></point>
+<point name="GB-35" chinese-name="陽交" western-name="Yangjiao" english="Yang Intersection" pinyin="yáng jiāo" han-geul="yang gyo 양교" romaji="yō ko" alternative="" meridian="GB" num="35" ></point>
+<point name="GB-36" chinese-name="外丘(?)" western-name="Waiqiu" english="Outer Hill" pinyin="wài qiū(?)" han-geul="woe gu 외구" romaji="gai kyū" alternative="" meridian="GB" num="36" ></point>
+<point name="GB-37" chinese-name="光明(?)" western-name="Guangming" english="Bright Light" pinyin="guāng míng(?)" han-geul="gwang myeong 광명" romaji="kō mei?" alternative="" meridian="GB" num="37" ></point>
+<point name="GB-38" chinese-name="陽輔" western-name="Yangfu" english="Yang Assistance" pinyin="yáng fǔ" han-geul="yang bo 양보" romaji="yō ho" alternative="" meridian="GB" num="38" ></point>
+<point name="GB-39" chinese-name="懸鐘" western-name="Xuanzhong" english="Suspended Bell" pinyin="xuán zhōng" han-geul="hyeon jong 현종/jeol gol 절골" romaji="ken shō" alternative="絶骨 jué gǔ" meridian="GB" num="39" ></point>
+<point name="GB-40" chinese-name="丘墟" western-name="Qiuxu" english="Mound of Ruins" pinyin="qiū xū" han-geul="gu heo 구허" romaji="kyū kyo" alternative="" meridian="GB" num="40" ></point>
+<point name="GB-41" chinese-name="足臨泣" western-name="Zulinqi" english="Foot Governor of Tears" pinyin="zú lín qì" han-geul="[jok] im eup [족] 임읍" romaji="ashi no rin kyū" alternative="" meridian="GB" num="41" ></point>
+<point name="GB-42" chinese-name="地五會" western-name="Diwuhui" english="Earth Five Meetings" pinyin="dì wǔ huì" han-geul="ji o hoe 지오회" romaji="chi go e(?)" alternative="" meridian="GB" num="42" ></point>
+<point name="GB-43" chinese-name="俠谿" western-name="Xiaxi" english="Clamped Stream" pinyin="xiá xī" han-geul="hyeop gye 협계" romaji="kyō kei?" alternative="" meridian="GB" num="43" ></point>
+<point name="GB-44" chinese-name="足竅陰" western-name="Zuqiaoyin" english="Yin Portals of the Foot" pinyin="zú qiào yīn" han-geul="[jok] gyu eum [족] 규음" romaji="ashi no kyō in" alternative="" meridian="GB" num="44" ></point>
 <point name="Liv-1" chinese-name="大敦" western-name="" english="" pinyin="dà dūn" han-geul="dae don 대돈" romaji="tai ton" alternative="" meridian="LIV" num="1" ></point>
 <point name="Liv-2" chinese-name="行間" western-name="" english="" pinyin="xíng jiān" han-geul="haeng gan 행간" romaji="kō kan" alternative="" meridian="LIV" num="2" ></point>
 <point name="Liv-3" chinese-name="太沖" western-name="" english="" pinyin="taì chōng" han-geul="tae chung 태충" romaji="tai shō" alternative="" meridian="LIV" num="3" ></point>

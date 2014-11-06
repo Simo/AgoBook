@@ -23,9 +23,12 @@
 		251A013019CB6F3300813278 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A012F19CB6F3300813278 /* Security.framework */; };
 		251A013219CB6F4D00813278 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A013119CB6F4D00813278 /* SystemConfiguration.framework */; };
 		251A013419CB6F5800813278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A013319CB6F5800813278 /* QuartzCore.framework */; };
+		251C208D1A02F20600834EA1 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251C208A1A02F20600834EA1 /* DEMOMenuViewController.m */; };
+		251C208E1A02F20600834EA1 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251C208C1A02F20600834EA1 /* DEMONavigationController.m */; };
 		252B4154199EA35E00CD5CA0 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */; };
 		252B4155199EA35E00CD5CA0 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */; };
 		252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */; };
+		2532E72F1A04C7F2005C7284 /* base_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 2532E72E1A04C7F2005C7284 /* base_container.png */; };
 		2536484B19F22B39007BA045 /* EAPRassegneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536484A19F22B39007BA045 /* EAPRassegneTableViewController.m */; };
 		2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
 		2537BB2B187C9D89009EB7F7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537BB29187C9D89009EB7F7 /* CoreDataHelper.m */; };
@@ -38,6 +41,10 @@
 		2545F7D018970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */; };
 		25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
 		25463ABF187DF199001F9D2C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */; };
+		255AC1EE1A0BF6FC00E16114 /* EAPPericardiumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AC1ED1A0BF6FC00E16114 /* EAPPericardiumViewController.m */; };
+		255AC1F11A0BFAA700E16114 /* EAPTripleBurnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AC1F01A0BFAA700E16114 /* EAPTripleBurnerViewController.m */; };
+		255AC1F41A0BFC3900E16114 /* EAPGallBladderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AC1F31A0BFC3900E16114 /* EAPGallBladderViewController.m */; };
+		255AC1F71A0BFD2600E16114 /* EAPLiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AC1F61A0BFD2600E16114 /* EAPLiverViewController.m */; };
 		2563124A19F993D800711886 /* CoreDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563124919F993D800711886 /* CoreDataImporter.m */; };
 		2563124D19F99B4100711886 /* AcuPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563124C19F99B4100711886 /* AcuPoint.m */; };
 		2563125019F99B7B00711886 /* Punto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563124F19F99B7B00711886 /* Punto.m */; };
@@ -65,8 +72,35 @@
 		256F316A18FDCC50003114D5 /* SBRTTokenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316818FDCC50003114D5 /* SBRTTokenButton.m */; };
 		256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
 		256F316E18FDCCF1003114D5 /* SBRTTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256F316C18FDCCF1003114D5 /* SBRTTokenView.m */; };
+		258549AB1A0C0B2500BCFA9C /* EAPDuMaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258549AA1A0C0B2500BCFA9C /* EAPDuMaiViewController.m */; };
+		258549AE1A0C0B3100BCFA9C /* EAPRenMaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258549AD1A0C0B3100BCFA9C /* EAPRenMaiViewController.m */; };
+		25909DC51A06A2A3003BBC1F /* EAPStomachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25909DC41A06A2A3003BBC1F /* EAPStomachViewController.m */; };
 		2591881019A5381B002A9261 /* EAPPuntoProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */; };
+		259AFA151A0515DB0038AB95 /* Cuore.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA061A0515DB0038AB95 /* Cuore.png */; };
+		259AFA161A0515DB0038AB95 /* DuMai.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA071A0515DB0038AB95 /* DuMai.png */; };
+		259AFA171A0515DB0038AB95 /* Fegato.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA081A0515DB0038AB95 /* Fegato.png */; };
+		259AFA181A0515DB0038AB95 /* GrossoIntestino.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA091A0515DB0038AB95 /* GrossoIntestino.png */; };
+		259AFA191A0515DB0038AB95 /* IntestinoTenue.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0A1A0515DB0038AB95 /* IntestinoTenue.png */; };
+		259AFA1A1A0515DB0038AB95 /* MilzaPancreas.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0B1A0515DB0038AB95 /* MilzaPancreas.png */; };
+		259AFA1B1A0515DB0038AB95 /* MilzaPancreas2.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0C1A0515DB0038AB95 /* MilzaPancreas2.png */; };
+		259AFA1C1A0515DB0038AB95 /* MinistroCuore.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0D1A0515DB0038AB95 /* MinistroCuore.png */; };
+		259AFA1D1A0515DB0038AB95 /* Polmone.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0E1A0515DB0038AB95 /* Polmone.png */; };
+		259AFA1E1A0515DB0038AB95 /* Rene.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA0F1A0515DB0038AB95 /* Rene.png */; };
+		259AFA1F1A0515DB0038AB95 /* RenMai.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA101A0515DB0038AB95 /* RenMai.png */; };
+		259AFA201A0515DB0038AB95 /* Stomaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA111A0515DB0038AB95 /* Stomaco.png */; };
+		259AFA211A0515DB0038AB95 /* TripliceRiscaldatore.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA121A0515DB0038AB95 /* TripliceRiscaldatore.png */; };
+		259AFA221A0515DB0038AB95 /* VescicaBiliare.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA131A0515DB0038AB95 /* VescicaBiliare.png */; };
+		259AFA231A0515DB0038AB95 /* VescicaUrinaria.png in Resources */ = {isa = PBXBuildFile; fileRef = 259AFA141A0515DB0038AB95 /* VescicaUrinaria.png */; };
+		259AFA271A05880C0038AB95 /* EAPAcuPointReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 259AFA261A05880C0038AB95 /* EAPAcuPointReference.m */; };
+		259AFA2A1A058A290038AB95 /* EAPAcuPointButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 259AFA291A058A290038AB95 /* EAPAcuPointButton.m */; };
 		259E0DFA194C9DA300AF2E85 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259E0DF9194C9DA300AF2E85 /* CoreText.framework */; };
+		25AA55D41A095A55008CB8A1 /* EAPSpleenOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55D31A095A55008CB8A1 /* EAPSpleenOneViewController.m */; };
+		25AA55D61A095D8A008CB8A1 /* dbaehjjc.png in Resources */ = {isa = PBXBuildFile; fileRef = 25AA55D51A095D8A008CB8A1 /* dbaehjjc.png */; };
+		25AA55D91A096255008CB8A1 /* EAPSpleenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55D81A096254008CB8A1 /* EAPSpleenTwoViewController.m */; };
+		25AA55DC1A097407008CB8A1 /* EAPHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55DB1A097407008CB8A1 /* EAPHeartViewController.m */; };
+		25AA55DF1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55DE1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m */; };
+		25AA55E21A097987008CB8A1 /* EAPBladderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55E11A097987008CB8A1 /* EAPBladderViewController.m */; };
+		25AA55E51A097FD6008CB8A1 /* EAPKidneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55E41A097FD6008CB8A1 /* EAPKidneyViewController.m */; };
 		25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BC99281853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BD2D6A195B494B00A3EA37 /* Segno.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D69195B494B00A3EA37 /* Segno.m */; };
@@ -108,8 +142,18 @@
 		25CE2340184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE233E184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m */; };
 		25CE2345184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE2344184FC72900AD84F4 /* EAPDettaglioContainerViewController.m */; };
 		25CE2346184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE2344184FC72900AD84F4 /* EAPDettaglioContainerViewController.m */; };
+		25CE2FA319FC248E0041A9B5 /* EAPTavoleTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE2FA219FC248E0041A9B5 /* EAPTavoleTabBarViewController.m */; };
+		25D08F801A02D09A004FE24C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F751A02D09A004FE24C /* RECommonFunctions.m */; };
+		25D08F811A02D09A004FE24C /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F771A02D09A004FE24C /* REFrostedContainerViewController.m */; };
+		25D08F821A02D09A004FE24C /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F791A02D09A004FE24C /* REFrostedViewController.m */; };
+		25D08F831A02D09A004FE24C /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F7B1A02D09A004FE24C /* UIImage+REFrostedViewController.m */; };
+		25D08F841A02D09A004FE24C /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F7D1A02D09A004FE24C /* UIView+REFrostedViewController.m */; };
+		25D08F851A02D09A004FE24C /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D08F7F1A02D09A004FE24C /* UIViewController+REFrostedViewController.m */; };
+		25D08F871A02D0B5004FE24C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D08F861A02D0B5004FE24C /* Accelerate.framework */; };
 		25D3B404197C550D0080EFDC /* EAPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D3B403197C550D0080EFDC /* EAPTextField.m */; };
 		25D559AA19ED9FE7008B8886 /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D559A919ED9FE7008B8886 /* Persona.m */; };
+		25D7288A19FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7288919FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.m */; };
+		25D7289119FA7640009DEF0C /* EAPLungViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7289019FA7640009DEF0C /* EAPLungViewController.m */; };
 		25D983FE184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D983FD184E8AA500E1F11C /* EAPContentContainerViewController.m */; };
 		25D983FF184E8AA500E1F11C /* EAPContentContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D983FD184E8AA500E1F11C /* EAPContentContainerViewController.m */; };
 		25DCF1EE184E71E80010F119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DCF1ED184E71E80010F119 /* UIKit.framework */; };
@@ -159,6 +203,7 @@
 		25E754C319CDD89A00BFDF64 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A719CDD89A00BFDF64 /* trees.c */; };
 		25E754C419CDD89A00BFDF64 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754A919CDD89A00BFDF64 /* uncompr.c */; };
 		25E754C519CDD89A00BFDF64 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 25E754AC19CDD89A00BFDF64 /* zutil.c */; };
+		25E7BA3A19FC4489008D3770 /* EAPLargeIntestinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E7BA3919FC4489008D3770 /* EAPLargeIntestinViewController.m */; };
 		25E9ABEC19F1B3CB00DF117B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25E9ABEB19F1B3CB00DF117B /* Default@2x.png */; };
 		25E9ABF019F1C49E00DF117B /* EAPPopOverRassegneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E9ABEF19F1C49E00DF117B /* EAPPopOverRassegneViewController.m */; };
 		25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED82521852FC73009C0EB9 /* MagicalImportFunctions.m */; };
@@ -253,12 +298,17 @@
 		251A012F19CB6F3300813278 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		251A013119CB6F4D00813278 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		251A013319CB6F5800813278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		251C20891A02F20600834EA1 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
+		251C208A1A02F20600834EA1 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		251C208B1A02F20600834EA1 /* DEMONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMONavigationController.h; sourceTree = "<group>"; };
+		251C208C1A02F20600834EA1 /* DEMONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMONavigationController.m; sourceTree = "<group>"; };
 		252B414E199EA35E00CD5CA0 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		252B414F199EA35E00CD5CA0 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		252B4150199EA35E00CD5CA0 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
 		252B4151199EA35E00CD5CA0 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
 		252B4152199EA35E00CD5CA0 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
 		252B4153199EA35E00CD5CA0 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		2532E72E1A04C7F2005C7284 /* base_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base_container.png; sourceTree = "<group>"; };
 		2536484919F22B39007BA045 /* EAPRassegneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPRassegneTableViewController.h; sourceTree = "<group>"; };
 		2536484A19F22B39007BA045 /* EAPRassegneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPRassegneTableViewController.m; sourceTree = "<group>"; };
 		2537BB28187C9D89009EB7F7 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
@@ -276,6 +326,14 @@
 		2545F7CE18970B2B00F09DC3 /* CoreDataPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataPickerTextField.m; sourceTree = "<group>"; };
 		25463ABC187DF199001F9D2C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		25463ABD187DF199001F9D2C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		255AC1EC1A0BF6FC00E16114 /* EAPPericardiumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPericardiumViewController.h; sourceTree = "<group>"; };
+		255AC1ED1A0BF6FC00E16114 /* EAPPericardiumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPericardiumViewController.m; sourceTree = "<group>"; };
+		255AC1EF1A0BFAA700E16114 /* EAPTripleBurnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPTripleBurnerViewController.h; sourceTree = "<group>"; };
+		255AC1F01A0BFAA700E16114 /* EAPTripleBurnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPTripleBurnerViewController.m; sourceTree = "<group>"; };
+		255AC1F21A0BFC3900E16114 /* EAPGallBladderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPGallBladderViewController.h; sourceTree = "<group>"; };
+		255AC1F31A0BFC3900E16114 /* EAPGallBladderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPGallBladderViewController.m; sourceTree = "<group>"; };
+		255AC1F51A0BFD2600E16114 /* EAPLiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPLiverViewController.h; sourceTree = "<group>"; };
+		255AC1F61A0BFD2600E16114 /* EAPLiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPLiverViewController.m; sourceTree = "<group>"; };
 		255CB5E9196B20DD00269949 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2563124819F993D800711886 /* CoreDataImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataImporter.h; sourceTree = "<group>"; };
 		2563124919F993D800711886 /* CoreDataImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataImporter.m; sourceTree = "<group>"; };
@@ -314,9 +372,47 @@
 		256F316818FDCC50003114D5 /* SBRTTokenButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenButton.m; sourceTree = "<group>"; };
 		256F316B18FDCCF1003114D5 /* SBRTTokenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRTTokenView.h; sourceTree = "<group>"; };
 		256F316C18FDCCF1003114D5 /* SBRTTokenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRTTokenView.m; sourceTree = "<group>"; };
+		258549A91A0C0B2500BCFA9C /* EAPDuMaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPDuMaiViewController.h; sourceTree = "<group>"; };
+		258549AA1A0C0B2500BCFA9C /* EAPDuMaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPDuMaiViewController.m; sourceTree = "<group>"; };
+		258549AC1A0C0B3100BCFA9C /* EAPRenMaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPRenMaiViewController.h; sourceTree = "<group>"; };
+		258549AD1A0C0B3100BCFA9C /* EAPRenMaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPRenMaiViewController.m; sourceTree = "<group>"; };
+		25909DC31A06A2A3003BBC1F /* EAPStomachViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPStomachViewController.h; sourceTree = "<group>"; };
+		25909DC41A06A2A3003BBC1F /* EAPStomachViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPStomachViewController.m; sourceTree = "<group>"; };
 		2591880E19A5381B002A9261 /* EAPPuntoProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPuntoProgressBar.h; sourceTree = "<group>"; };
 		2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPuntoProgressBar.m; sourceTree = "<group>"; };
+		259AFA061A0515DB0038AB95 /* Cuore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cuore.png; sourceTree = "<group>"; };
+		259AFA071A0515DB0038AB95 /* DuMai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DuMai.png; sourceTree = "<group>"; };
+		259AFA081A0515DB0038AB95 /* Fegato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fegato.png; sourceTree = "<group>"; };
+		259AFA091A0515DB0038AB95 /* GrossoIntestino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrossoIntestino.png; sourceTree = "<group>"; };
+		259AFA0A1A0515DB0038AB95 /* IntestinoTenue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IntestinoTenue.png; sourceTree = "<group>"; };
+		259AFA0B1A0515DB0038AB95 /* MilzaPancreas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MilzaPancreas.png; sourceTree = "<group>"; };
+		259AFA0C1A0515DB0038AB95 /* MilzaPancreas2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MilzaPancreas2.png; sourceTree = "<group>"; };
+		259AFA0D1A0515DB0038AB95 /* MinistroCuore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinistroCuore.png; sourceTree = "<group>"; };
+		259AFA0E1A0515DB0038AB95 /* Polmone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Polmone.png; sourceTree = "<group>"; };
+		259AFA0F1A0515DB0038AB95 /* Rene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rene.png; sourceTree = "<group>"; };
+		259AFA101A0515DB0038AB95 /* RenMai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RenMai.png; sourceTree = "<group>"; };
+		259AFA111A0515DB0038AB95 /* Stomaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stomaco.png; sourceTree = "<group>"; };
+		259AFA121A0515DB0038AB95 /* TripliceRiscaldatore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TripliceRiscaldatore.png; sourceTree = "<group>"; };
+		259AFA131A0515DB0038AB95 /* VescicaBiliare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VescicaBiliare.png; sourceTree = "<group>"; };
+		259AFA141A0515DB0038AB95 /* VescicaUrinaria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VescicaUrinaria.png; sourceTree = "<group>"; };
+		259AFA251A05880C0038AB95 /* EAPAcuPointReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPAcuPointReference.h; sourceTree = "<group>"; };
+		259AFA261A05880C0038AB95 /* EAPAcuPointReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPAcuPointReference.m; sourceTree = "<group>"; };
+		259AFA281A058A290038AB95 /* EAPAcuPointButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPAcuPointButton.h; sourceTree = "<group>"; };
+		259AFA291A058A290038AB95 /* EAPAcuPointButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPAcuPointButton.m; sourceTree = "<group>"; };
 		259E0DF9194C9DA300AF2E85 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		25AA55D21A095A55008CB8A1 /* EAPSpleenOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSpleenOneViewController.h; sourceTree = "<group>"; };
+		25AA55D31A095A55008CB8A1 /* EAPSpleenOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSpleenOneViewController.m; sourceTree = "<group>"; };
+		25AA55D51A095D8A008CB8A1 /* dbaehjjc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dbaehjjc.png; sourceTree = "<group>"; };
+		25AA55D71A096254008CB8A1 /* EAPSpleenTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSpleenTwoViewController.h; sourceTree = "<group>"; };
+		25AA55D81A096254008CB8A1 /* EAPSpleenTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSpleenTwoViewController.m; sourceTree = "<group>"; };
+		25AA55DA1A097407008CB8A1 /* EAPHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPHeartViewController.h; sourceTree = "<group>"; };
+		25AA55DB1A097407008CB8A1 /* EAPHeartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPHeartViewController.m; sourceTree = "<group>"; };
+		25AA55DD1A0977C8008CB8A1 /* EAPSmallIntestineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPSmallIntestineViewController.h; sourceTree = "<group>"; };
+		25AA55DE1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPSmallIntestineViewController.m; sourceTree = "<group>"; };
+		25AA55E01A097987008CB8A1 /* EAPBladderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPBladderViewController.h; sourceTree = "<group>"; };
+		25AA55E11A097987008CB8A1 /* EAPBladderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPBladderViewController.m; sourceTree = "<group>"; };
+		25AA55E31A097FD6008CB8A1 /* EAPKidneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPKidneyViewController.h; sourceTree = "<group>"; };
+		25AA55E41A097FD6008CB8A1 /* EAPKidneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPKidneyViewController.m; sourceTree = "<group>"; };
 		25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 5.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 2.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99261853BE3100787841 /* AgoBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgoBook.xcdatamodel; sourceTree = "<group>"; };
@@ -373,11 +469,30 @@
 		25CE233E184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPListaTrattamentiViewController.m; sourceTree = "<group>"; };
 		25CE2343184FC72900AD84F4 /* EAPDettaglioContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPDettaglioContainerViewController.h; sourceTree = "<group>"; };
 		25CE2344184FC72900AD84F4 /* EAPDettaglioContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPDettaglioContainerViewController.m; sourceTree = "<group>"; };
+		25CE2FA119FC248E0041A9B5 /* EAPTavoleTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPTavoleTabBarViewController.h; sourceTree = "<group>"; };
+		25CE2FA219FC248E0041A9B5 /* EAPTavoleTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPTavoleTabBarViewController.m; sourceTree = "<group>"; };
+		25D08F741A02D09A004FE24C /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		25D08F751A02D09A004FE24C /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		25D08F761A02D09A004FE24C /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		25D08F771A02D09A004FE24C /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		25D08F781A02D09A004FE24C /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		25D08F791A02D09A004FE24C /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		25D08F7A1A02D09A004FE24C /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		25D08F7B1A02D09A004FE24C /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		25D08F7C1A02D09A004FE24C /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		25D08F7D1A02D09A004FE24C /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		25D08F7E1A02D09A004FE24C /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		25D08F7F1A02D09A004FE24C /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		25D08F861A02D0B5004FE24C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		25D3B402197C550D0080EFDC /* EAPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPTextField.h; sourceTree = "<group>"; };
 		25D3B403197C550D0080EFDC /* EAPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPTextField.m; sourceTree = "<group>"; };
 		25D559A719ED9E2D008B8886 /* AgoBook 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 7.xcdatamodel"; sourceTree = "<group>"; };
 		25D559A819ED9FE7008B8886 /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
 		25D559A919ED9FE7008B8886 /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
+		25D7288819FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPTavolePuntiCommonViewController.h; sourceTree = "<group>"; };
+		25D7288919FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPTavolePuntiCommonViewController.m; sourceTree = "<group>"; };
+		25D7288F19FA7640009DEF0C /* EAPLungViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPLungViewController.h; sourceTree = "<group>"; };
+		25D7289019FA7640009DEF0C /* EAPLungViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPLungViewController.m; sourceTree = "<group>"; };
 		25D983FC184E8AA500E1F11C /* EAPContentContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPContentContainerViewController.h; sourceTree = "<group>"; };
 		25D983FD184E8AA500E1F11C /* EAPContentContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPContentContainerViewController.m; sourceTree = "<group>"; };
 		25DCF1EA184E71E80010F119 /* AgoBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,6 +572,8 @@
 		25E754AB19CDD89A00BFDF64 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		25E754AC19CDD89A00BFDF64 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		25E754AD19CDD89A00BFDF64 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		25E7BA3819FC4489008D3770 /* EAPLargeIntestinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPLargeIntestinViewController.h; sourceTree = "<group>"; };
+		25E7BA3919FC4489008D3770 /* EAPLargeIntestinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPLargeIntestinViewController.m; sourceTree = "<group>"; };
 		25E9ABEB19F1B3CB00DF117B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		25E9ABEE19F1C49E00DF117B /* EAPPopOverRassegneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPopOverRassegneViewController.h; sourceTree = "<group>"; };
 		25E9ABEF19F1C49E00DF117B /* EAPPopOverRassegneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPopOverRassegneViewController.m; sourceTree = "<group>"; };
@@ -527,6 +644,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D08F871A02D0B5004FE24C /* Accelerate.framework in Frameworks */,
 				251A013419CB6F5800813278 /* QuartzCore.framework in Frameworks */,
 				251A013219CB6F4D00813278 /* SystemConfiguration.framework in Frameworks */,
 				251A013019CB6F3300813278 /* Security.framework in Frameworks */,
@@ -566,6 +684,7 @@
 		250C285A18A6770B00164FDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				25D08F731A02D055004FE24C /* REFrostedVC */,
 				25CC720119F3E23000FD787E /* TrattamentoGenerator */,
 				2538A17F19F293CD00EAB506 /* RassegnaGenerator */,
 				2563BAA119CBA5A7007F7C0A /* DropboxHelper */,
@@ -607,6 +726,17 @@
 				2518810819CCB49E00A4F2CD /* EAPDropboxTableViewController.m */,
 			);
 			name = DropBox;
+			sourceTree = "<group>";
+		};
+		251C20881A02F1E000834EA1 /* FrostedMenu */ = {
+			isa = PBXGroup;
+			children = (
+				251C20891A02F20600834EA1 /* DEMOMenuViewController.h */,
+				251C208A1A02F20600834EA1 /* DEMOMenuViewController.m */,
+				251C208B1A02F20600834EA1 /* DEMONavigationController.h */,
+				251C208C1A02F20600834EA1 /* DEMONavigationController.m */,
+			);
+			name = FrostedMenu;
 			sourceTree = "<group>";
 		};
 		252B414D199EA31800CD5CA0 /* JVFloatLabeledTextField */ = {
@@ -677,6 +807,7 @@
 		255AF5F718809B2400E533AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				259AFA241A0587C20038AB95 /* Helpers */,
 				2563124B19F99B4100711886 /* AcuPoint.h */,
 				2563124C19F99B4100711886 /* AcuPoint.m */,
 				2563124E19F99B7B00711886 /* Punto.h */,
@@ -720,6 +851,21 @@
 		2563125319F9B41800711886 /* Acupoints */ = {
 			isa = PBXGroup;
 			children = (
+				259AFA061A0515DB0038AB95 /* Cuore.png */,
+				259AFA071A0515DB0038AB95 /* DuMai.png */,
+				259AFA081A0515DB0038AB95 /* Fegato.png */,
+				259AFA091A0515DB0038AB95 /* GrossoIntestino.png */,
+				259AFA0A1A0515DB0038AB95 /* IntestinoTenue.png */,
+				259AFA0B1A0515DB0038AB95 /* MilzaPancreas.png */,
+				259AFA0C1A0515DB0038AB95 /* MilzaPancreas2.png */,
+				259AFA0D1A0515DB0038AB95 /* MinistroCuore.png */,
+				259AFA0E1A0515DB0038AB95 /* Polmone.png */,
+				259AFA0F1A0515DB0038AB95 /* Rene.png */,
+				259AFA101A0515DB0038AB95 /* RenMai.png */,
+				259AFA111A0515DB0038AB95 /* Stomaco.png */,
+				259AFA121A0515DB0038AB95 /* TripliceRiscaldatore.png */,
+				259AFA131A0515DB0038AB95 /* VescicaBiliare.png */,
+				259AFA141A0515DB0038AB95 /* VescicaUrinaria.png */,
 				2563125419F9B42F00711886 /* Cuore.jpg */,
 				2563125519F9B42F00711886 /* DuMai.jpg */,
 				2563125619F9B42F00711886 /* Fegato.jpg */,
@@ -759,6 +905,15 @@
 			name = Tokenized;
 			sourceTree = "<group>";
 		};
+		259AFA241A0587C20038AB95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				259AFA251A05880C0038AB95 /* EAPAcuPointReference.h */,
+				259AFA261A05880C0038AB95 /* EAPAcuPointReference.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		25A7C8BD199F2A0400CB18C1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,6 +928,8 @@
 			children = (
 				2591880E19A5381B002A9261 /* EAPPuntoProgressBar.h */,
 				2591880F19A5381B002A9261 /* EAPPuntoProgressBar.m */,
+				259AFA281A058A290038AB95 /* EAPAcuPointButton.h */,
+				259AFA291A058A290038AB95 /* EAPAcuPointButton.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -860,6 +1017,25 @@
 			name = Contained;
 			sourceTree = "<group>";
 		};
+		25D08F731A02D055004FE24C /* REFrostedVC */ = {
+			isa = PBXGroup;
+			children = (
+				25D08F741A02D09A004FE24C /* RECommonFunctions.h */,
+				25D08F751A02D09A004FE24C /* RECommonFunctions.m */,
+				25D08F761A02D09A004FE24C /* REFrostedContainerViewController.h */,
+				25D08F771A02D09A004FE24C /* REFrostedContainerViewController.m */,
+				25D08F781A02D09A004FE24C /* REFrostedViewController.h */,
+				25D08F791A02D09A004FE24C /* REFrostedViewController.m */,
+				25D08F7A1A02D09A004FE24C /* UIImage+REFrostedViewController.h */,
+				25D08F7B1A02D09A004FE24C /* UIImage+REFrostedViewController.m */,
+				25D08F7C1A02D09A004FE24C /* UIView+REFrostedViewController.h */,
+				25D08F7D1A02D09A004FE24C /* UIView+REFrostedViewController.m */,
+				25D08F7E1A02D09A004FE24C /* UIViewController+REFrostedViewController.h */,
+				25D08F7F1A02D09A004FE24C /* UIViewController+REFrostedViewController.m */,
+			);
+			name = REFrostedVC;
+			sourceTree = "<group>";
+		};
 		25D3B401197C54D90080EFDC /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -867,6 +1043,56 @@
 				25D3B403197C550D0080EFDC /* EAPTextField.m */,
 			);
 			name = TextFields;
+			sourceTree = "<group>";
+		};
+		25D7288719FA7273009DEF0C /* TavolePunti */ = {
+			isa = PBXGroup;
+			children = (
+				25D7288B19FA75A4009DEF0C /* TavoleController */,
+				25D7288819FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.h */,
+				25D7288919FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.m */,
+				25CE2FA119FC248E0041A9B5 /* EAPTavoleTabBarViewController.h */,
+				25CE2FA219FC248E0041A9B5 /* EAPTavoleTabBarViewController.m */,
+			);
+			name = TavolePunti;
+			sourceTree = "<group>";
+		};
+		25D7288B19FA75A4009DEF0C /* TavoleController */ = {
+			isa = PBXGroup;
+			children = (
+				251C20881A02F1E000834EA1 /* FrostedMenu */,
+				25D7288F19FA7640009DEF0C /* EAPLungViewController.h */,
+				25D7289019FA7640009DEF0C /* EAPLungViewController.m */,
+				25E7BA3819FC4489008D3770 /* EAPLargeIntestinViewController.h */,
+				25E7BA3919FC4489008D3770 /* EAPLargeIntestinViewController.m */,
+				25909DC31A06A2A3003BBC1F /* EAPStomachViewController.h */,
+				25909DC41A06A2A3003BBC1F /* EAPStomachViewController.m */,
+				25AA55D21A095A55008CB8A1 /* EAPSpleenOneViewController.h */,
+				25AA55D31A095A55008CB8A1 /* EAPSpleenOneViewController.m */,
+				25AA55D71A096254008CB8A1 /* EAPSpleenTwoViewController.h */,
+				25AA55D81A096254008CB8A1 /* EAPSpleenTwoViewController.m */,
+				25AA55DA1A097407008CB8A1 /* EAPHeartViewController.h */,
+				25AA55DB1A097407008CB8A1 /* EAPHeartViewController.m */,
+				25AA55DD1A0977C8008CB8A1 /* EAPSmallIntestineViewController.h */,
+				25AA55DE1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m */,
+				25AA55E01A097987008CB8A1 /* EAPBladderViewController.h */,
+				25AA55E11A097987008CB8A1 /* EAPBladderViewController.m */,
+				25AA55E31A097FD6008CB8A1 /* EAPKidneyViewController.h */,
+				25AA55E41A097FD6008CB8A1 /* EAPKidneyViewController.m */,
+				255AC1EC1A0BF6FC00E16114 /* EAPPericardiumViewController.h */,
+				255AC1ED1A0BF6FC00E16114 /* EAPPericardiumViewController.m */,
+				255AC1EF1A0BFAA700E16114 /* EAPTripleBurnerViewController.h */,
+				255AC1F01A0BFAA700E16114 /* EAPTripleBurnerViewController.m */,
+				255AC1F21A0BFC3900E16114 /* EAPGallBladderViewController.h */,
+				255AC1F31A0BFC3900E16114 /* EAPGallBladderViewController.m */,
+				255AC1F51A0BFD2600E16114 /* EAPLiverViewController.h */,
+				255AC1F61A0BFD2600E16114 /* EAPLiverViewController.m */,
+				258549A91A0C0B2500BCFA9C /* EAPDuMaiViewController.h */,
+				258549AA1A0C0B2500BCFA9C /* EAPDuMaiViewController.m */,
+				258549AC1A0C0B3100BCFA9C /* EAPRenMaiViewController.h */,
+				258549AD1A0C0B3100BCFA9C /* EAPRenMaiViewController.m */,
+			);
+			name = TavoleController;
 			sourceTree = "<group>";
 		};
 		25D983FA184E8A6E00E1F11C /* Content */ = {
@@ -911,6 +1137,7 @@
 		25DCF1EC184E71E80010F119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25D08F861A02D0B5004FE24C /* Accelerate.framework */,
 				251A013319CB6F5800813278 /* QuartzCore.framework */,
 				251A013119CB6F4D00813278 /* SystemConfiguration.framework */,
 				251A012F19CB6F3300813278 /* Security.framework */,
@@ -959,7 +1186,9 @@
 				2563125319F9B41800711886 /* Acupoints */,
 				25DCF1F7184E71E80010F119 /* AgoBook-Info.plist */,
 				25DCF1F8184E71E80010F119 /* InfoPlist.strings */,
+				2532E72E1A04C7F2005C7284 /* base_container.png */,
 				25E9ABEB19F1B3CB00DF117B /* Default@2x.png */,
+				25AA55D51A095D8A008CB8A1 /* dbaehjjc.png */,
 				2563125119F9A5C300711886 /* DefaultData.xml */,
 				25BFF88A19F456F400C2A99B /* base.png */,
 				25DCF1FB184E71E80010F119 /* main.m */,
@@ -1227,6 +1456,7 @@
 		25FC340618AFAF9400775243 /* NuovaSeduta */ = {
 			isa = PBXGroup;
 			children = (
+				25D7288719FA7273009DEF0C /* TavolePunti */,
 				25FC340B18AFB01800775243 /* EAPPuntiSedutaTableViewController.h */,
 				25FC340C18AFB01800775243 /* EAPPuntiSedutaTableViewController.m */,
 				2519007318BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.h */,
@@ -1314,31 +1544,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				2563126F19F9B42F00711886 /* TripliceRiscaldatore.jpg in Resources */,
+				259AFA171A0515DB0038AB95 /* Fegato.png in Resources */,
 				25E9ABEC19F1B3CB00DF117B /* Default@2x.png in Resources */,
+				259AFA191A0515DB0038AB95 /* IntestinoTenue.png in Resources */,
 				25DCF1FA184E71E80010F119 /* InfoPlist.strings in Resources */,
+				259AFA1E1A0515DB0038AB95 /* Rene.png in Resources */,
 				25DCF202184E71E80010F119 /* Default.png in Resources */,
 				2563126619F9B42F00711886 /* GrossoIntestino.jpg in Resources */,
 				2563125219F9A5C300711886 /* DefaultData.xml in Resources */,
+				259AFA231A0515DB0038AB95 /* VescicaUrinaria.png in Resources */,
 				2563126419F9B42F00711886 /* DuMai.jpg in Resources */,
 				2538A17E19F2881400EAB506 /* HFF Zeldom Zen.otf in Resources */,
 				2563126919F9B42F00711886 /* MilzaPancreas2.jpg in Resources */,
 				2563126C19F9B42F00711886 /* Rene.jpg in Resources */,
+				259AFA1F1A0515DB0038AB95 /* RenMai.png in Resources */,
+				259AFA1D1A0515DB0038AB95 /* Polmone.png in Resources */,
 				2563126D19F9B42F00711886 /* RenMai.jpg in Resources */,
 				250DD49F19F1A162005E9D22 /* Images.xcassets in Resources */,
+				259AFA1A1A0515DB0038AB95 /* MilzaPancreas.png in Resources */,
 				2563127019F9B42F00711886 /* VescicaUrinaria.jpg in Resources */,
 				25DCF204184E71E80010F119 /* DDefault@2x.png in Resources */,
+				259AFA1B1A0515DB0038AB95 /* MilzaPancreas2.png in Resources */,
+				259AFA151A0515DB0038AB95 /* Cuore.png in Resources */,
 				25BFF88B19F456F400C2A99B /* base.png in Resources */,
 				2563126A19F9B42F00711886 /* MinistroCuore.jpg in Resources */,
 				2563126B19F9B42F00711886 /* Polmone.jpg in Resources */,
 				25DCF206184E71E80010F119 /* Default-568h@2x.png in Resources */,
 				250DD4A119F1A343005E9D22 /* HDefault@2x.png in Resources */,
 				2563126319F9B42F00711886 /* Cuore.jpg in Resources */,
+				259AFA211A0515DB0038AB95 /* TripliceRiscaldatore.png in Resources */,
+				259AFA161A0515DB0038AB95 /* DuMai.png in Resources */,
 				25DCF209184E71E80010F119 /* MainStoryboard.storyboard in Resources */,
+				259AFA221A0515DB0038AB95 /* VescicaBiliare.png in Resources */,
+				25AA55D61A095D8A008CB8A1 /* dbaehjjc.png in Resources */,
+				259AFA181A0515DB0038AB95 /* GrossoIntestino.png in Resources */,
 				2563126519F9B42F00711886 /* Fegato.jpg in Resources */,
+				2532E72F1A04C7F2005C7284 /* base_container.png in Resources */,
 				2563126819F9B42F00711886 /* MilzaPancreas.jpg in Resources */,
 				2563126719F9B42F00711886 /* intestinoTenue.jpg in Resources */,
 				2563127119F9B42F00711886 /* VescicolaBiliare.jpg in Resources */,
 				2563126E19F9B42F00711886 /* Stomaco.jpg in Resources */,
+				259AFA201A0515DB0038AB95 /* Stomaco.png in Resources */,
+				259AFA1C1A0515DB0038AB95 /* MinistroCuore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1375,12 +1622,15 @@
 			files = (
 				25E754C119CDD89A00BFDF64 /* inflate.c in Sources */,
 				25E754AE19CDD89A00BFDF64 /* FileInZipInfo.m in Sources */,
+				25D7289119FA7640009DEF0C /* EAPLungViewController.m in Sources */,
 				2538A18219F293FA00EAB506 /* EAPRassegnaGenerator.m in Sources */,
+				255AC1EE1A0BF6FC00E16114 /* EAPPericardiumViewController.m in Sources */,
 				25DCF1FC184E71E80010F119 /* main.m in Sources */,
 				2511517C19E32D49007DD5DA /* NSDate+StringConverter.m in Sources */,
 				25DCF200184E71E80010F119 /* EAPAppDelegate.m in Sources */,
 				25463ABE187DF199001F9D2C /* CoreDataTableViewController.m in Sources */,
 				25DCF20F184E71E80010F119 /* EAPMainViewController.m in Sources */,
+				25D7288A19FA72B8009DEF0C /* EAPTavolePuntiCommonViewController.m in Sources */,
 				25DCF212184E71E80010F119 /* EAPFlipsideViewController.m in Sources */,
 				25DCF234184E75700010F119 /* EAPEmptySegue.m in Sources */,
 				2543C26919726B5300EAB5DD /* SegnoTag.m in Sources */,
@@ -1396,12 +1646,14 @@
 				25E754B519CDD89A00BFDF64 /* ZipReadStream.m in Sources */,
 				2536484B19F22B39007BA045 /* EAPRassegneTableViewController.m in Sources */,
 				2563124D19F99B4100711886 /* AcuPoint.m in Sources */,
+				25AA55E51A097FD6008CB8A1 /* EAPKidneyViewController.m in Sources */,
 				25C6EE6118A2D3BA00D7011B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				25CE231C184FABCB00AD84F4 /* EAPAnagraficaViewController.m in Sources */,
 				25BD2D76195B494B00A3EA37 /* EsameObiettivo.m in Sources */,
 				25BD2D70195B494B00A3EA37 /* Famiglia.m in Sources */,
 				25E754BF19CDD89A00BFDF64 /* infback.c in Sources */,
 				25E754B619CDD89A00BFDF64 /* ZipWriteStream.m in Sources */,
+				259AFA271A05880C0038AB95 /* EAPAcuPointReference.m in Sources */,
 				25CE2320184FBC6900AD84F4 /* EAPStoriaMedicaViewController.m in Sources */,
 				2511517919E32CCB007DD5DA /* NSString+DateConverter.m in Sources */,
 				25E754C519CDD89A00BFDF64 /* zutil.c in Sources */,
@@ -1411,8 +1663,10 @@
 				256F316918FDCC50003114D5 /* SBRTTokenButton.m in Sources */,
 				2563BAA419CBA5CD007F7C0A /* DropboxHelper.m in Sources */,
 				25CE2328184FBEAD00AD84F4 /* EAPRassegnaSegniViewController.m in Sources */,
+				25909DC51A06A2A3003BBC1F /* EAPStomachViewController.m in Sources */,
 				25F4898918B0F97900189EF6 /* EAPContainedCommonViewController.m in Sources */,
 				25E754BC19CDD89A00BFDF64 /* gzlib.c in Sources */,
+				258549AB1A0C0B2500BCFA9C /* EAPDuMaiViewController.m in Sources */,
 				25FC340D18AFB01800775243 /* EAPPuntiSedutaTableViewController.m in Sources */,
 				2519007518BBEAB30052EA47 /* EAPPuntiNuovaSedutaCell.m in Sources */,
 				25E754C019CDD89A00BFDF64 /* inffast.c in Sources */,
@@ -1422,10 +1676,15 @@
 				25CC720719F3ECFF00FD787E /* Trattamento.m in Sources */,
 				25CE232C184FBEC300AD84F4 /* EAPTrattamentiViewController.m in Sources */,
 				2563125019F99B7B00711886 /* Punto.m in Sources */,
+				259AFA2A1A058A290038AB95 /* EAPAcuPointButton.m in Sources */,
 				25CE2333184FC6AD00AD84F4 /* EAPSeduteViewController.m in Sources */,
 				25BD2D7C195B494B00A3EA37 /* Anamnesi.m in Sources */,
 				25E2110D19EF0A5800FB663A /* Rassegna.m in Sources */,
+				251C208E1A02F20600834EA1 /* DEMONavigationController.m in Sources */,
 				25CE2337184FC6BC00AD84F4 /* EAPPuntiViewController.m in Sources */,
+				25D08F811A02D09A004FE24C /* REFrostedContainerViewController.m in Sources */,
+				25D08F841A02D09A004FE24C /* UIView+REFrostedViewController.m in Sources */,
+				25AA55DF1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m in Sources */,
 				25E754B919CDD89A00BFDF64 /* crc32.c in Sources */,
 				25BD2D97195B494B00A3EA37 /* SegnoPersonale.m in Sources */,
 				25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -1433,17 +1692,24 @@
 				25E754B419CDD89A00BFDF64 /* ZipFile.m in Sources */,
 				25CE233B184FC6D500AD84F4 /* EAPProblemiViewController.m in Sources */,
 				25071F5119902DAE00A01A02 /* EAPListaPersoneTableViewController.m in Sources */,
+				25D08F831A02D09A004FE24C /* UIImage+REFrostedViewController.m in Sources */,
+				258549AE1A0C0B3100BCFA9C /* EAPRenMaiViewController.m in Sources */,
 				25E754B219CDD89A00BFDF64 /* zip.c in Sources */,
 				25CE233F184FC6EB00AD84F4 /* EAPListaTrattamentiViewController.m in Sources */,
 				25CE2345184FC72900AD84F4 /* EAPDettaglioContainerViewController.m in Sources */,
 				25E754B119CDD89A00BFDF64 /* unzip.c in Sources */,
+				25CE2FA319FC248E0041A9B5 /* EAPTavoleTabBarViewController.m in Sources */,
+				255AC1F41A0BFC3900E16114 /* EAPGallBladderViewController.m in Sources */,
+				25D08F851A02D09A004FE24C /* UIViewController+REFrostedViewController.m in Sources */,
 				25ED828A1852FC73009C0EB9 /* MagicalImportFunctions.m in Sources */,
 				25BD2D73195B494B00A3EA37 /* Allegato.m in Sources */,
 				25E754BB19CDD89A00BFDF64 /* gzclose.c in Sources */,
+				25AA55D41A095A55008CB8A1 /* EAPSpleenOneViewController.m in Sources */,
 				25ED828C1852FC73009C0EB9 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				25ED828E1852FC73009C0EB9 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				25071F4D199024F600A01A02 /* EAPInitialViewController.m in Sources */,
 				25E754BA19CDD89A00BFDF64 /* deflate.c in Sources */,
+				25AA55E21A097987008CB8A1 /* EAPBladderViewController.m in Sources */,
 				252B4156199EA35E00CD5CA0 /* NSString+TextDirectionality.m in Sources */,
 				25ED82901852FC73009C0EB9 /* NSNumber+MagicalDataImport.m in Sources */,
 				2544C14C1997496300460451 /* EAPPictureViewController.m in Sources */,
@@ -1451,13 +1717,16 @@
 				25ED82921852FC73009C0EB9 /* NSObject+MagicalDataImport.m in Sources */,
 				25BE8689194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m in Sources */,
 				2537BB2A187C9D89009EB7F7 /* CoreDataHelper.m in Sources */,
+				25D08F801A02D09A004FE24C /* RECommonFunctions.m in Sources */,
 				25E754BD19CDD89A00BFDF64 /* gzread.c in Sources */,
 				2545F7CF18970B2B00F09DC3 /* CoreDataPickerTextField.m in Sources */,
 				25ED82941852FC73009C0EB9 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				25AA55DC1A097407008CB8A1 /* EAPHeartViewController.m in Sources */,
 				25E9ABF019F1C49E00DF117B /* EAPPopOverRassegneViewController.m in Sources */,
 				25ED82961852FC73009C0EB9 /* NSString+MagicalDataImport.m in Sources */,
 				2565A194199CF04E004A1302 /* EAPPopOverPazientiViewController.m in Sources */,
 				25ED82981852FC73009C0EB9 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				255AC1F11A0BFAA700E16114 /* EAPTripleBurnerViewController.m in Sources */,
 				25ED829A1852FC73009C0EB9 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				25F633D4194E421300A70FAF /* EAPSegnoPersonaleTableViewCell.m in Sources */,
 				25ED829C1852FC73009C0EB9 /* NSManagedObject+MagicalFinders.m in Sources */,
@@ -1470,9 +1739,12 @@
 				25ED82A61852FC73009C0EB9 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				25BD2D82195B494B00A3EA37 /* StoriaMedica.m in Sources */,
 				25E754C219CDD89A00BFDF64 /* inftrees.c in Sources */,
+				25E7BA3A19FC4489008D3770 /* EAPLargeIntestinViewController.m in Sources */,
 				25BD2D8E195B494B00A3EA37 /* Seduta.m in Sources */,
 				25E754B719CDD89A00BFDF64 /* adler32.c in Sources */,
+				251C208D1A02F20600834EA1 /* DEMOMenuViewController.m in Sources */,
 				25ED82A81852FC73009C0EB9 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				255AC1F71A0BFD2600E16114 /* EAPLiverViewController.m in Sources */,
 				25E754C419CDD89A00BFDF64 /* uncompr.c in Sources */,
 				25E754B019CDD89A00BFDF64 /* mztools.c in Sources */,
 				25ED82AA1852FC73009C0EB9 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
@@ -1483,6 +1755,7 @@
 				25ED82B21852FC73009C0EB9 /* MagicalRecord+ErrorHandling.m in Sources */,
 				25E754AF19CDD89A00BFDF64 /* ioapi.c in Sources */,
 				256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */,
+				25AA55D91A096255008CB8A1 /* EAPSpleenTwoViewController.m in Sources */,
 				25ED82B41852FC73009C0EB9 /* MagicalRecord+iCloud.m in Sources */,
 				25ED82B61852FC73009C0EB9 /* MagicalRecord+Options.m in Sources */,
 				25ED82B81852FC73009C0EB9 /* MagicalRecord+Setup.m in Sources */,
@@ -1490,6 +1763,7 @@
 				25ED82BA1852FC73009C0EB9 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				25ED82BC1852FC73009C0EB9 /* MagicalRecord.m in Sources */,
 				25D559AA19ED9FE7008B8886 /* Persona.m in Sources */,
+				25D08F821A02D09A004FE24C /* REFrostedViewController.m in Sources */,
 				25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */,
 				25E754B319CDD89A00BFDF64 /* ZipException.m in Sources */,
 			);

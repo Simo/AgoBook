@@ -7,8 +7,9 @@
 //
 
 #import "CoreDataTableViewController.h"
+#import "DEMONavigationController.h"
 
-@interface EAPPuntiSedutaTableViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+@interface EAPPuntiSedutaTableViewController : CoreDataTableViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate, AcuPointTableNavigationDelegate>
 
 -(void)populateList;
 
