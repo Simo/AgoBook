@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Anamnesi.h"
 
 @class EAPProblemiViewController;
 
@@ -20,6 +21,10 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak,nonatomic) id<EAPProblemiViewControllerDelegate> delegate;
+
+@property (weak, nonatomic) EsameObiettivo *esameObiettivo;
+@property (weak, nonatomic) Diagnosi *diagnosi;
+@property (weak, nonatomic) Anamnesi *anamnesi;
 
 - (IBAction)takePhoto:  (UIButton *)sender;
 

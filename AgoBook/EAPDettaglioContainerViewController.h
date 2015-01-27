@@ -10,6 +10,7 @@
 #import "EAPProblemiViewController.h"
 #import "EAPSeduteViewController.h"
 #import "EAPPuntiViewController.h"
+#import "Trattamento.h"
 
 @class EAPDettaglioContainerViewController;
 
@@ -30,6 +31,8 @@
 
 @property (strong, nonatomic) UIViewController *currentViewController;
 @property (strong, nonatomic) NSMutableDictionary *relativePositions;
+
+@property (weak, nonatomic) Trattamento *trattamentoScelto;
 
 @property (strong, nonatomic) NSArray *listaSedutePerSeduteVC;
 

@@ -35,11 +35,19 @@
     NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"dataInizio" ascending:NO]];
     
     NSArray *sortedTrattamenti = [[self.personaScelta.trattamenti allObjects] sortedArrayUsingDescriptors:sortDescriptors];
-    Trattamento *trattamento = [sortedTrattamenti objectAtIndex:0];
     
-    NSString *titolo = [NSString stringWithFormat:@"%@ (del %@)",trattamento.descrizione,[trattamento.dataInizio stringFromDate]];
+    if ([sortedTrattamenti count] != 0) {
+        Trattamento *trattamento = [sortedTrattamenti objectAtIndex:0];
+        NSString *titolo = [NSString stringWithFormat:@"%@ (del %@)",trattamento.descrizione,[trattamento.dataInizio stringFromDate]];
+        self.ultimoTrattamento.textLabel.text = titolo;
+    } else {
+        self.ultimoTrattamento.textLabel.text = @"Aggiungi il primo trattamento";
+    }
     
-    self.ultimoTrattamento.textLabel.text = titolo;
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -43,6 +43,7 @@
 {
     [super viewDidLoad];
     [self configureFetch];
+    NSLog(@"l'array dei trattamenti e': %@",self.fetchedResultsController);
     [self performFetch];
 
     // Uncomment the following line to preserve selection between presentations.

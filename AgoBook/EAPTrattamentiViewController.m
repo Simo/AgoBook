@@ -63,6 +63,14 @@
 
 - (void)trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller
 {
+    // trattamento e' un oggetto CD quindi porta con se' riferimento a context
+    
+    // prima di tutto devo pulire le views caricate nel viewcontainer
+    self.dettaglioTrattamentoVC;
+    // per il trattamento passato recupero gli oggetti EsameObiettivo, Anamnesi e Diagnosi
+    // dalla diagnosi recupero eventuali sedute
+    // dalle sedute recupero i punti applicati
+    // presento la vista con i "problemi", la prima
     
 }
 

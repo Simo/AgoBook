@@ -949,7 +949,6 @@
 				25A7C8BD199F2A0400CB18C1 /* Common */,
 				25FC340618AFAF9400775243 /* NuovaSeduta */,
 				25CE232E184FC68100AD84F4 /* Trattamenti */,
-				25F633CE194E3FE000A70FAF /* RassegnaSegniPersonali */,
 				25CE231B184FABCB00AD84F4 /* EAPAnagraficaViewController.m */,
 				25CE231A184FABCB00AD84F4 /* EAPAnagraficaViewController.h */,
 				25CE231E184FBC6900AD84F4 /* EAPStoriaMedicaViewController.h */,
@@ -964,6 +963,7 @@
 				250C285D18A67EC900164FDA /* EAPNuovaSedutaViewController.m */,
 				25BE8687194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.h */,
 				25BE8688194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m */,
+				25F633CE194E3FE000A70FAF /* RassegnaSegniPersonali */,
 			);
 			name = Contained;
 			sourceTree = "<group>";

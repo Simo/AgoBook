@@ -81,10 +81,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        /*
         [[segue destinationViewController] setDelegate:self];
         UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
         self.flipsidePopoverController = popoverController;
         popoverController.delegate = self;
+         */
     } else if ([segue.identifier isEqualToString:@"embedContentContainer"]) {
         self.contentContainer = segue.destinationViewController;
         self.contentContainer.delegate = self;

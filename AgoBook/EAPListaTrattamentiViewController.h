@@ -15,7 +15,7 @@
 
 @protocol EAPListaTrattamentiViewControllerDelegate
 
--(void) listaTrattamentiRowSelected:(EAPListaTrattamentiViewController *)controller withIndexPath:(NSIndexPath *)indexPath;
+- (void) listaTrattamentiRowSelected:(EAPListaTrattamentiViewController *)controller withIndexPath:(NSIndexPath *)indexPath;
 - (void) trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller;
 
 @end
