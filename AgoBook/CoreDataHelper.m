@@ -85,7 +85,9 @@ NSString *storeFilename = @"AgoBook.sqlite";
     if (_store) {return;} // Don't load store if it's already loaded
     NSError *error = nil;
     
-    NSDictionary *options = @{NSSQLitePragmasOption: @{@"journal_mode": @"DELETE"}};
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,
+                              NSInferMappingModelAutomaticallyOption:@YES,
+                              NSSQLitePragmasOption: @{@"journal_mode": @"DELETE"}};
     
     _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeURL] options:options error:&error];
     

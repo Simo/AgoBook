@@ -10,6 +10,7 @@
 #import "EAPListaTrattamentiViewController.h"
 #import "EAPDettaglioContainerViewController.h"
 
+@class Trattamento;
 @class EAPTrattamentiViewController;
 
 @protocol EAPTrattamentiViewControllerDelegate <NSObject>
@@ -26,6 +27,7 @@
 @property (strong, nonatomic) EAPDettaglioContainerViewController *dettaglioTrattamentoVC;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmDettaglioTrattamento;
 
+@property (strong, nonatomic) Trattamento *trattamentoDesignato;
 @property (strong, nonatomic) NSArray *array;
 
 @property (strong, nonatomic) Persona *selectedPerson;

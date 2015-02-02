@@ -9,6 +9,7 @@
 #import "DEMONavigationController.h"
 #import "DEMOMenuViewController.h"
 #import "UIViewController+REFrostedViewController.h"
+#import "AcuPoint.h"
 
 @interface DEMONavigationController ()
 
@@ -56,6 +57,7 @@
 
 - (void)selezionatoAcupoint:(AcuPoint *)acupoint perPunto:(Punto *)punto fromController:(EAPTavolePuntiCommonViewController *)controller
 {
+    //NSLog(@"string stringa delle mie brame: %@", acupoint.name);
     [self.delegateVC selectedAcupoint:acupoint fromController:self];
 }
 

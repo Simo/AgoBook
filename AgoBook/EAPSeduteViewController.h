@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataTableViewController.h"
+#import "Trattamento.h"
 
-@interface EAPSeduteViewController : UITableViewController
+@interface EAPSeduteViewController : CoreDataTableViewController <UIActionSheetDelegate>
 
+@property (weak, nonatomic) Trattamento *trattamento;
 @property (strong, nonatomic) NSArray *listaSedute;
 
 @end

@@ -97,11 +97,11 @@
     
     static NSString *CellIdentifier = @"puntosedutaCell";
     EAPPuntiNuovaSedutaCell *cell = (EAPPuntiNuovaSedutaCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    /*
+    
     for(UIView *view in cell.contentView.subviews){
         [view removeFromSuperview];
     }
-    */
+    
     // richiama il punto che popola la cell
     Punto *p = (Punto *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     // Istanzia un UIButton per avviare il count
@@ -112,9 +112,21 @@
     // aggiungiamo la funzionalita'
     [button addTarget:cell action:@selector(startProgressTapped:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton *info = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    info.frame = CGRectMake(5, 5, 20, 20);
+    [cell.contentView addSubview:info];
+    [info addTarget:self action:@selector(mostraMappaPunti:) forControlEvents:UIControlEventTouchUpInside];
+    
+    cell.txtFieldPunto = [[UITextField alloc] initWithFrame:CGRectMake(59, 26, 132, 30)];
+    [cell.txtFieldPunto setBorderStyle:UITextBorderStyleRoundedRect];
+    [cell.contentView addSubview:cell.txtFieldPunto];
+    
     EAPPuntoProgressBar *barra = [[EAPPuntoProgressBar alloc] initWithFrame:CGRectMake(200, 7, 200, 44)];
     [cell.contentView addSubview:barra];
     cell.progressView = barra;
+    
+    cell.lblTempoAppl = [[UILabel alloc] initWithFrame:CGRectMake(311, 46, 42, 21)];
+    [cell.contentView addSubview:cell.lblTempoAppl];
     
     cell.txtFieldPunto.delegate = cell;
     cell.punto = p;
@@ -128,17 +140,19 @@
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
-    NSLog(@"nella table view");
 }
 
 /* In a storyboard-based application, you will often want to do a little preparation before navigation */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:TAVOLEACUPOINTS]) {
+        self.cellaScelta = (EAPPuntiNuovaSedutaCell *)([[sender superview] superview]);
+        /*
         if ([[UIDevice currentDevice].model rangeOfString:@"Simulator"].location != NSNotFound) {
             self.cellaScelta = (EAPPuntiNuovaSedutaCell *)([[sender superview] superview]);
         } else {
             self.cellaScelta = (EAPPuntiNuovaSedutaCell *)([[[sender superview] superview] superview]);
         }
+        */
         /*
         self.destionation = (EAPTavoleTabBarViewController *)segue.destinationViewController;
         self.destionation.punto = [[self.fetchedResultsController fetchedObjects] objectAtIndex:self.cellaScelta.tag];
@@ -213,6 +227,11 @@
         
     }
     
+}
+
+-(void) mostraMappaPunti:(id)sender
+{
+    [self performSegueWithIdentifier:TAVOLEACUPOINTS sender:sender];
 }
 
 - (void)selectedAcupoint:(AcuPoint *)acupoint fromController:(DEMONavigationController *)controller

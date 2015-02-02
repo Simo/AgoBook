@@ -7,26 +7,40 @@
 //
 
 #import "EAPSeduteViewController.h"
+#import "CoreDataHelper.h"
+#import "Seduta.h"
+#import "NSDate+StringConverter.h"
 
 @interface EAPSeduteViewController ()
 
 @end
 
 @implementation EAPSeduteViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+/*
+- (void) configureFetch {
+    //CoreDataHelper *cdh = [(EAPAppDelegate *)[[UIApplication sharedApplication] delegate] cdh];
+    //self.managedObjectContext = [cdh context];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Seduta"];
+    request.predicate = [NSPredicate predicateWithFormat:@"diagnosi = %@", self.trattamento.diagnosi];
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"dataSeduta"
+                                                                                     ascending:NO
+                                                                                      selector:@selector(compare:)]];
+    [request setFetchBatchSize:50];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                        managedObjectContext:[self.trattamento managedObjectContext]
+                                                                          sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedResultsController.delegate = self;
+    
 }
-
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    /*[self configureFetch];
+    NSLog(@"l'array delle sedute e': %lu",[self.fetchedResultsController.fetchedObjects count]);
+    [self performFetch];
+     */
+    NSLog(@"l'array delle sedute e': %lu",[self.listaSedute count]);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -51,6 +65,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    //return [[self.fetchedResultsController fetchedObjects] count];
     return [self.listaSedute count];
 }
 
@@ -59,7 +74,10 @@
     static NSString *CellIdentifier = @"listaSeduteCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.listaSedute objectAtIndex:indexPath.row];
+    //Seduta *seduta = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Seduta *seduta = [self.listaSedute objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [seduta.dataSeduta stringFromDate];
     
     return cell;
 }

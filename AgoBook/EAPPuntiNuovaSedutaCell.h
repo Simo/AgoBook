@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIProgressView *progressView;
 @property (strong, nonatomic) IBOutlet UIButton *avviaProgress;
 @property (strong, nonatomic) IBOutlet UITextField *txtFieldPunto;
+@property (strong, nonatomic) IBOutlet UILabel *lblTempoAppl;
 @property (strong, nonatomic) NSTimer *timer;
 
 @property (strong, nonatomic) Punto *punto;

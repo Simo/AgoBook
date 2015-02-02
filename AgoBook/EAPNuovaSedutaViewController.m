@@ -10,7 +10,10 @@
 #import "EAPPuntiSedutaTableViewController.h"
 #import "CoreDataHelper.h"
 #import "EAPAppDelegate.h"
+#import "Seduta.h"
+#import "Feedback.h"
 #import "Punto.h"
+
 
 @interface EAPNuovaSedutaViewController ()
 
@@ -31,6 +34,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    if (!self.seduta.feedbackNow) {
+        self.seduta.feedbackNow = (Feedback *)[NSEntityDescription entityForName:@"Feedback" inManagedObjectContext:self.seduta.managedObjectContext];
+    }
+    if (!self.seduta.feedbackThen) {
+        self.seduta.feedbackThen = (Feedback *)[NSEntityDescription entityForName:@"Feedback" inManagedObjectContext:self.seduta.managedObjectContext];
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,7 @@
 //
 
 #import "EAPTrattamentiViewController.h"
+#import "Trattamento.h"
 
 @interface EAPTrattamentiViewController ()
 
@@ -64,14 +65,16 @@
 - (void)trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller
 {
     // trattamento e' un oggetto CD quindi porta con se' riferimento a context
-    
+    [self setTrattamentoDesignato:trattamento];
     // prima di tutto devo pulire le views caricate nel viewcontainer
-    self.dettaglioTrattamentoVC;
     // per il trattamento passato recupero gli oggetti EsameObiettivo, Anamnesi e Diagnosi
+    self.dettaglioTrattamentoVC.trattamentoScelto = trattamento;
     // dalla diagnosi recupero eventuali sedute
     // dalle sedute recupero i punti applicati
     // presento la vista con i "problemi", la prima
-    
+    [self.dettaglioTrattamentoVC caricaChildVC:@"ProblemiSegue"];
+    // imposto il segmented index a 0
+    self.segmDettaglioTrattamento.selectedSegmentIndex = 0;
 }
 
 #pragma mark - DettaglioContainer delegate's methods

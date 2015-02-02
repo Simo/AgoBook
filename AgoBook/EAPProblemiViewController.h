@@ -7,24 +7,39 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EAPContainedCommonViewController.h"
+#import "Trattamento.h"
 #import "Anamnesi.h"
+#import "EsameObiettivo.h"
+#import "Diagnosi.h"
+#import "JVFloatLabeledTextView.h"
 
 @class EAPProblemiViewController;
 
 @protocol EAPProblemiViewControllerDelegate <NSObject>
 
+
 -(void)apriNuovaSedutaViewController:(EAPProblemiViewController *)controller;
 
 @end
 
-@interface EAPProblemiViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface EAPProblemiViewController : EAPContainedCommonViewController <UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak,nonatomic) id<EAPProblemiViewControllerDelegate> delegate;
 
-@property (weak, nonatomic) EsameObiettivo *esameObiettivo;
-@property (weak, nonatomic) Diagnosi *diagnosi;
-@property (weak, nonatomic) Anamnesi *anamnesi;
+@property (weak, nonatomic) Trattamento *trattamento;
+/*
+@property (strong, nonatomic) EsameObiettivo *esameObiettivo;
+@property (strong, nonatomic) Diagnosi *diagnosi;
+@property (strong, nonatomic) Anamnesi *anamnesi;
+*/
+@property (strong, nonatomic) IBOutlet JVFloatLabeledTextView *manifestazioneTextView;
+@property (strong, nonatomic) IBOutlet JVFloatLabeledTextView *sintomiTextView;
+@property (strong, nonatomic) IBOutlet JVFloatLabeledTextView *evidenzeTextView;
+@property (strong, nonatomic) IBOutlet JVFloatLabeledTextView *descrizioneTextView;
+
+
 
 - (IBAction)takePhoto:  (UIButton *)sender;
 

@@ -36,6 +36,7 @@
                                                  SegueIdentifierListSeduteVC:@1,
                                                 SegueIdentifierListPuntiVC:@2}];
 
+    //[self caricaChildVC:SegueIdentifierProblemiVC];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +51,7 @@
         if(!self.problemiVC){
             self.problemiVC = segue.destinationViewController;
             self.problemiVC.delegate = self;
+            self.problemiVC.trattamento = self.trattamentoScelto;
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
@@ -65,6 +67,7 @@
         if(!self.seduteVC){
             self.seduteVC = segue.destinationViewController;
             self.seduteVC.listaSedute = self.listaSedutePerSeduteVC;
+            self.seduteVC.listaSedute = [self.trattamentoScelto.diagnosi.sedute allObjects];
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
@@ -73,9 +76,9 @@
             [segue.destinationViewController didMoveToParentViewController:self];
             self.currentViewController = self.seduteVC;
         } else {
-            self.seduteVC.listaSedute = self.listaSedutePerSeduteVC;
+            //self.seduteVC.listaSedute = self.listaSedutePerSeduteVC;
             [self swapFromViewController:self.currentViewController toViewController:self.seduteVC];
-            [self.seduteVC.tableView reloadData];
+            //[self.seduteVC.tableView reloadData];
             self.currentViewController = self.seduteVC;
         }
     } else if ([segue.identifier isEqualToString:SegueIdentifierListPuntiVC]) {

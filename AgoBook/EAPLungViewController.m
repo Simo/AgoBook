@@ -96,6 +96,7 @@
 {
     UIButton *btn = (UIButton *)sender;
     AcuPoint *ap = (AcuPoint *)[self getAcupointWithName:btn.titleLabel.text inArray:self.meridianPoints];
+    //NSLog(@"string stringa delle mie brame: %@", ap.name);
     [self.delegate selezionatoAcupoint:ap perPunto:nil fromController:self];
 }
 

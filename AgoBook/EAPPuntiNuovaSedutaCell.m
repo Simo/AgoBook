@@ -14,7 +14,6 @@
 
 @interface EAPPuntiNuovaSedutaCell()
 
-@property (strong, nonatomic) IBOutlet UILabel *lblTempoAppl;
 @property (nonatomic) NSInteger secondsPassed;
 @end
 

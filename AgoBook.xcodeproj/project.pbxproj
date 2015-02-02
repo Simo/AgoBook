@@ -101,6 +101,8 @@
 		25AA55DF1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55DE1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m */; };
 		25AA55E21A097987008CB8A1 /* EAPBladderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55E11A097987008CB8A1 /* EAPBladderViewController.m */; };
 		25AA55E51A097FD6008CB8A1 /* EAPKidneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AA55E41A097FD6008CB8A1 /* EAPKidneyViewController.m */; };
+		25ADBA421A80184700DAD3CB /* Seduta.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ADBA411A80184700DAD3CB /* Seduta.m */; };
+		25ADBA451A80184800DAD3CB /* Feedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ADBA441A80184800DAD3CB /* Feedback.m */; };
 		25BC99271853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BC99281853BE3100787841 /* AgoBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25BC99241853BE3100787841 /* AgoBook.xcdatamodeld */; };
 		25BD2D6A195B494B00A3EA37 /* Segno.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D69195B494B00A3EA37 /* Segno.m */; };
@@ -111,7 +113,6 @@
 		25BD2D7C195B494B00A3EA37 /* Anamnesi.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D7B195B494B00A3EA37 /* Anamnesi.m */; };
 		25BD2D82195B494B00A3EA37 /* StoriaMedica.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D81195B494B00A3EA37 /* StoriaMedica.m */; };
 		25BD2D8B195B494B00A3EA37 /* Elemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D8A195B494B00A3EA37 /* Elemento.m */; };
-		25BD2D8E195B494B00A3EA37 /* Seduta.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D8D195B494B00A3EA37 /* Seduta.m */; };
 		25BD2D94195B494B00A3EA37 /* Diagnosi.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D93195B494B00A3EA37 /* Diagnosi.m */; };
 		25BD2D97195B494B00A3EA37 /* SegnoPersonale.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BD2D96195B494B00A3EA37 /* SegnoPersonale.m */; };
 		25BE8689194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE8688194E22A400ABB3FF /* EAPRassSegniPersonaleViewController.m */; };
@@ -413,6 +414,11 @@
 		25AA55E11A097987008CB8A1 /* EAPBladderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPBladderViewController.m; sourceTree = "<group>"; };
 		25AA55E31A097FD6008CB8A1 /* EAPKidneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPKidneyViewController.h; sourceTree = "<group>"; };
 		25AA55E41A097FD6008CB8A1 /* EAPKidneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPKidneyViewController.m; sourceTree = "<group>"; };
+		25ADBA3F1A8012BE00DAD3CB /* AgoBook 8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 8.xcdatamodel"; sourceTree = "<group>"; };
+		25ADBA401A80184700DAD3CB /* Seduta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seduta.h; path = ../Seduta.h; sourceTree = "<group>"; };
+		25ADBA411A80184700DAD3CB /* Seduta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seduta.m; path = ../Seduta.m; sourceTree = "<group>"; };
+		25ADBA431A80184800DAD3CB /* Feedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Feedback.h; path = ../Feedback.h; sourceTree = "<group>"; };
+		25ADBA441A80184800DAD3CB /* Feedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Feedback.m; path = ../Feedback.m; sourceTree = "<group>"; };
 		25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 5.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99251853BE3100787841 /* AgoBook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AgoBook 2.xcdatamodel"; sourceTree = "<group>"; };
 		25BC99261853BE3100787841 /* AgoBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgoBook.xcdatamodel; sourceTree = "<group>"; };
@@ -432,8 +438,6 @@
 		25BD2D81195B494B00A3EA37 /* StoriaMedica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriaMedica.m; sourceTree = "<group>"; };
 		25BD2D89195B494B00A3EA37 /* Elemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elemento.h; sourceTree = "<group>"; };
 		25BD2D8A195B494B00A3EA37 /* Elemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elemento.m; sourceTree = "<group>"; };
-		25BD2D8C195B494B00A3EA37 /* Seduta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seduta.h; sourceTree = "<group>"; };
-		25BD2D8D195B494B00A3EA37 /* Seduta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seduta.m; sourceTree = "<group>"; };
 		25BD2D92195B494B00A3EA37 /* Diagnosi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diagnosi.h; sourceTree = "<group>"; };
 		25BD2D93195B494B00A3EA37 /* Diagnosi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diagnosi.m; sourceTree = "<group>"; };
 		25BD2D95195B494B00A3EA37 /* SegnoPersonale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegnoPersonale.h; sourceTree = "<group>"; };
@@ -818,8 +822,6 @@
 				25BD2D96195B494B00A3EA37 /* SegnoPersonale.m */,
 				25BD2D92195B494B00A3EA37 /* Diagnosi.h */,
 				25BD2D93195B494B00A3EA37 /* Diagnosi.m */,
-				25BD2D8C195B494B00A3EA37 /* Seduta.h */,
-				25BD2D8D195B494B00A3EA37 /* Seduta.m */,
 				25BD2D89195B494B00A3EA37 /* Elemento.h */,
 				25BD2D8A195B494B00A3EA37 /* Elemento.m */,
 				25BD2D80195B494B00A3EA37 /* StoriaMedica.h */,
@@ -844,6 +846,10 @@
 				25E2110C19EF0A5800FB663A /* Rassegna.m */,
 				25CC720519F3ECFF00FD787E /* Trattamento.h */,
 				25CC720619F3ECFF00FD787E /* Trattamento.m */,
+				25ADBA431A80184800DAD3CB /* Feedback.h */,
+				25ADBA441A80184800DAD3CB /* Feedback.m */,
+				25ADBA401A80184700DAD3CB /* Seduta.h */,
+				25ADBA411A80184700DAD3CB /* Seduta.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1685,6 +1691,7 @@
 				25D08F811A02D09A004FE24C /* REFrostedContainerViewController.m in Sources */,
 				25D08F841A02D09A004FE24C /* UIView+REFrostedViewController.m in Sources */,
 				25AA55DF1A0977C8008CB8A1 /* EAPSmallIntestineViewController.m in Sources */,
+				25ADBA421A80184700DAD3CB /* Seduta.m in Sources */,
 				25E754B919CDD89A00BFDF64 /* crc32.c in Sources */,
 				25BD2D97195B494B00A3EA37 /* SegnoPersonale.m in Sources */,
 				25C6EE5D18A2D3A200D7011B /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -1740,7 +1747,6 @@
 				25BD2D82195B494B00A3EA37 /* StoriaMedica.m in Sources */,
 				25E754C219CDD89A00BFDF64 /* inftrees.c in Sources */,
 				25E7BA3A19FC4489008D3770 /* EAPLargeIntestinViewController.m in Sources */,
-				25BD2D8E195B494B00A3EA37 /* Seduta.m in Sources */,
 				25E754B719CDD89A00BFDF64 /* adler32.c in Sources */,
 				251C208D1A02F20600834EA1 /* DEMOMenuViewController.m in Sources */,
 				25ED82A81852FC73009C0EB9 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
@@ -1752,6 +1758,7 @@
 				25ED82AE1852FC73009C0EB9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				25ED82B01852FC73009C0EB9 /* MagicalRecord+Actions.m in Sources */,
 				25BD2D8B195B494B00A3EA37 /* Elemento.m in Sources */,
+				25ADBA451A80184800DAD3CB /* Feedback.m in Sources */,
 				25ED82B21852FC73009C0EB9 /* MagicalRecord+ErrorHandling.m in Sources */,
 				25E754AF19CDD89A00BFDF64 /* ioapi.c in Sources */,
 				256F316D18FDCCF1003114D5 /* SBRTTokenView.m in Sources */,
@@ -1926,6 +1933,8 @@
 		25DCF22C184E71E80010F119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1942,6 +1951,8 @@
 		25DCF22D184E71E80010F119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -2034,9 +2045,10 @@
 				25B6E6B5195A057D004DE436 /* AgoBook 5.xcdatamodel */,
 				256C96F9199E40F000CED613 /* AgoBook 6.xcdatamodel */,
 				25D559A719ED9E2D008B8886 /* AgoBook 7.xcdatamodel */,
+				25ADBA3F1A8012BE00DAD3CB /* AgoBook 8.xcdatamodel */,
 				25BC99261853BE3100787841 /* AgoBook.xcdatamodel */,
 			);
-			currentVersion = 25D559A719ED9E2D008B8886 /* AgoBook 7.xcdatamodel */;
+			currentVersion = 25ADBA3F1A8012BE00DAD3CB /* AgoBook 8.xcdatamodel */;
 			path = AgoBook.xcdatamodeld;
 			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;

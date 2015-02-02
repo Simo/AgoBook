@@ -155,6 +155,8 @@
     } else if ([segue.identifier isEqualToString:SegueIdentifierNuovaSeduta]){
         if(!self.nuovaSedutaVC){
             self.nuovaSedutaVC = segue.destinationViewController;
+            // si crea una nuova seduta, ma il problema e' poi quello di legarla ad un trattamento per la persona scelta
+            self.nuovaSedutaVC.seduta = (Seduta *)[NSEntityDescription entityForName:@"Seduta" inManagedObjectContext:self.persona.managedObjectContext];
             NSNumber *number = [NSNumber numberWithInteger:[self.childViewControllers count]];
             [self.relativePositions setValue:number forKey:segue.identifier];
             [self addChildViewController:segue.destinationViewController];
