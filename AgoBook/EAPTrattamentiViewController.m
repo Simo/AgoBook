@@ -55,12 +55,13 @@
 }
 
 #pragma mark - ListaTrattamenti delegate's methods
-
+/*
 -(void)listaTrattamentiRowSelected:(EAPListaTrattamentiViewController *)controller withIndexPath:(NSIndexPath *)indexPath
 {
     self.dettaglioTrattamentoVC.listaSedutePerSeduteVC = [self.array objectAtIndex:indexPath.row];
     [self.dettaglioTrattamentoVC caricaChildVC:@"ProblemiSegue"];
 }
+*/
 
 - (void)trattamentoSelected:(Trattamento *)trattamento inController:(EAPListaTrattamentiViewController *)controller
 {
